@@ -1,0 +1,119 @@
+% Compile with: latexmk -pdfxe -outdir=build
+\documentclass[12pt,oneside]{LuThesis}
+\usepackage[dvipsnames]{xcolor}
+\definecolor{bostonuniversityred}{rgb}{0.8, 0.0, 0.0}
+\definecolor{awesome}{rgb}{1.0, 0.13, 0.32}
+\definecolor{cadmiumgreen}{rgb}{0.0, 0.42, 0.24}
+\usepackage{listings}
+\lstset{language=R,%
+    %basicstyle=\color{red},
+    basicstyle=\ttfamily,%
+    breaklines=true,%
+    morekeywords={matlab2tikz},
+    keywordstyle=\color{blue},%
+    morekeywords=[2]{1}, keywordstyle=[2]{\color{black}},
+    showstringspaces=false,%without this there will be a symbol in the places where there is a space
+    numbers=left,%
+    numberstyle={\tiny \color{black}},% size of the numbers
+    numbersep=9pt, % this defines how far the numbers are from the text
+    emph=[1]{for,in,end,break},emphstyle=[1]\color{bostonuniversityred}, %some words to emphasise
+    %emph=[2]{word1,word2}, emphstyle=[2]{style}, 
+    emph=[1]{data.frame},emphstyle=[1]\color{awesome}, %some words to emphasise   
+}
+
+\title{Darba nosaukums}
+\author{Viktorija Leimane}
+
+%%% LuThesis deklerācijas
+\def\studaplnum{vl16047}
+\def\darbvad{Darba vadītājs}
+\def\dokfak{\textbf{Datorikas fakultātē}}
+\def\recenzents{Recenzents}
+\def\doktitle{\textbf{Darba nosaukums}}
+\def\dokdate{} % Darba vadītāja parakstīšanas datums
+\def\dokdateiesn{} % Darba iesniegšanas datums
+
+%%% Valodas un fonti
+\setdefaultlanguage{latvian}
+\setotherlanguage{english}
+\setmainfont[BoldFont=FreeSerifBold.ttf,ItalicFont=FreeSerifItalic.ttf,BoldItalicFont=FreeSerifBoldItalic.ttf]{FreeSerif.ttf}
+
+\usepackage{graphicx}
+
+%%% Misc
+% \usepackage{hyperref}
+\usepackage[hidelinks]{hyperref}
+\addbibresource{thesis.bib} % biblatex bibliotēkas fails: thesis.bib
+\usepackage[section]{placeins}
+\usepackage[toc,page]{appendix}
+
+%%% Dokumenta struktūra
+\begin{document}
+
+\maketitle
+
+% * Anotācija
+\chapter*{Anotācija}
+\setcounter{page}{1}
+\begin{abstract}
+\input{tex/abstract-lv}
+\end{abstract}
+
+\chapter*{Abstract}
+\begin{english}
+\begin{abstract}
+\input{tex/abstract-en}
+\end{abstract}
+\end{english}
+
+%* Saturs
+\tableofcontents
+
+
+\chapter*{Apzīmējumu saraksts}
+\addcontentsline{toc}{chapter}{Apzīmējumu saraksts}
+\input{tex/abbreviations}
+
+
+\chapter*{Ievads}
+\addcontentsline{toc}{chapter}{Ievads}
+\input{tex/intro}
+
+
+\chapter{Literatūras apskats}
+% \input{tex/definitions}
+\input{tex/literature}
+
+
+\chapter{Rezultāti}
+\input{tex/results}
+
+
+
+\chapter*{Secinājumi}
+\addcontentsline{toc}{chapter}{Secinājumi}
+\input{tex/conclusions}
+
+
+
+\chapter*{Pateicības}
+\addcontentsline{toc}{chapter}{Pateicības}
+\input{tex/acknowledgements}
+
+
+\clearpage
+\addcontentsline{toc}{chapter}{Izmantotā literatūra un avoti}
+\printbibliography[title=Izmantotā literatūra un avoti]
+
+\clearpage
+
+\appendix
+\chapter*{Pielikums}
+\addcontentsline{toc}{chapter}{Pielikums}
+% the \\ insures the section title is centered below the phrase: AppendixA
+\input{tex/appendix}
+
+% Dokumentālā lapa
+\makedoklapa
+
+\end{document}
