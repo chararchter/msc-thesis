@@ -4,22 +4,9 @@
 \definecolor{bostonuniversityred}{rgb}{0.8, 0.0, 0.0}
 \definecolor{awesome}{rgb}{1.0, 0.13, 0.32}
 \definecolor{cadmiumgreen}{rgb}{0.0, 0.42, 0.24}
-\usepackage{listings}
-\lstset{language=R,%
-    %basicstyle=\color{red},
-    basicstyle=\ttfamily,%
-    breaklines=true,%
-    morekeywords={matlab2tikz},
-    keywordstyle=\color{blue},%
-    morekeywords=[2]{1}, keywordstyle=[2]{\color{black}},
-    showstringspaces=false,%without this there will be a symbol in the places where there is a space
-    numbers=left,%
-    numberstyle={\tiny \color{black}},% size of the numbers
-    numbersep=9pt, % this defines how far the numbers are from the text
-    emph=[1]{for,in,end,break},emphstyle=[1]\color{bostonuniversityred}, %some words to emphasise
-    %emph=[2]{word1,word2}, emphstyle=[2]{style}, 
-    emph=[1]{data.frame},emphstyle=[1]\color{awesome}, %some words to emphasise   
-}
+
+\usepackage{booktabs}
+\usepackage{pythonhighlight}
 
 \title{Daudzvalodīgu jēdzientelpu pielietojums nodomu noteikšanā}
 \author{Viktorija Leimane}
@@ -85,20 +72,20 @@
 \input{tex/literature}
 
 
-\chapter{Rezultāti}
-\input{tex/results}
+% \chapter{Rezultāti}
+% \input{tex/results}
 
 
 
-\chapter*{Secinājumi}
-\addcontentsline{toc}{chapter}{Secinājumi}
-\input{tex/conclusions}
+% \chapter*{Secinājumi}
+% \addcontentsline{toc}{chapter}{Secinājumi}
+% \input{tex/conclusions}
 
 
 
-%\chapter*{Pateicības}
-%\addcontentsline{toc}{chapter}{Pateicības}
-%\input{tex/acknowledgements}
+% \chapter*{Pateicības}
+% \addcontentsline{toc}{chapter}{Pateicības}
+% \input{tex/acknowledgements}
 
 
 \clearpage
@@ -114,6 +101,6 @@
 \input{tex/appendix}
 
 % Dokumentālā lapa
-\makedoklapa
+% \makedoklapa
 
 \end{document}

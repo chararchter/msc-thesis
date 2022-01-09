@@ -1,0 +1,101 @@
+
+\section{Jēdzientelpa}
+
+Jēdzientelpa ir vārdu vai frāžu attēlojums daudzdimensionālā vektoru telpā. Jēdzientelpas tiek trennētas ar neironu tīkliem uz liela teksta korpusa un uztver kontekstu no tuvākajiem vārdiem tekstā. Pēc distributional hypothesis vārdi, kas atrodas līdzīgos kontekstos, ir ar līdzīgu nozīmi.
+
+Atšķirībā no dabisko valodu apstrādes metodēm, kas katru vārdu uztver kā vienu atsevišķu vienību un tādēļ vienīgā iespējamā darbība ar vārdiem ir pārbaudīt vienādību, jēdzientelpas uztver attiecības starp vārdiem. Rezultātā vārdam atbilstošais vektors satur semantisku un sintaktisku informāciju par vārdu. No tā izriet praktiskā implikācija - ar vektoriem var darīt lineāro algebru - saskaitīt, atņemt utml.
+
+Cilvēkiem uztverama jēdzientelpu analoģija ir krāsas nosaukums un tam atbilstošais vektors RGB krāsu modelī ar R, G un B koordinātēm no 0 līdz 255, piemēram, red = (255, 0, 0). Ar krāsu jēdzientelpām ir iespējams veikt saskaitīšanu un atņemšanu, kam ir fizikāla nozīme.
+
+Atrast tuvākās krāsas sarkanam.
+\begin{python}
+closest(colors, colors['red'])
+# red (229, 0, 0)
+# fire engine red (254, 0, 2)
+# bright red (255, 0, 13)
+# tomato red (236, 45, 1)
+# cherry red (247, 2, 42)
+\end{python}
+
+Operācijas ar vektoriem darbojas gan krāsu nosaukumiem semantiski, gan skaitliskiem vektoriem krāsu telpā. Piemēram, tuvākais vektors violeta un sarkana starpībai ir zils, kas atbilst cilvēku intuīcijai par RGB krāsām.
+$$purple - red = blue$$
+$$(126, 30, 156) - (229, 0, 0) = (-103, 30, 156)$$
+\begin{python}
+closest(colors, subtractv(colors['purple'], colors['red']))
+# cobalt blue (3, 10, 167)
+# royal blue (5, 4, 170)
+# darkish blue (1, 65, 130)
+# true blue (1, 15, 204)
+# royal (12, 23, 147)
+\end{python}
+
+Tā saskaitot zaļu un zilu rodas kaut kas pa vidu - tirkīzs.
+$$blue + green = turquoise$$
+$$(3, 67, 223) + (21, 176, 26) = (24, 243, 249)$$
+\begin{python}
+closest(colors, addv(colors['blue'], colors['green']))
+# bright turquoise (15, 254, 249)
+# bright light blue (38, 247, 253)
+# bright aqua (11, 249, 234)
+# cyan (0, 255, 255)
+# neon blue (4, 217, 255)
+\end{python}
+
+No vektoru operācijām var nolasīt secinājumus par semantiskajām attiecībām starp vārdiem, piemēram, rozā sarkanam ir tas pats, kas gaiši zils zilam.
+$$pink - red + blue = light blue$$
+$$(255, 129, 192) - (229, 0, 0) + (3, 67, 223) = (29, 196, 415)$$
+\begin{python}
+closest(colors, addv(subtractv(colors['pink'], colors['red']), colors['blue']))
+# neon blue (4, 217, 255)
+# bright sky blue (2, 204, 254)
+# bright light blue (38, 247, 253)
+# cyan (0, 255, 255)
+# bright cyan (65, 253, 254)
+\end{python}
+
+%\begin{python}
+
+%\end{python}
+
+Izrādās tādas pašas sakarības kādas ir krāsu nosaukumiem un to attēlojumiem krāsu telpā ir spēkā jebkuram vārdam (ref 1.1. tabula). Vārdi, kuri bieži atrodas līdzīgos kontekstos, ir tuvāki nozīmē. Jēdzientelpas ietver gan sintaktiskas, gan semantiskas attiecības starp vārdiem. Jāuzsver, ka tādas semantiskas attiecības kā valsts-galvaspilsēta nav eksplicīti uzdotas, jēdzientelpu modelis tās ir novērojis tikai balstoties uz vārdu atrašanās vietām teksta korpusā.
+
+
+Spēja noteikt sintaktisku un semantisku vārdu attiecības ir īpaši būtiska virtuālo asistentu jomā, jo, pirmkārt, semantiski līdzīgiem nodomiem ir līdzīgi vektori, tātad tie vienādi klasificēsies, otrkārt, informācija par sintakses attiecībām noder, jo lietotāji ievada jautājumus brīvā formā un tas ir it īpaši svarīgi fleksīvām valodām kā latviešu.
+
+
+
+\begin{table}[htbp]
+	\centering
+	\caption{Semantisko attiecību piemēri}
+	\begin{tabular}{ll}\toprule
+		attiecība & piemērs  \\\midrule
+		valsts-galvaspilsēta   & Parīze - Francija + Itālija = Roma \\
+		valsts-valūta   & dolāri - ASV + Latvija = eiro \\
+		vīrietis-sieviete   & karalis - vīrietis + sieviete = karaliene \\\bottomrule
+	\end{tabular}%
+	\label{tab:semantic-relationship-examples}%
+\end{table}
+
+\begin{table}[htbp]
+	\centering
+	\caption{Sintaktisko attiecību piemēri}
+	\begin{tabular}{ll}\toprule
+		attiecība & piemērs  \\\midrule
+		daudzskaitlis   & pele - peles \\
+		pagātne   & staigā - staigāja \\
+		salīdzināmā pakāpe   & labs - labāks \\\bottomrule
+	\end{tabular}%
+	\label{tab:semantic-relationship-examples}%
+\end{table}
+
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=\textwidth]{figures/word2vec-country-capital.png}
+	\caption{Divdimensionāla PCA projekcija uzrāda attiecības starp valstu un galvaspilsētu jēdzientelpām}
+\end{figure}
+
+
+
+%distributed reprezentations
+%http://www.cs.toronto.edu/~rgrosse/courses/csc321_2018/readings/L07%20Distributed%20Representations.pdf
