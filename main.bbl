@@ -17,6 +17,29 @@
 \endgroup
 
 \datalist[entry]{none/global//global/global}
+  \entry{colyer2016}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=CA}{%
+         family={Colyer},
+         familyi={C\bibinitperiod},
+         given={Adrian},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{CA1}
+    \strng{fullhash}{CA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{The amazing power of word vectors}
+    \verb{url}
+    \verb https://blog.acolyer.org/2016/04/21/the-amazing-power-of-word-vectors
+    \verb /
+    \endverb
+    \field{journaltitle}{the morning paper}
+    \field{year}{2016}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
   \entry{parrish2017}{misc}{}
     \name{author}{1}{}{%
       {{hash=PA}{%
@@ -36,6 +59,46 @@
     \endverb
     \field{journaltitle}{Github}
     \field{year}{2017}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{word2vec2013}{article}{}
+    \name{author}{4}{}{%
+      {{hash=MT}{%
+         family={Mikolov},
+         familyi={M\bibinitperiod},
+         given={Tomas},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=CK}{%
+         family={Chen},
+         familyi={C\bibinitperiod},
+         given={Kai},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=CG}{%
+         family={Corrado},
+         familyi={C\bibinitperiod},
+         given={Greg},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=DJ}{%
+         family={Dean},
+         familyi={D\bibinitperiod},
+         given={Jeffrey},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{MT+1}
+    \strng{fullhash}{MTCKCGDJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Efficient estimation of word representations in vector space}
+    \verb{url}
+    \verb https://arxiv.org/abs/1301.3781v3
+    \endverb
+    \field{journaltitle}{arXiv}
+    \field{year}{2013}
     \warn{\item Invalid format of field 'month'}
   \endentry
 
