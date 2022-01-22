@@ -1,15 +1,24 @@
 Jēdzientelpa ir vārdu vai frāžu attēlojums daudzdimensionālā vektoru telpā. Jēdzientelpas no teksta korpusa iegūst ar neironu tīkliem, kuri uztver kontekstu no tuvākajiem vārdiem tekstā. 
 
+\subsection{One hot encoding}
+
+trūkumi:
+vektora garums = vārdu krājuma izmērs => algoritmu sarežgītība pieaug eksponenciāli the curse of dimensionality(?)
+
+vārdu vektori ir cieši savienoti (coupled) ar korpusu un statiski, piemēram, pievienot jaunu vārdu nozīmē katram esošajam vārdu vektoram pievienot papildus nulli (nāktos pārtrennēt visu modeli(?)).
+
+nesatur kontekstuālu vārdu nozīmi. nav korelācijas starp vārdiem ar līdzīgu nozīmi un lietojumu.
+
+
+\subsection{Back to jēdzientelpas}
+
 Atšķirībā no dabisko valodu apstrādes metodēm, kas katru vārdu uztver kā vienu atsevišķu vienību un tādēļ vienīgā iespējamā darbība ar vārdiem ir pārbaudīt vienādību, katras jēdzientelpas vektora vērtības ietekmē vārdi tiem apkārt (distributed representation) un būtībā jēdzientelpas uztver attiecības starp vārdiem. Rezultātā vārdam atbilstošais vektors satur semantisku un sintaktisku informāciju par vārdu. No tā izriet praktiskā implikācija - ar vektoriem var darīt lineāro algebru - saskaitīt, atņemt utml \cite{colyer2016}.
 
-\textbf{ONE HOT ENCODING}\\
+Vārdus ir daudz grūtāk salīdzināt nekā skaitļus(, tādēļ mēs piešķiram vārdiem vektorus). Tomēr vārdi apraksta objektus ar noteiktām kvantificējamām īpašībām, piemēram, vieglāks/smagāks (masa), lētāks/dārgāks (cena). Šādai reprezentācijai ir jēga, jo dažādus objektus var salīdzināt savā starpā pēc īpašību vērtības jeb izteiktības pakāpes, piemēram, velosipēds ir vieglāks nekā mašīna. Zinot, ka objektu īpašību skaitliska reprezentācija palīdz tos salīdzināt, atklājas jēga kvantitatīvi izteikt semantiku, tādējādi vārdi tiek attēloti veidā, kas izsaka to nozīmi (caur kontekstu). 
 
-
-Vārdus ir daudz grūtāk salīdzināt nekā skaitļus(, tādēļ mēs piešķiram vārdiem vektorus). Tomēr vārdi apraksta objektus ar noteiktām kvantificējamām īpašībām, piemēram, vieglāks/smagāks (masa), lētāks/dārgāks (cena). Šādai reprezentācijai ir jēga, jo dažādus objektus var salīdzināt savā starpā pēc īpašību vērtības jeb izteiktības pakāpes, piemēram, velosipēds ir vieglāks nekā mašīna. Zinot, ka objektu īpašību skaitliska reprezentācija palīdz tos salīdzināt, atklājas jēga kvantitatīvi izteikt semantiku, tādējādi vārdi tiek attēloti veidā, kas izsaka to nozīmi. 
+\textbf{Add colyer2016 example with age and royalty of words}\\
 
 Cilvēkiem uztverama jēdzientelpu analoģija ir krāsas nosaukums un tam atbilstošais vektors RGB krāsu modelī ar R, G un B koordinātēm no 0 līdz 255, piemēram, red = (255, 0, 0). Ar krāsu jēdzientelpām ir iespējams veikt saskaitīšanu un atņemšanu, kam ir fizikāla nozīme \cite{parrish2017}.
-
-\textbf{colyer2016 example with age and royalty of words}\\
 
 Atrast tuvākās krāsas sarkanam.
 \begin{python}

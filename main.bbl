@@ -67,7 +67,7 @@
       {{hash=MT}{%
          family={Mikolov},
          familyi={M\bibinitperiod},
-         given={Tomas},
+         given={Tom{\'{a}}s},
          giveni={T\bibinitperiod},
       }}%
       {{hash=CK}{%
@@ -93,12 +93,78 @@
     \strng{fullhash}{MTCKCGDJ1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{title}{Efficient estimation of word representations in vector space}
+    \verb{eprint}
+    \verb 1301.3781
+    \endverb
+    \field{title}{Efficient Estimation of Word Representations in Vector Space}
     \verb{url}
     \verb https://arxiv.org/abs/1301.3781v3
     \endverb
-    \field{journaltitle}{arXiv}
+    \field{eprinttype}{arXiv}
+    \field{eprintclass}{cs.CL}
     \field{year}{2013}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{mikolov2013exploiting}{article}{}
+    \name{author}{3}{}{%
+      {{hash=MT}{%
+         family={Mikolov},
+         familyi={M\bibinitperiod},
+         given={Tom{\'{a}}s},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=LQV}{%
+         family={Le},
+         familyi={L\bibinitperiod},
+         given={Quoc\bibnamedelima V.},
+         giveni={Q\bibinitperiod\bibinitdelim V\bibinitperiod},
+      }}%
+      {{hash=SI}{%
+         family={Sutskever},
+         familyi={S\bibinitperiod},
+         given={Ilya},
+         giveni={I\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{MTLQVSI1}
+    \strng{fullhash}{MTLQVSI1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{eprint}
+    \verb 1309.4168
+    \endverb
+    \field{title}{Exploiting Similarities among Languages for Machine
+  Translation}
+    \verb{url}
+    \verb http://arxiv.org/abs/1309.4168
+    \endverb
+    \field{eprinttype}{arXiv}
+    \field{eprintclass}{cs.CL}
+    \field{year}{2013}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{mccormick2016}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=MC}{%
+         family={McCormick},
+         familyi={M\bibinitperiod},
+         given={Chris},
+         giveni={C\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{MC1}
+    \strng{fullhash}{MC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Word2Vec Tutorial - The Skip-Gram Model}
+    \verb{url}
+    \verb http://mccormickml.com/2016/04/19/word2vec-tutorial-the-skip-gram-mod
+    \verb el/
+    \endverb
+    \field{journaltitle}{the morning paper}
+    \field{year}{2016}
     \warn{\item Invalid format of field 'month'}
   \endentry
 
