@@ -163,9 +163,41 @@
     \verb http://mccormickml.com/2016/04/19/word2vec-tutorial-the-skip-gram-mod
     \verb el/
     \endverb
-    \field{journaltitle}{the morning paper}
     \field{year}{2016}
     \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{fasttext2019}{article}{}
+    \name{author}{2}{}{%
+      {{hash=BK}{%
+         family={Balodis},
+         familyi={B\bibinitperiod},
+         given={Kaspars},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=DD}{%
+         family={Deksne},
+         familyi={D\bibinitperiod},
+         given={Daiga},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BKDD1}
+    \strng{fullhash}{BKDD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.3390/info10050161
+    \endverb
+    \field{issn}{2078-2489}
+    \field{number}{5:161}
+    \field{title}{FastText-Based Intent Detection for Inflected Languages}
+    \verb{url}
+    \verb https://www.mdpi.com/2078-2489/10/5/161
+    \endverb
+    \field{volume}{10}
+    \field{journaltitle}{Information}
+    \field{year}{2019}
   \endentry
 
   \entry{paikens2020}{inproceedings}{}
