@@ -33,7 +33,7 @@ def addv(coord1, coord2):
 def closest(space, coord, n=10):
 	closest = []
 	for key in sorted(space.keys(),
-						key=lambda x: distance(coord, space[x]))[:n]:
+					  key=lambda x: distance(coord, space[x]))[:n]:
 		closest.append(key)
 	return closest
 
@@ -43,5 +43,4 @@ color_data = json.loads(open("xkcd.json").read())
 colors = dict()
 for item in color_data['colors']:
     colors[item["color"]] = hex_to_int(item["hex"])
-
 \end{python}

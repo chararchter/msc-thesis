@@ -1,4 +1,13 @@
-Continuous Bag-of-Words (CBOW) un Continuous Skip-gram Model ir neironu tīklu arhitektūras jēdzientelpu izveidei balstoties uz teksta korpusa. CBOW modelī (konteksta distributed reprezentation jeb) apkārt esošos vārdus izmanto vidū esošā vārda paredzēšanai. Skip-gram modelī vārda vektoru izmanto konteksta paredzēšanai.
+Continuous Bag-of-Words (CBOW) un Continuous Skip-gram Model ir divas neironu tīklu modeļu arhitektūras jēdzientelpu izveidei balstoties uz teksta korpusa. CBOW modelī (konteksta distributed reprezentation jeb) apkārt esošos vārdus izmanto vidū esošā vārda paredzēšanai. Skip-gram modelī vārda vektoru izmanto konteksta paredzēšanai.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=\textwidth]{figures/word2vec-models.png}
+	\caption{Vārdu vektoru piemērs, kur katra dimensija ir novērtēta ar svariem un atbilst hipotētiskai vārda nozīmes niansei \cite{word2vec2013}.}
+	\label{fig:cbow-skipgram}
+\end{figure}
+
+
 
 Ideja un cosine of the angle
 \url{https://en.wikipedia.org/wiki/Vector_space_model}
@@ -11,11 +20,17 @@ test2 \cite{mikolov2013exploiting}.
 
 \section{Continuous Bag-of-Words}
 
-Bag-of-Words apzīmē vārdu grupu nesaglabājot kārību. Vienā izlasē (bag) vārda tuvums mērķa vārdam konkrētā izlasē nav tik svarīgs, atkārtojot procesu uz korpusa no konteksta tāpat tiks sīkāk (granulētāk) izšķirti svari tuvākajiem vārdiem, piemēram, Rīga un Latvija būs tuvumā 1000 reizes biežāk nekā Rīga un sniegs.
+Bag-of-Words (BOW) apzīmē vārdu grupu nesaglabājot kārību. Vienā izlasē (bag) vārda tuvums mērķa vārdam konkrētā izlasē nav tik svarīgs, atkārtojot procesu uz korpusa no konteksta tāpat tiks sīkāk (granulētāk) izšķirti svari tuvākajiem vārdiem, piemēram, Rīga un Latvija būs tuvumā 1000 reizes biežāk nekā Rīga un sniegs.
 % \url{https://en.wikipedia.org/wiki/Bag-of-words_model}
 
 CBOW (Continuous Bag-of-Words) metodē neironu tīkls mēģina uzminēt esošo (vidējo) vārdu no n iepriekšējiem un n nākošajiem vārdiem. Procesu atkārtojot, vārdiem, kas bieži parādās vienā kontekstā, būs līdzīgi vektori. Pēc distributional hypothesis vārdi, kas atrodas līdzīgos kontekstos, ir ar līdzīgu nozīmi \cite{word2vec2013}.
 
+
+Šo arhitektūru mēs saucam par BOW modeli, jo vārdu secība vēsturē neietekmē projekciju.
+
+Tāpat kā BOW modelis, CBOW vārdu secība neietekmē projekciju. 
+
+Mēs šo modeli raksturojam vēl vairāk kā CBOW, jo atšķirībā no standarta BOW modeļa tas izmanto nepārtrauktu konteksta dalītu attēlojumu.
 
 \section{Continuous Skip-gram Model}
 
