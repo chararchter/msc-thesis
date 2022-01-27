@@ -17,6 +17,101 @@
 \endgroup
 
 \datalist[entry]{none/global//global/global}
+  \entry{nlp2018}{incollection}{}
+    \name{author}{2}{}{%
+      {{hash=GVN}{%
+         family={Gudivada},
+         familyi={G\bibinitperiod},
+         given={Venkat\bibnamedelima N.},
+         giveni={V\bibinitperiod\bibinitdelim N\bibinitperiod},
+      }}%
+      {{hash=AK}{%
+         family={Arbabifard},
+         familyi={A\bibinitperiod},
+         given={Kamyar},
+         giveni={K\bibinitperiod},
+      }}%
+    }
+    \name{editor}{2}{}{%
+      {{hash=GVN}{%
+         family={Gudivada},
+         familyi={G\bibinitperiod},
+         given={Venkat\bibnamedelima N.},
+         giveni={V\bibinitperiod\bibinitdelim N\bibinitperiod},
+      }}%
+      {{hash=RC}{%
+         family={Rao},
+         familyi={R\bibinitperiod},
+         given={C.R.},
+         giveni={C\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \keyw{Natural language processing, Natural language understanding,
+  Information retrieval, Open-source libraries, Workflow systems, Annotated
+  corpora}
+    \strng{namehash}{GVNAK1}
+    \strng{fullhash}{GVNAK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    This chapter provides an annotated listing of various resources for natural
+  language processing research and applications development. Resources include
+  corpora, software libraries and frameworks, and workflow systems.%
+    }
+    \field{booktitle}{Computational Analysis and Understanding of Natural
+  Languages: Principles, Methods and Applications}
+    \verb{doi}
+    \verb https://doi.org/10.1016/bs.host.2018.07.007
+    \endverb
+    \field{issn}{0169-7161}
+    \field{pages}{31\bibrangedash 50}
+    \field{series}{Handbook of Statistics}
+    \field{title}{Chapter 3 - Open-Source Libraries, Application Frameworks,
+  and Workflow Systems for NLP}
+    \verb{url}
+    \verb https://www.sciencedirect.com/science/article/pii/S0169716118300221
+    \endverb
+    \field{volume}{38}
+    \field{year}{2018}
+  \endentry
+
+  \entry{atis1990}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=HCT}{%
+         family={Hemphill},
+         familyi={H\bibinitperiod},
+         given={Charles\bibnamedelima T.},
+         giveni={C\bibinitperiod\bibinitdelim T\bibinitperiod},
+      }}%
+      {{hash=GJJ}{%
+         family={Godfrey},
+         familyi={G\bibinitperiod},
+         given={John\bibnamedelima J.},
+         giveni={J\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=DGR}{%
+         family={Doddington},
+         familyi={D\bibinitperiod},
+         given={George\bibnamedelima R.},
+         giveni={G\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{HCTGJJDGR1}
+    \strng{fullhash}{HCTGJJDGR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Speech and Natural Language: Proceedings of a Workshop
+  Held at Hidden Valley}
+    \field{title}{The {ATIS} Spoken Language Systems Pilot Corpus}
+    \verb{url}
+    \verb https://catalog.ldc.upenn.edu/docs/LDC93S4B/corpus.html
+    \endverb
+    \field{year}{1990}
+  \endentry
+
   \entry{colyer2016}{misc}{}
     \name{author}{1}{}{%
       {{hash=CA}{%
@@ -106,45 +201,6 @@
     \warn{\item Invalid format of field 'month'}
   \endentry
 
-  \entry{mikolov2013exploiting}{article}{}
-    \name{author}{3}{}{%
-      {{hash=MT}{%
-         family={Mikolov},
-         familyi={M\bibinitperiod},
-         given={Tom{\'{a}}s},
-         giveni={T\bibinitperiod},
-      }}%
-      {{hash=LQV}{%
-         family={Le},
-         familyi={L\bibinitperiod},
-         given={Quoc\bibnamedelima V.},
-         giveni={Q\bibinitperiod\bibinitdelim V\bibinitperiod},
-      }}%
-      {{hash=SI}{%
-         family={Sutskever},
-         familyi={S\bibinitperiod},
-         given={Ilya},
-         giveni={I\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{MTLQVSI1}
-    \strng{fullhash}{MTLQVSI1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \verb{eprint}
-    \verb 1309.4168
-    \endverb
-    \field{title}{Exploiting Similarities among Languages for Machine
-  Translation}
-    \verb{url}
-    \verb http://arxiv.org/abs/1309.4168
-    \endverb
-    \field{eprinttype}{arXiv}
-    \field{eprintclass}{cs.CL}
-    \field{year}{2013}
-    \warn{\item Invalid format of field 'month'}
-  \endentry
-
   \entry{mccormick2016}{misc}{}
     \name{author}{1}{}{%
       {{hash=MC}{%
@@ -165,39 +221,6 @@
     \endverb
     \field{year}{2016}
     \warn{\item Invalid format of field 'month'}
-  \endentry
-
-  \entry{fasttext2019}{article}{}
-    \name{author}{2}{}{%
-      {{hash=BK}{%
-         family={Balodis},
-         familyi={B\bibinitperiod},
-         given={Kaspars},
-         giveni={K\bibinitperiod},
-      }}%
-      {{hash=DD}{%
-         family={Deksne},
-         familyi={D\bibinitperiod},
-         given={Daiga},
-         giveni={D\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{BKDD1}
-    \strng{fullhash}{BKDD1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \verb{doi}
-    \verb 10.3390/info10050161
-    \endverb
-    \field{issn}{2078-2489}
-    \field{number}{5:161}
-    \field{title}{FastText-Based Intent Detection for Inflected Languages}
-    \verb{url}
-    \verb https://www.mdpi.com/2078-2489/10/5/161
-    \endverb
-    \field{volume}{10}
-    \field{journaltitle}{Information}
-    \field{year}{2019}
   \endentry
 
   \entry{paikens2020}{inproceedings}{}
@@ -285,6 +308,39 @@
     }
     \field{year}{2020}
     \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{fasttext2019}{article}{}
+    \name{author}{2}{}{%
+      {{hash=BK}{%
+         family={Balodis},
+         familyi={B\bibinitperiod},
+         given={Kaspars},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=DD}{%
+         family={Deksne},
+         familyi={D\bibinitperiod},
+         given={Daiga},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BKDD1}
+    \strng{fullhash}{BKDD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.3390/info10050161
+    \endverb
+    \field{issn}{2078-2489}
+    \field{number}{5:161}
+    \field{title}{FastText-Based Intent Detection for Inflected Languages}
+    \verb{url}
+    \verb https://www.mdpi.com/2078-2489/10/5/161
+    \endverb
+    \field{volume}{10}
+    \field{journaltitle}{Information}
+    \field{year}{2019}
   \endentry
 \enddatalist
 \endinput
