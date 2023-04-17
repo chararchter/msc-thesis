@@ -1,10 +1,12 @@
-Jēdzientelpa ir vārdu vai frāžu attēlojums daudzdimensionālā vektoru telpā. Jēdzientelpas no teksta korpusa iegūst ar neironu tīkliem, kuri uztver kontekstu no tuvākajiem vārdiem tekstā.
+Jēdzientelpa ir vārdu vai frāžu attēlojums daudzdimensionālā vektoru telpā. Jēdzientelpu pamatā ir ideja, ka vārdiem, kuriem ir līdzīga nozīme un kurus lieto līdzīgos kontekstos, daudzdimensiju telpā jābūt savstarpēji tuvākiem, bet vārdiem ar atšķirīgu nozīmi un kontekstiem jābūt tālākiem, piemēram, vārds “suns” būs tuvāk vārdiem “kaķis” un “mājdzīvnieks” nekā vārds “koks”.
 
-% Liels lēciens uz vienizcēluma kodējumu, bet vienizcēluma kodējumam jābūt pirms jēdzientelpas, jo tie ir pretstati un tas tālāk nav vajadzīgs. 
+% Liels lēciens uz vienizcēluma kodējumu, bet vienizcēluma kodējumam jābūt pirms jēdzientelpas, jo tie ir pretstati un tas tālāk nav vajadzīgs. You’ll need a little context for this one before I dive into the story.
 
-Vienizcēluma kodējums (\textit{one hot encoding}) dabiskās valodas apstrādē ir vektors, kurā katrs vektora elements ir sasaistīts ar vārdu krājuma elementu. Līdz ar to katrs vārds ir vektors, kurā atbilstošais elements ir 1 un visi pārējie elemeni ir 0. Piemēram, ja vārdu krājumā ir četri vārdi: karalis, karaliene, sieviete, vīrietis, karaliene tiktu kodēta kā [0, 1, 0, 0] \cite{colyer2016}.
+Noderīgs sākumpunkts izpratnei par vārdu attēlošanu ar skaitļu vektoriem un šo attēlojumu pielietojamības robežām ir vienizcēluma kodējums (\textit{one hot encoding}). Vienizcēluma kodējums dabiskās valodas apstrādē ir vektors, kurā katrs vektora elements ir sasaistīts ar vārdu krājuma elementu. Līdz ar to katrs vārds ir vektors, kurā atbilstošais elements ir 1 un visi pārējie elemeni ir 0. Piemēram, ja vārdu krājumā ir četri vārdi: karalis, karaliene, sieviete, vīrietis, karaliene tiktu kodēta kā [0, 1, 0, 0] \cite{colyer2016}.
 
-Vektora garuma sasaiste ar vārdu krājuma izmēru ir trūkums, jo vārdu vektori ir cieši savienoti (\textit{coupled}) ar korpusu un statiski, piemēram, pievienot jaunu vārdu nozīmē katram esošajam vārdu vektoram pievienot papildus nulli, tātad nāktos pārtrenēt visu modeli. Tāpat palielinoties dimensiju skaitam telpa pieaug tik strauji, ka daudzdimensiju telpām raksturīgs neblīvums/izretinātība (\textit{sparsity}): vienizcēluma kodējuma vektorā ir tikai viens nenulles elements un korpusos mēdz būt miljardiem (tiešām? atrast cik unikālu vārdu kādā konkrētā angļu korpusā) vārdu. Visbeidzot vienizcēluma kodējums nesatur kontekstuālu vārdu nozīmi, nav korelācijas starp vārdiem ar līdzīgu nozīmi un lietojumu \cite{colyer2016}.
+Taču vektora garuma sasaiste ar vārdu krājuma izmēru ir trūkums, jo vārdu vektori ir cieši savienoti (\textit{coupled}) ar korpusu un statiski, piemēram, pievienot jaunu vārdu nozīmē katram esošajam vārdu vektoram pievienot papildus nulli, tātad nāktos pārtrenēt visu modeli. Tāpat palielinoties dimensiju skaitam telpa pieaug tik strauji, ka daudzdimensiju telpām raksturīgs neblīvums/izretinātība (\textit{sparsity}): vienizcēluma kodējuma vektorā ir tikai viens nenulles elements un korpusos mēdz būt miljardiem 
+% (tiešām? atrast cik unikālu vārdu kādā konkrētā angļu korpusā)
+vārdu. Visbeidzot vienizcēluma kodējums nesatur kontekstuālu vārdu nozīmi, nav korelācijas starp vārdiem ar līdzīgu nozīmi un lietojumu \cite{colyer2016}.
 
 Atšķirībā no dabisko valodu apstrādes metodēm, kas katru vārdu uztver kā vienu atsevišķu vienību un tādēļ vienīgā iespējamā darbība ar vārdiem ir pārbaudīt vienādību, katras jēdzientelpas vektora vērtības ietekmē vārdi tiem apkārt jeb reprezentācija ir izkliedēta (\textit{distributed representation}) un būtībā jēdzientelpas uztver attiecības starp vārdiem. Rezultātā vārdam atbilstošais vektors satur semantisku un sintaktisku informāciju par vārdu. No tā izriet praktiskā implikācija -- ar vektoriem var veikt lineārās algebras operācijas, piemēram, saskaitīt un atņemt \cite{colyer2016}.
 
@@ -111,3 +113,9 @@ Spēja noteikt sintaktiskas un semantiskas vārdu attiecības ir īpaši būtisk
 
 
 \section{Daudzvalodīga jēdzientelpa}
+
+Daudzvalodīgas jēdzientelpas no vienvalodīgām jēdzientelpām atšķiras ar to, ka uztver attiecības starp vārdiem no dažādām valodām.
+
+Tā kā vienvalodīgas jēdzientelpas tiek trennētas tikai uz vienas valodas, tās nespēj notvert attiecības/relācijas starp vārdiem dažādās valodās, un spēj raksturot tikai attiecības starp vārdiem vienā valodā, piemēram, vārds "suns" tiek reprezentēts kā vektors kas jēdzientelpā ir tuvs citiem ar suņiem saistītiem vārdiem, piemēram, "kucēns" un "riet".
+
+Turpretī daudzvalodīgas jēdzientelpas tiek trennētas uz paralēliem datiem - vienādas nozīmes tekstiem dažādās valodās. Tas ļauj notvert starpvalodu (\textit{cross-lingual}) attiecības/relācijas/reprezentācijas/sakarības starp līdzīgas nozīmes vārdiem kopējā jēdzientelpā, piemēram, vārdi "suns" un "dog" ("suns" angļu valodā) tiek reprezentēti kā tuvi vektori kopējā jēdzientelpā, kas norāda uz līdzīgu nozīmi. Daudzvalodīgas jēdzientelpas īpaši noder valodām ar mazākām treniņdatu kopām, jo palīdz tulkot un atgriezt informāciju starp valodām (\textit{cross-language information retrieval}) - piemēram atgriezt angļu Wikipedia lapu vaicājumam, kuram nav latviešu Wikipedia ekvivalenta.
