@@ -1,7 +1,20 @@
+Nodoms ir mērķis, kas lietotājam ir padomā, rakstot jautājumu. Nodomu noteikšana ir lietotāja ievades teksta klasifikācija tam piešķirot visvarbūtīgāko nodomu no iepriekš definētu nodomu kopas \cite{fasttext2019}. Piemēram, klasificējot lietotāja nodomu kā vilciena atiešanas laiks, čatbots var sniegt lietotājam nepieciešamo atbildi no vilcienu grafika (\ref{tab:input-intent} tabula).
 
-Nodoms ir mērķis, kas lietotājam ir padomā, rakstot jautājumu. Piemēram, lietotājs raksta: “kad ir nākošais vilciens uz Rīgu?”, un mērķis ir pārlūkot vilcienu sarakstu. Lai arī jaunāko valodas modeļu, piemēram, GPT-3 izvades teksti lietotājam rada iespaidu par tekošu valodu, pastāv neparastās ielejas (\textit{uncanny valley}) efekts, kurā novērotā plūstošā atbildes valoda rada ekspektācijas, kuras virtuālie asistenti nevar attaisnot un izraisa neapmierinātību \cite{paikens2020}. Tāpēc klienta nodoma noteikšana ir svarīga, lai nodrošinātu patīkamu lietotāja pieredzi.
 
-Nodomu noteikšana ir klasifikācijas uzdevums: attēlot lietotāja brīvā valodā rakstītu pieprasījumu uz visiespējamāko nolūku. Nodomu noteikšanai lieto neironu tīklu klasifikatoru, kas mācās no anotētas datu kopas -- lietotāju ievades tekstiem un atbilstošajiem klientu apkalpošanas speciālista identificētajiem lietotāja nodomiem. Ierobežotās apmācību kopas dēļ dialogsistēmas/virtuālie asistenti var atbildēt uz ierobežotu jautājumu klāstu, piemēram, aptverot bieži uzdotos jautājumus (FAQ -- \textit{Frequently Asked Questions}) \cite{fasttext2019}.
+\begin{table}[htbp]
+	\centering
+	\caption{Lietotāja ievada un nodoma piemērs}
+	\begin{tabular}{ll}\toprule
+		Ievads & Cikos ir nākošais vilciens no Rīgas uz Siguldu? \\
+		Nodoms & vilciena atiešanas laiks \\\bottomrule
+	\end{tabular}%
+	\label{tab:input-intent}%
+\end{table}
+
+% kā dara nodomu noteikšanu?
+Pirms mašīnmācīšanās nodomi tika noteikti ar pattern-based recognition, bet izveidot un uzturēt lielu skaitu ar patterns ir darbietilpīgi. Advancētāka pieeja nodomu noteikšanai ir apmācīt neironu tīklu klasifikatoru uz anotētas datu kopas -- lietotāju ievades tekstiem un atbilstošajiem klientu apkalpošanas speciālista identificētajiem lietotāja nodomiem. Ierobežotās apmācību kopas dēļ dialogsistēmas/virtuālie asistenti var atbildēt uz ierobežotu jautājumu klāstu, piemēram, aptverot bieži uzdotos jautājumus (FAQ -- \textit{Frequently Asked Questions}) \cite{fasttext2019}.
+
+Lai arī jaunāko valodas modeļu, piemēram, GPT-3, izvades teksti lietotājam rada iespaidu par tekošu valodu, pastāv neparastās ielejas (\textit{uncanny valley}) efekts, kurā novērotā plūstošā atbildes valoda rada ekspektācijas, kuras virtuālie asistenti nevar attaisnot un izraisa neapmierinātību \cite{paikens2020}. Tāpēc klienta nodoma noteikšana ir svarīga, lai nodrošinātu patīkamu lietotāja pieredzi.
 
 Jāpiebilst, ka labuma gūšanai no nodomu noteikšanas automatizācijas nav nepieciešams pārklāt 100\% lietotāju pieprasījumu. Veiksmīgas izmantošanas piemērs telekomunikāciju industrijā validācijā izmantoja 1732 klientu pieprasījumu datu kopu anotētu ar attiecīgajiem nolūkiem. Šajā gadījumā divi visbiežākie nodomi ir rēķina atlikšana (356 pieprasījumi; 21\% datu kopas) un nokavēta rēķina maksājuma apstiprināšana (207 pieprasījumi; 12\% datu kopas). Trīs mēnešus ilgā eksperimentālā pētījuma tika apstrādāti 14000 lietotāju pieprasījumi. Sākotnējos testos nodomu noteikšana un izvēlētā atbildes veidne bija precīza 90\% gadījumu, eksperimenta gaitā iegūtie dati ļāva uzlabot nodomu noteikšanu par 2\%, tātad klientu apkalpošanas speciālistiem bija jāveic izmaiņas tikai 8\% pieprasījumu rēķinu kategorijā \cite{paikens2020}.
 
