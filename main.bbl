@@ -342,5 +342,164 @@
     \field{year}{2020}
     \warn{\item Invalid format of field 'month'}
   \endentry
+
+  \entry{de-bruyn-2022}{inproceedings}{}
+    \name{author}{4}{}{%
+      {{hash=DbM}{%
+         family={De\bibnamedelima bruyn},
+         familyi={D\bibinitperiod\bibinitdelim b\bibinitperiod},
+         given={Maxime},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=LE}{%
+         family={Lotfi},
+         familyi={L\bibinitperiod},
+         given={Ehsan},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=BJ}{%
+         family={Buhmann},
+         familyi={B\bibinitperiod},
+         given={Jeska},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=DW}{%
+         family={Daelemans},
+         familyi={D\bibinitperiod},
+         given={Walter},
+         giveni={W\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Association for Computational Linguistics}%
+    }
+    \strng{namehash}{DbM+1}
+    \strng{fullhash}{DbMLEBJDW1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    We expect to interact with home assistants irrespective of our language.
+  However, scaling the Natural Language Understanding pipeline to multiple
+  languages while keeping the same level of accuracy remains a challenge. In
+  this work, we leverage the inherent multilingual aspect of translation models
+  for the task of multilingual intent classification and slot filling. Our
+  experiments reveal that they work equally well with general-purpose
+  multilingual text-to-text models. Furthermore, their accuracy can be further
+  improved by artificially increasing the size of the training set.
+  Unfortunately, increasing the training set also increases the overlap with
+  the test set, leading to overestimating their true capabilities. As a result,
+  we propose two new evaluation methods capable of accounting for an overlap
+  between the training and test set.%
+    }
+    \field{booktitle}{Proceedings of the Massively Multilingual Natural
+  Language Understanding Workshop (MMNLU-22)}
+    \field{pages}{69\bibrangedash 82}
+    \field{title}{Machine Translation for Multilingual Intent Detection and
+  Slots Filling}
+    \verb{url}
+    \verb https://aclanthology.org/2022.mmnlu-1.8
+    \endverb
+    \list{location}{1}{%
+      {Abu Dhabi, United Arab Emirates (Hybrid)}%
+    }
+    \field{month}{12}
+    \field{year}{2022}
+  \endentry
+
+  \entry{firdaus2023}{article}{}
+    \name{author}{3}{}{%
+      {{hash=FM}{%
+         family={Firdaus},
+         familyi={F\bibinitperiod},
+         given={Mauajama},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=EA}{%
+         family={Ekbal},
+         familyi={E\bibinitperiod},
+         given={Asif},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=CE}{%
+         family={Cambria},
+         familyi={C\bibinitperiod},
+         given={Erik},
+         giveni={E\bibinitperiod},
+      }}%
+    }
+    \keyw{Multitask learning, Multilingual analysis, Information fusion, Intent
+  detection, Slot filling, Deep learning}
+    \strng{namehash}{FMEACE1}
+    \strng{fullhash}{FMEACE1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Dialogue systems are becoming an ubiquitous presence in our everyday lives
+  having a huge impact on business and society. Spoken language understanding
+  (SLU) is the critical component of every goal-oriented dialogue system or any
+  conversational system. The understanding of the user utterance is crucial for
+  assisting the user in achieving their desired objectives. Future-generation
+  systems need to be able to handle the multilinguality issue. Hence, the
+  development of conversational agents becomes challenging as it needs to
+  understand the different languages along with the semantic meaning of the
+  given utterance. In this work, we propose a multilingual multitask approach
+  to fuse the two primary SLU tasks, namely, intent detection and slot filling
+  for three different languages. While intent detection deals with identifying
+  user’s goal or purpose, slot filling captures the appropriate user
+  utterance information in the form of slots. As both of these tasks are highly
+  correlated, we propose a multitask strategy to tackle these two tasks
+  concurrently. We employ a transformer as a shared sentence encoder for the
+  three languages, i.e., English, Hindi, and Bengali. Experimental results show
+  that the proposed model achieves an improvement for all the languages for
+  both the tasks of SLU. The multi-lingual multi-task (MLMT) framework shows an
+  improvement of more than 2% in case of intent accuracy and 3% for slot F1
+  score in comparison to the single task models. Also, there is an increase of
+  more than 1 point intent accuracy and 2 points slot F1 score in the MLMT
+  model as opposed to the language specific frameworks.%
+    }
+    \verb{doi}
+    \verb https://doi.org/10.1016/j.inffus.2022.09.029
+    \endverb
+    \field{issn}{1566-2535}
+    \field{pages}{299\bibrangedash 315}
+    \field{title}{Multitask learning for multilingual intent detection and slot
+  filling in dialogue systems}
+    \verb{url}
+    \verb https://www.sciencedirect.com/science/article/pii/S1566253522001671
+    \endverb
+    \field{volume}{91}
+    \field{journaltitle}{Information Fusion}
+    \field{year}{2023}
+  \endentry
+
+  \entry{jayarao2018}{inproceedings}{}
+    \name{author}{2}{}{%
+      {{hash=JP}{%
+         family={Jayarao},
+         familyi={J\bibinitperiod},
+         given={Pratik},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=SA}{%
+         family={Srivastava},
+         familyi={S\bibinitperiod},
+         given={Aman},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{JPSA1}
+    \strng{fullhash}{JPSA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{2018 International Conference on Electrical, Electronics,
+  Communication, Computer, and Optimization Techniques (ICEECCOT)}
+    \verb{doi}
+    \verb 10.1109/ICEECCOT43722.2018.9001577
+    \endverb
+    \field{pages}{583\bibrangedash 587}
+    \field{title}{Intent Detection for code-mix utterances in task oriented
+  dialogue systems}
+    \field{year}{2018}
+  \endentry
 \enddatalist
 \endinput
