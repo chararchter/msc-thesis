@@ -472,6 +472,60 @@
     \field{year}{2023}
   \endentry
 
+  \entry{liu2020}{article}{}
+    \name{author}{5}{}{%
+      {{hash=LZ}{%
+         family={Liu},
+         familyi={L\bibinitperiod},
+         given={Zihan},
+         giveni={Z\bibinitperiod},
+      }}%
+      {{hash=WGI}{%
+         family={Winata},
+         familyi={W\bibinitperiod},
+         given={Genta\bibnamedelima Indra},
+         giveni={G\bibinitperiod\bibinitdelim I\bibinitperiod},
+      }}%
+      {{hash=LZ}{%
+         family={Lin},
+         familyi={L\bibinitperiod},
+         given={Zhaojiang},
+         giveni={Z\bibinitperiod},
+      }}%
+      {{hash=XP}{%
+         family={Xu},
+         familyi={X\bibinitperiod},
+         given={Peng},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=FP}{%
+         family={Fung},
+         familyi={F\bibinitperiod},
+         given={Pascale},
+         giveni={P\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{LZ+1}
+    \strng{fullhash}{LZWGILZXPFP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1609/aaai.v34i05.6362
+    \endverb
+    \field{number}{05}
+    \field{pages}{8433\bibrangedash 8440}
+    \field{title}{Attention-Informed Mixed-Language Training for Zero-Shot
+  Cross-Lingual Task-Oriented Dialogue Systems}
+    \verb{url}
+    \verb https://ojs.aaai.org/index.php/AAAI/article/view/6362
+    \endverb
+    \field{volume}{34}
+    \field{journaltitle}{Proceedings of the AAAI Conference on Artificial
+  Intelligence}
+    \field{year}{2020}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
   \entry{jayarao2018}{inproceedings}{}
     \name{author}{2}{}{%
       {{hash=JP}{%
