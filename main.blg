@@ -22,49 +22,47 @@ Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Database file #1: main-blx.bib
 Database file #2: thesis.bib
-Warning--I didn't find a database entry for "conneau2020"
 Biblatex version: 3.16
 Reallocating 'wiz_functions' (item size: 4) to 9000 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
-You've used 13 entries,
+You've used 14 entries,
             6393 wiz_defined-function locations,
-            1308 strings with 16149 characters,
-and the built_in function-call counts, 85263 in all, are:
-= -- 6374
-> -- 1420
-< -- 371
-+ -- 2160
-- -- 532
-* -- 6045
-:= -- 9484
+            1316 strings with 17790 characters,
+and the built_in function-call counts, 101568 in all, are:
+= -- 7818
+> -- 1623
+< -- 438
++ -- 2710
+- -- 604
+* -- 7154
+:= -- 11528
 add.period$ -- 0
-call.type$ -- 13
-change.case$ -- 212
-chr.to.int$ -- 54
-cite$ -- 24
-duplicate$ -- 8849
-empty$ -- 7669
-format.name$ -- 858
-if$ -- 17289
+call.type$ -- 14
+change.case$ -- 268
+chr.to.int$ -- 60
+cite$ -- 26
+duplicate$ -- 10653
+empty$ -- 8947
+format.name$ -- 1003
+if$ -- 20412
 int.to.chr$ -- 0
-int.to.str$ -- 31
+int.to.str$ -- 35
 missing$ -- 0
-newline$ -- 499
-num.names$ -- 598
-pop$ -- 4357
+newline$ -- 588
+num.names$ -- 689
+pop$ -- 4823
 preamble$ -- 1
-purify$ -- 301
+purify$ -- 378
 quote$ -- 0
-skip$ -- 2373
+skip$ -- 2700
 stack$ -- 0
-substring$ -- 11255
-swap$ -- 1964
-text.length$ -- 296
+substring$ -- 13836
+swap$ -- 2275
+text.length$ -- 324
 text.prefix$ -- 0
 top$ -- 1
-type$ -- 430
+type$ -- 464
 warning$ -- 0
-while$ -- 1316
+while$ -- 1621
 width$ -- 0
-write$ -- 487
-(There was 1 warning)
+write$ -- 575

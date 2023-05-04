@@ -223,6 +223,112 @@
     \warn{\item Invalid format of field 'month'}
   \endentry
 
+  \entry{conneau2020}{inproceedings}{}
+    \name{author}{10}{}{%
+      {{hash=CA}{%
+         family={Conneau},
+         familyi={C\bibinitperiod},
+         given={Alexis},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=KK}{%
+         family={Khandelwal},
+         familyi={K\bibinitperiod},
+         given={Kartikay},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=GN}{%
+         family={Goyal},
+         familyi={G\bibinitperiod},
+         given={Naman},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=CV}{%
+         family={Chaudhary},
+         familyi={C\bibinitperiod},
+         given={Vishrav},
+         giveni={V\bibinitperiod},
+      }}%
+      {{hash=WG}{%
+         family={Wenzek},
+         familyi={W\bibinitperiod},
+         given={Guillaume},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=GF}{%
+         family={Guzm{\'a}n},
+         familyi={G\bibinitperiod},
+         given={Francisco},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=GE}{%
+         family={Grave},
+         familyi={G\bibinitperiod},
+         given={Edouard},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=OM}{%
+         family={Ott},
+         familyi={O\bibinitperiod},
+         given={Myle},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=ZL}{%
+         family={Zettlemoyer},
+         familyi={Z\bibinitperiod},
+         given={Luke},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=SV}{%
+         family={Stoyanov},
+         familyi={S\bibinitperiod},
+         given={Veselin},
+         giveni={V\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Association for Computational Linguistics}%
+    }
+    \strng{namehash}{CA+1}
+    \strng{fullhash}{CAKKGNCVWGGFGEOMZLSV1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    This paper shows that pretraining multilingual language models at scale
+  leads to significant performance gains for a wide range of cross-lingual
+  transfer tasks. We train a Transformer-based masked language model on one
+  hundred languages, using more than two terabytes of filtered CommonCrawl
+  data. Our model, dubbed XLM-R, significantly outperforms multilingual BERT
+  (mBERT) on a variety of cross-lingual benchmarks, including +14.6{\%} average
+  accuracy on XNLI, +13{\%} average F1 score on MLQA, and +2.4{\%} F1 score on
+  NER. XLM-R performs particularly well on low-resource languages, improving
+  15.7{\%} in XNLI accuracy for Swahili and 11.4{\%} for Urdu over previous XLM
+  models. We also present a detailed empirical analysis of the key factors that
+  are required to achieve these gains, including the trade-offs between (1)
+  positive transfer and capacity dilution and (2) the performance of high and
+  low resource languages at scale. Finally, we show, for the first time, the
+  possibility of multilingual modeling without sacrificing per-language
+  performance; XLM-R is very competitive with strong monolingual models on the
+  GLUE and XNLI benchmarks. We will make our code and models publicly
+  available.%
+    }
+    \field{booktitle}{Proceedings of the 58th Annual Meeting of the Association
+  for Computational Linguistics}
+    \verb{doi}
+    \verb 10.18653/v1/2020.acl-main.747
+    \endverb
+    \field{pages}{8440\bibrangedash 8451}
+    \field{title}{Unsupervised Cross-lingual Representation Learning at Scale}
+    \verb{url}
+    \verb https://aclanthology.org/2020.acl-main.747
+    \endverb
+    \list{location}{1}{%
+      {Online}%
+    }
+    \field{month}{07}
+    \field{year}{2020}
+  \endentry
+
   \entry{fasttext2019}{article}{}
     \name{author}{2}{}{%
       {{hash=BK}{%
