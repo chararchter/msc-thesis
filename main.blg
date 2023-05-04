@@ -22,47 +22,53 @@ Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Database file #1: main-blx.bib
 Database file #2: thesis.bib
+I was expecting a `,' or a `}'---line 401 of file thesis.bib
+ :     isbn=978
+ :             -1788295758,
+I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for "bender2021"
 Biblatex version: 3.16
 Reallocating 'wiz_functions' (item size: 4) to 9000 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
-You've used 14 entries,
+You've used 15 entries,
             6393 wiz_defined-function locations,
-            1316 strings with 17790 characters,
-and the built_in function-call counts, 101568 in all, are:
-= -- 7818
-> -- 1623
-< -- 438
-+ -- 2710
-- -- 604
-* -- 7154
-:= -- 11528
+            1322 strings with 17980 characters,
+and the built_in function-call counts, 105537 in all, are:
+= -- 8069
+> -- 1711
+< -- 470
++ -- 2784
+- -- 625
+* -- 7362
+:= -- 11844
 add.period$ -- 0
-call.type$ -- 14
-change.case$ -- 268
+call.type$ -- 15
+change.case$ -- 292
 chr.to.int$ -- 60
-cite$ -- 26
-duplicate$ -- 10653
-empty$ -- 8947
-format.name$ -- 1003
-if$ -- 20412
+cite$ -- 28
+duplicate$ -- 11111
+empty$ -- 9341
+format.name$ -- 1048
+if$ -- 21289
 int.to.chr$ -- 0
-int.to.str$ -- 35
+int.to.str$ -- 38
 missing$ -- 0
-newline$ -- 588
-num.names$ -- 689
-pop$ -- 4823
+newline$ -- 609
+num.names$ -- 746
+pop$ -- 5152
 preamble$ -- 1
-purify$ -- 378
+purify$ -- 405
 quote$ -- 0
-skip$ -- 2700
+skip$ -- 2896
 stack$ -- 0
-substring$ -- 13836
-swap$ -- 2275
-text.length$ -- 324
+substring$ -- 14150
+swap$ -- 2392
+text.length$ -- 341
 text.prefix$ -- 0
 top$ -- 1
-type$ -- 464
+type$ -- 498
 warning$ -- 0
-while$ -- 1621
+while$ -- 1664
 width$ -- 0
-write$ -- 575
+write$ -- 595
+(There was 1 error message)

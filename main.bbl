@@ -112,6 +112,29 @@
     \field{year}{1990}
   \endentry
 
+  \entry{dangeti2017}{book}{}
+    \name{author}{1}{}{%
+      {{hash=DP}{%
+         family={Dangeti},
+         familyi={D\bibinitperiod},
+         given={Pratap},
+         giveni={P\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Packt Publishing}%
+    }
+    \strng{namehash}{DP1}
+    \strng{fullhash}{DP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{isbn}{978}
+    \field{title}{Statistics for Machine Learning: Techniques for exploring
+  supervised, unsupervised, and reinforcement learning models with Python and
+  R}
+    \field{year}{2017}
+  \endentry
+
   \entry{colyer2016}{misc}{}
     \name{author}{1}{}{%
       {{hash=CA}{%

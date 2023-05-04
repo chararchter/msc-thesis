@@ -1,5 +1,8 @@
 Jēdzientelpa ir vārdu vai frāžu attēlojums daudzdimensionālā vektoru telpā. Jēdzientelpu pamatā ir ideja, ka vārdiem, kuriem ir līdzīga nozīme un kurus lieto līdzīgos kontekstos, daudzdimensiju telpā jābūt savstarpēji tuvākiem, bet vārdiem ar atšķirīgu nozīmi un kontekstiem jābūt tālākiem, piemēram, vārds “suns” būs tuvāk vārdiem “kaķis” un “mājdzīvnieks” nekā vārds “koks”.
 
+To, cik tuvu ir vārdi jēdzientelpā, var noteikt, izmantojot kosinusa līdzības (\textit{cosine similarity}) metriku \cite{dangeti2017}. Ja vienam vārdam atbilst vektors $\vec{a}$, bet otram -- vektors $\vec{b}$, tad kosinusa līdzību $K.L.$ var atrast šādā veidā: $$K.L. = \cos(\varphi) = \frac{\vec{a} \cdot \vec{b}}{|\vec{a}| |\vec{b}|},$$ 
+kur $\varphi$ ir leņķis starp vektoriem $\vec{a}$ un $\vec{b}$, bet $||$ apzīmē vektora garumu jeb moduli: $|\vec{a}| = \sqrt{\vec{a} \cdot \vec{a}}$.
+
 % Liels lēciens uz vienizcēluma kodējumu, bet vienizcēluma kodējumam jābūt pirms jēdzientelpas, jo tie ir pretstati un tas tālāk nav vajadzīgs. You’ll need a little context for this one before I dive into the story.
 
 Noderīgs sākumpunkts izpratnei par vārdu attēlošanu ar skaitļu vektoriem un šo attēlojumu pielietojamības robežām ir vienizcēluma kodējums (\textit{one hot encoding}). Vienizcēluma kodējums dabiskās valodas apstrādē ir vektors, kurā katrs vektora elements ir sasaistīts ar vārdu krājuma elementu. Līdz ar to katrs vārds ir vektors, kurā atbilstošais elements ir 1 un visi pārējie elemeni ir 0. Piemēram, ja vārdu krājumā ir četri vārdi: karalis, karaliene, sieviete, vīrietis, karaliene tiktu kodēta kā [0, 1, 0, 0] \cite{colyer2016}.
@@ -67,7 +70,12 @@ closest(colors, addv(subtractv(colors['pink'], colors['red']), colors['blue']))
 # bright cyan (65, 253, 254)
 \end{python}
 
-Vēl viena analoģija ir vietas ar līdzīgām ģeogrāfiskā platuma un garuma koordinātēm ir līdzīgākas klimata/kultūras/etc ziņā. %atrast source
+Vēl viena analoģija ir vietas ar līdzīgām ģeogrāfiskā platuma un garuma koordinātēm ir līdzīgākas pēc klimata, kultūras utml. Piemēram, Rīga (56°57′N 24°6′E) ir līdzīgāka Viļņai (54°41′N 25°19′E) nekā Riodežaneiro (22°54′40″S 43°12′20″W)
+
+
+Another analogy is places with similar geographic latitude and longitude coordinates are more similar, for example in terms of climate, culture etc. For example, Riga and Vilnius are more similar than Latvia and Rio de Janeiro
+
+
 
 Izrādās, tādas pašas sakarības, kādas ir krāsu nosaukumiem un to attēlojumiem krāsu telpā, ir spēkā jebkuram vārdam. Vārdi, kuri bieži atrodas līdzīgos kontekstos, ir tuvāki nozīmē. Jēdzientelpas ietver gan sintaktiskas (\ref{tab:sintactic-relationship-examples} tabula), gan semantiskas (\ref{tab:semantic-relationship-examples} tabula) attiecības starp vārdiem. Jāuzsver, ka tādas semantiskas attiecības kā valsts--galvaspilsēta (\ref{fig:country-capital}) nav eksplicīti uzdotas, jēdzientelpu modelis tās ir novērojis tikai balstoties uz vārdu atrašanās vietām teksta korpusā. Iespēja trenēt modeli uz neanotētiem datiem kā šajā gadījumā samazina modeļa trenēšanas izmaksas valodām, kurās anotēti dati ir mazāk pieejami, un daudzkārt palielina potenciālās treniņu kopas apjomu, kas parasti ļauj sasniegt lielāku precizitāti.
 
