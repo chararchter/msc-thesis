@@ -112,6 +112,37 @@
     \field{year}{1990}
   \endentry
 
+  \entry{brown-corpus}{manual}{}
+    \name{author}{2}{}{%
+      {{hash=FWN}{%
+         family={Francis},
+         familyi={F\bibinitperiod},
+         given={W.\bibnamedelima Nelson},
+         giveni={W\bibinitperiod\bibinitdelim N\bibinitperiod},
+      }}%
+      {{hash=KH}{%
+         family={Kucera},
+         familyi={K\bibinitperiod},
+         given={H},
+         giveni={H},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Brown University}%
+    }
+    \strng{namehash}{FWNKH1}
+    \strng{fullhash}{FWNKH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Brown Corpus Manual: Manual of information to accompany a
+  Standard Sample of Present-Day American English, for use with digital
+  computers}
+    \verb{url}
+    \verb http://icame.uib.no/brown/bcm.html
+    \endverb
+    \field{year}{1964}
+  \endentry
+
   \entry{bender2021}{inproceedings}{}
     \name{author}{4}{}{%
       {{hash=BEM}{%
