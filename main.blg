@@ -26,49 +26,48 @@ I was expecting a `,' or a `}'---line 401 of file thesis.bib
  :     isbn=978
  :             -1788295758,
 I'm skipping whatever remains of this entry
-Warning--I didn't find a database entry for "bender2021"
 Biblatex version: 3.16
 Reallocating 'wiz_functions' (item size: 4) to 9000 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
-You've used 15 entries,
+You've used 16 entries,
             6393 wiz_defined-function locations,
-            1322 strings with 17980 characters,
-and the built_in function-call counts, 105537 in all, are:
-= -- 8069
-> -- 1711
-< -- 470
-+ -- 2784
-- -- 625
-* -- 7362
-:= -- 11844
+            1335 strings with 19547 characters,
+and the built_in function-call counts, 116425 in all, are:
+= -- 9016
+> -- 1863
+< -- 541
++ -- 3047
+- -- 665
+* -- 8113
+:= -- 12953
 add.period$ -- 0
-call.type$ -- 15
-change.case$ -- 292
+call.type$ -- 16
+change.case$ -- 356
 chr.to.int$ -- 60
-cite$ -- 28
-duplicate$ -- 11111
-empty$ -- 9341
-format.name$ -- 1048
-if$ -- 21289
+cite$ -- 30
+duplicate$ -- 12125
+empty$ -- 10297
+format.name$ -- 1127
+if$ -- 23568
 int.to.chr$ -- 0
-int.to.str$ -- 38
+int.to.str$ -- 42
 missing$ -- 0
-newline$ -- 609
-num.names$ -- 746
-pop$ -- 5152
+newline$ -- 664
+num.names$ -- 845
+pop$ -- 5518
 preamble$ -- 1
-purify$ -- 405
+purify$ -- 478
 quote$ -- 0
-skip$ -- 2896
+skip$ -- 3214
 stack$ -- 0
-substring$ -- 14150
-swap$ -- 2392
-text.length$ -- 341
+substring$ -- 15911
+swap$ -- 2637
+text.length$ -- 361
 text.prefix$ -- 0
 top$ -- 1
-type$ -- 498
+type$ -- 532
 warning$ -- 0
-while$ -- 1664
+while$ -- 1795
 width$ -- 0
-write$ -- 595
+write$ -- 649
 (There was 1 error message)

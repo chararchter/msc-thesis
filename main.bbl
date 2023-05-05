@@ -112,6 +112,78 @@
     \field{year}{1990}
   \endentry
 
+  \entry{bender2021}{inproceedings}{}
+    \name{author}{4}{}{%
+      {{hash=BEM}{%
+         family={Bender},
+         familyi={B\bibinitperiod},
+         given={Emily\bibnamedelima M.},
+         giveni={E\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=GT}{%
+         family={Gebru},
+         familyi={G\bibinitperiod},
+         given={Timnit},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=MMA}{%
+         family={McMillan-Major},
+         familyi={M\bibinithyphendelim M\bibinitperiod},
+         given={Angelina},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=SS}{%
+         family={Shmitchell},
+         familyi={S\bibinitperiod},
+         given={Shmargaret},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Association for Computing Machinery}%
+    }
+    \strng{namehash}{BEM+1}
+    \strng{fullhash}{BEMGTMMASS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    The past 3 years of work in NLP have been characterized by the development
+  and deployment of ever larger language models, especially for English. BERT,
+  its variants, GPT-2/3, and others, most recently Switch-C, have pushed the
+  boundaries of the possible both through architectural innovations and through
+  sheer size. Using these pretrained models and the methodology of fine-tuning
+  them for specific tasks, researchers have extended the state of the art on a
+  wide array of tasks as measured by leaderboards on specific benchmarks for
+  English. In this paper, we take a step back and ask: How big is too big? What
+  are the possible risks associated with this technology and what paths are
+  available for mitigating those risks? We provide recommendations including
+  weighing the environmental and financial costs first, investing resources
+  into curating and carefully documenting datasets rather than ingesting
+  everything on the web, carrying out pre-development exercises evaluating how
+  the planned approach fits into research and development goals and supports
+  stakeholder values, and encouraging research directions beyond ever larger
+  language models.%
+    }
+    \field{booktitle}{Proceedings of the 2021 ACM Conference on Fairness,
+  Accountability, and Transparency}
+    \verb{doi}
+    \verb 10.1145/3442188.3445922
+    \endverb
+    \field{isbn}{9781450383097}
+    \field{pages}{610–623}
+    \field{series}{FAccT '21}
+    \field{title}{On the Dangers of Stochastic Parrots: Can Language Models Be
+  Too Big? 🦜}
+    \verb{url}
+    \verb https://doi.org/10.1145/3442188.3445922
+    \endverb
+    \list{location}{1}{%
+      {Virtual Event, Canada}%
+    }
+    \field{year}{2021}
+    \warn{\item Can't use 'location' + 'address'}
+  \endentry
+
   \entry{dangeti2017}{book}{}
     \name{author}{1}{}{%
       {{hash=DP}{%

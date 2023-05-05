@@ -12,17 +12,17 @@ Nodoms ir mērķis, kas lietotājam ir padomā, rakstot jautājumu. Nodomu notei
 \end{table}
 
 % kā dara nodomu noteikšanu?
-Pirms mašīnmācīšanās nodomi tika noteikti ar pattern-based recognition, bet izveidot un uzturēt lielu skaitu ar patterns ir darbietilpīgi. Advancētāka pieeja nodomu noteikšanai ir apmācīt neironu tīklu klasifikatoru uz anotētas datu kopas -- lietotāju ievades tekstiem un atbilstošajiem klientu apkalpošanas speciālista identificētajiem lietotāja nodomiem. Ierobežotās apmācību kopas dēļ dialogsistēmas/virtuālie asistenti var atbildēt uz ierobežotu jautājumu klāstu, piemēram, aptverot bieži uzdotos jautājumus (FAQ -- \textit{Frequently Asked Questions}) \cite{fasttext2019}.
+Pirms mašīnmācīšanās nodomi tika noteikti ar šabloniem (\textit{pattern-based recognition}), bet izveidot un uzturēt lielu skaitu šablonu ir darbietilpīgi. Advancētāka pieeja nodomu noteikšanai ir apmācīt neironu tīklu klasifikatoru uz anotētas datu kopas -- lietotāju ievades tekstiem un atbilstošajiem klientu apkalpošanas speciālista identificētajiem lietotāja nodomiem. Ierobežotās apmācību kopas dēļ dialogsistēmas/virtuālie asistenti var atbildēt uz ierobežotu jautājumu klāstu, piemēram, aptverot bieži uzdotos jautājumus (FAQ -- \textit{Frequently Asked Questions}) \cite{fasttext2019}.
 
 Lai arī jaunāko valodas modeļu, piemēram, GPT-3, izvades teksti lietotājam rada iespaidu par tekošu valodu, pastāv neparastās ielejas (\textit{uncanny valley}) efekts, kurā novērotā plūstošā atbildes valoda rada ekspektācijas, kuras virtuālie asistenti nevar attaisnot un izraisa neapmierinātību \cite{paikens2020}. Tāpēc klienta nodoma noteikšana ir svarīga, lai nodrošinātu patīkamu lietotāja pieredzi.
 
 Jāpiebilst, ka labuma gūšanai no nodomu noteikšanas automatizācijas nav nepieciešams pārklāt 100\% lietotāju pieprasījumu. Veiksmīgas izmantošanas piemērs telekomunikāciju industrijā validācijā izmantoja 1732 klientu pieprasījumu datu kopu anotētu ar attiecīgajiem nolūkiem. Šajā gadījumā divi visbiežākie nodomi ir rēķina atlikšana (356 pieprasījumi; 21\% datu kopas) un nokavēta rēķina maksājuma apstiprināšana (207 pieprasījumi; 12\% datu kopas). Trīs mēnešus ilgā eksperimentālā pētījuma tika apstrādāti 14000 lietotāju pieprasījumi. Sākotnējos testos nodomu noteikšana un izvēlētā atbildes veidne bija precīza 90\% gadījumu, eksperimenta gaitā iegūtie dati ļāva uzlabot nodomu noteikšanu par 2\%, tātad klientu apkalpošanas speciālistiem bija jāveic izmaiņas tikai 8\% pieprasījumu rēķinu kategorijā \cite{paikens2020}.
 
-Tipiski soļi nodomu noteikšanas biznesa pielietojumā:
+Tipiski soļi nodomu noteikšanas pielietojumam uzņēmējdarbībā:
 \begin{enumerate}
 	\item Atrast visbiežākos pieprasījumu tipus;
 	\item Sagatavot atbildes veidni (\textit{template});
-	\item Nodomu noteikšanas sistēma identificē, vai lietotāja pieprasījums pieder iepriekšdefinētajaiem tipiem un izdod potenciālo atbildi;
+	\item Nodomu noteikšanas sistēma identificē, vai lietotāja pieprasījums pieder iepriekš definētajaiem tipiem un izdod potenciālo atbildi;
 	\item Klientu apkalpošanas speciālists izvērtē un koriģē atbildi pirms nosūtīšanas;
 	\item Automātiski uzlabot nodomu noteikšanas sistēmu, balstoties uz speciālista veiktajām korekcijām \cite{paikens2020}.
 \end{enumerate}

@@ -1,6 +1,6 @@
 Jēdzientelpas no teksta korpusa iegūst ar neironu tīkliem, kuri uztver kontekstu no tuvākajiem vārdiem tekstā.
 
-Continuous Bag-of-Words (CBOW) un Continuous Skip-gram Model ir divas neironu tīklu modeļu arhitektūras jēdzientelpu izveidei balstoties uz teksta korpusa. Metožu priekšrocība ir tajā, ka nav nepieciešama anotēta treniņu datu kopa, trenēšanai izmanto lielus teksta korpusus. CBOW modelī apkārt esošos vārdus izmanto vidū esošā vārda paredzēšanai. Skip-gram modelī vārda vektoru izmanto konteksta paredzēšanai (\ref{fig:cbow-skipgram} attēls).
+\textit{Continuous Bag-of-Words} (CBOW) un \textit{Continuous Skip-gram Model} ir divas neironu tīklu modeļu arhitektūras jēdzientelpu izveidei balstoties uz teksta korpusa. Metožu priekšrocība ir tajā, ka nav nepieciešama anotēta treniņu datu kopa, trenēšanai izmanto lielus teksta korpusus. CBOW modelī apkārt esošos vārdus izmanto vidū esošā vārda paredzēšanai. Skip-gram modelī vārda vektoru izmanto konteksta paredzēšanai (\ref{fig:cbow-skipgram} attēls).
 
 \begin{figure}[h]
 	\centering
@@ -28,11 +28,15 @@ CBOW (Continuous Bag-of-Words) metodē neironu tīkls mēģina uzminēt esošo (
 jeb svari starp ievades un projekcijas slāņiem tiek lietoti visiem vārdiem.
 % (weight matrix between the input and the projection layer is shared for all word positions) 
 \cite{word2vec2013}.
+CBOW neironu tīkla galvenās daļas ir kartējuma (\textit{embedding}) slānis un tam sekojošs blīvais (\textit{dense}) slānis, kurā katrs slāņa mezgls ir pilnībā savienots ar citu mezglu nākamajā slānī (\ref{fig:cbow-skipgram} attēls).
+
+
 
 \section{Continuous Skip-gram Model}
 
 
-Koncepts ir uztrenēt neironu tīklu ar slēpto slāni (\textit{hidden layer}) un iegūt slēptā slāņa svarus, kas patiesībā arī ir vārdu vektori. Uzdevums ir no ievades vārdu pa vārdam paredzēt apkārt esošos vārdus. Kaimiņu vārdu skaits -- loga izmērs (\textit{window size}) -- ir hiperparametrs (\ref{fig:skipgram} attēls).
+\textit{Continuous Skip-gram} metode ir līdzīga CBOW, tikai tās uzdevums ir paredzēt nevis vienu vārdu no apkārt esošajiem, bet otrādi -- no ievades vārdu pa vārdam paredzēt apkārt esošos vārdus.
+Šīs metodes ideja ir uztrenēt neironu tīklu ar slēpto slāni (\textit{hidden layer}) un iegūt slēptā slāņa svarus, kas patiesībā arī ir vārdu vektori. Vērā ņemamu kaimiņu vārdu skaits -- loga izmērs (\textit{window size}) -- ir hiperparametrs (\ref{fig:skipgram} attēls). Modeļa trenēšanas laikā kaimiņu vārdu svara koeficienti nav vienādi: jo tālāk tie atrodas no aplūkotā ievades vārda, jo mazāk ietekmē tā nozīmi, tāpēc tālāk esošajiem vārdiem tiek piešķirti mazāki svara koeficienti \cite{word2vec2013}. 
 
 % [piemērs]
 
@@ -46,6 +50,7 @@ Koncepts ir uztrenēt neironu tīklu ar slēpto slāni (\textit{hidden layer}) u
 	Izvades slānis -- $1xn$ \cite{mccormick2016}.}
 	\label{fig:skipgram}
 \end{figure}
+
 
 % \section{Modeļu performance/salīdzinājums/rezultāti}
 
