@@ -7,6 +7,7 @@
 
 \usepackage{booktabs}
 \usepackage{pythonhighlight}
+\usepackage{subcaption}
 
 \title{Daudzvalodīgu jēdzientelpu pielietojums nodomu noteikšanā}
 \author{Viktorija Leimane}
@@ -67,25 +68,11 @@
 \input{tex/intro}
 
 
-\chapter{Dabisko valodu apstrāde}
+\chapter{Korpuss}
 \input{tex/nlp}
 
 \chapter{Jēdzientelpa}
 \input{tex/word-embeddings}
-
-\chapter{Jēdzientelpu modeļi}
-
-Uzskaitījums un apraksts visiem jēdzientelpu modeļiem, trenēšanas algoritms etc.
-
-\begin{itemize}
-	\item multilingual BERT (Bidirectional Encoder Representations from Transformers)
-	\item XLM-RoBERTa
-	\item Cross-Lingual Projected Embeddings (CLWE)
-	\item Multilingual Universal Sentence Encoder (MUSE)
-	\item VecMap
-	\item Cross-lingual Language Model (XLM)
-\end{itemize}
-
 
 \chapter{Jēdzientelpu modeļu apmācība}
 \input{tex/models}
@@ -96,17 +83,14 @@ Uzskaitījums un apraksts visiem jēdzientelpu modeļiem, trenēšanas algoritms
 \chapter{Experimental setup}
 \input{tex/experimental-setup}
 
-\chapter{Kods}
+
+\chapter{Rezultāti}
+\input{tex/results}
 
 
-% \chapter{Rezultāti}
-% \input{tex/results}
-
-
-
-% \chapter*{Secinājumi}
-% \addcontentsline{toc}{chapter}{Secinājumi}
-% \input{tex/conclusions}
+\chapter*{Secinājumi}
+\addcontentsline{toc}{chapter}{Secinājumi}
+\input{tex/conclusions}
 
 
 

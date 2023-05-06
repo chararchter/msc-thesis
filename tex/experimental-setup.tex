@@ -5,90 +5,36 @@ Daudzvalodu nodomu noteikšana ir lietotāja vaicājumu nolūka identificēšana
 	\item apmācība angļu valodā, testēšana ne-angļu valodā.
 \end{enumerate}
 
-Katrai no trim pieejām ir savas priekšrocības un ierobežojumi, un pieejas izvēle ir atkarīga no konkrētajām uzdevuma prasībām. Apmācība un testēšana vienā un tajā pašā valodā var nodrošināt augstāku precizitāti, savukārt, apmācot visas valodas kopā, var izveidot vienu modeli vairākām valodām, taču dažās valodās var būt zemāka precizitāte. Apmācība angļu valodā un testēšana valodās, kas nav angļu valoda, ir noderīgas, ja ir ierobežoti resursi citām valodām un ir sagaidāms, ka modelis labi darbosies angļu valodā. Pieejas izvēlei jābūt balstītai uz uzdevuma īpašajām prasībām un resursiem.
+Katrai no trijām pieejām ir savas priekšrocības un ierobežojumi, un pieejas izvēle ir atkarīga no konkrētajām uzdevuma prasībām. Apmācība un testēšana vienā un tajā pašā valodā var nodrošināt augstāku precizitāti, savukārt, apmācot visas valodas kopā, var izveidot vienu modeli vairākām valodām, taču dažās valodās var būt zemāka precizitāte. Apmācība angļu valodā un testēšana valodās, kas nav angļu valoda, ir noderīgas, ja ir ierobežoti resursi citām valodām un ir sagaidāms, ka modelis labi darbosies angļu valodā. Pieejas izvēlei jābūt balstītai uz uzdevuma īpašajām prasībām un resursiem.
 
 
 
-Cilvēki sagaida precīzu mijiedarbību ar virtuālajiem asistentiem neatkarīgi no viņu lietotās valodas, tomēr mērogot (\textit{scaling}) nodomu noteikšanas plūsmu (\textit{pipeline}) uz vairākām valodām ir izaicinājums \cite{de-bruyn-2022}. 
+Cilvēki sagaida precīzu mijiedarbību ar virtuālajiem asistentiem neatkarīgi no viņu lietotās valodas, tomēr mērogot (\textit{scaling}) nodomu noteikšanu uz vairākām valodām ir izaicinājums \cite{de-bruyn-2022}. 
 
 
 
-Mēs izmantojam lielajiem modeļiem (\textit{large language model}) raksturīgo daudzvalodu aspektu daudzvalodu nodomu noteikšanas uzdevumiem \cite{de-bruyn-2022}.
+Izveidotais daudzvalodu modelis sasniedza 93.4\% vidējo precizitāti nodomu noteikšanā uz MASSIVE datu kopas, kas satur (angļu tekstu iztulkotu 51 valodās) paralēlus (katrs izteikums tulkots 51 valodā) anotētus datus, izmantojot lielajiem modeļiem (\textit{large language model}) raksturīgo daudzvalodu aspektu \cite{de-bruyn-2022}.
+
+Atrada, ka modeļu precizitāti var uzlabot mākslīgi palielinot treniņkopas izmēru. Tomēr treniņkopas palielināšana palielināja arī pārklājumu ar testa kopu, kas pārvērtēja (\textit{overestimating}) patieso precizitāti \cite{de-bruyn-2022}. Citā pētījumā tika secināts, ka pie nemainīgas modeļa arhitektūras palielinot trenēšanā izmantoto valodu skaitu līdz pat 100 modeļa efektivitāte mazāk populārām valodām sākumā pieaug, bet pēc tam sāk samazināties. Tas tiek dēvēts par "daudzvalodības lāstu" (\textit{curse of multilinguality}), ko var novērst, palielinot kopējo neironu skaitu \cite{conneau2020}.
 
 
 
+Ir divas iespējas: viens modelis katrai valodai vai kopīgs modelis visām valodām. Katrai valodai savs modelis labi darbojas resursietilpīgās valodās, piemēram, angļu valodā. Tomēr maz-resursu valodas gūst labumu no starp-valodu zināšanu pārneses (\textit{cross-lingual knowledge transfer}), kas raksturīga kopīgam modelim \cite{de-bruyn-2022}.
 
-Tika parādīts, ka tas veiksmīgi realizē nodomu noteikšanu, sasniedzot 93.4\% vidējo precizitāti uz MASSIVE datu kopas, kas satur (angļu tekstu iztulkotu 51 valodās) paralēlus (katrs izteikums tulkots 51 valodā) anotētus datus \cite{de-bruyn-2022}.
-
-
-
-Atrada, ka modeļu precizitāti var uzlabot mākslīgi palielinot treniņkopas izmēru. Tomēr treniņkopas palielināšana palielināja arī pārklājumu ar testa kopu, kas pārvērtēja (\textit{overestimating}) patieso precizitāti \cite{de-bruyn-2022}.
-
-
-
-
-Ir divas iespējas: viens modelis katrai valodai vai kopīgs modelis visām valodām. Katrai valodai savs modelis labi darbojas resursietilpīgās valodās, piemēram, angļu valodā. Tomēr maz-resursu valodas (valodas, kurās ir mazāk resursu) gūst labumu no starp-valodu zināšanu pārneses (\textit{cross-lingual knowledge transfer}), kas raksturīga vienam modelim \cite{de-bruyn-2022}.
-
-Tipisks daudzvalodu nodomu noteikšanas risinājums ir transformeru daudzvalodu modeļu izmantošana, piemēram, mBert un XLM-RoBERTa. Šie modeļi ir līdzīgi monolingvāliem modeļiem, izņemot to ka tiek trenēti uz daudzvalodu datu kopām (atšķirībā no monolingvāliem modeļiem, daudzvalodu modeļi tiek trenēti uz daudzvalodu datu kopām) \cite{de-bruyn-2022}. 
+Tipisks daudzvalodu nodomu noteikšanas risinājums ir transformeru daudzvalodu modeļu izmantošana, piemēram, mBert un XLM-RoBERTa. Atšķirībā no monolingvāliem modeļiem, daudzvalodu modeļi tiek trenēti uz daudzvalodu datu kopām \cite{de-bruyn-2022}. 
 
 Izmantojot kopīgu modeli angļu, hindi un bengali valodu mBERT jēdzientelpām precizitāte palielinās par ~2\% nekā atsevišķi trenējot katrā valodā (salīdzinot ar individuāliem nodomu noteikšanas modeļiem) \cite{firdaus2023}.
 
 
 
-Izplatīta stratēģija šīs problēmas (maz treniņdatu) risināšanai ir ievākt vairāk datu un apmācīt katru vienvalodu nodomu noteikšanas modeli atsevišķi, taču tas ir dārgi un resursietilpīgi. Izmantojot vienu daudzvalodu modeli zināšanas no liel-resursu valodas tiek pārnestas uz mazresursu mērķvalodu \cite{liu2020}.
+Izplatīta stratēģija nepietiekama apjoma treniņdatu problēmas risināšanai ir ievākt vairāk datu un apmācīt katru vienvalodu nodomu noteikšanas modeli atsevišķi, taču tas ir dārgi un resursietilpīgi. Izmantojot vienu daudzvalodu modeli zināšanas no liel-resursu valodas tiek pārnestas uz maz-resursu mērķvalodu \cite{liu2020}.
 
 Visbeidzot, būtu svarīgi izpētīt, kā virtuālais asistents tiek galā ar jauktu valodu vaicājumiem (\textit{code switching}), kas ir izplatīti daudzvalodu vidēs, piemēram, kombinācija latviešu-angļu. Tas ietver pieeju izpēti vairāku valodu identificēšanai un atdalīšanai vienā izteikumā, kā arī efektīvi pielietotas daudzvalodu jēdzientelpas. Piemēram, pētījumā datu kopa, kas sastāv tikai no jauktu angļu un hindi valodu vaicājumiem, bija ar ~2\% zemāku precizitāti (F1 score) nekā angļu, hindi un jauktu valodu datu kopa, ar ELMO jēdzientelpām \cite{jayarao2018}.
 
 Vēl viens jauktu valodu paņēmiens ir aizvietot izvēlētus vārdus ar to tulkojumiem maz-resursu valodām. Pētījumā salīdzinot modeļa trenēšanu tikai uz angļu datu kopas un testēšanu uz spāņu datiem ar modeļa trenēšanu uz jauktiem angļu un spāņu valodu vaicājumiem ar multilingual BERT jēdzientelpām precizitāte uzlabojās no 73.7\% uz 86.5\%, ar XLM jēdzientelpām no 60.8\% uz 83.9\% \cite{liu2020}. Jauktu valodu vaicājumi tika ģenerēti automātiski aizvietojot vārdus, kas izvēlēti balstoties uz uzmanības slāņa (\textit{attention layer}) aprēķinātajiem rādītājiem (scores) uz angļu valodas modeļa, ar to tulkojumiem bilingvālā vārdnīcā \cite{liu2020}. 
 % table 2 
 
-
-Palielināja trenēšanā izmantoto valodu skaitu līdz pat 100.
-
-
-(\textit{curse of multilinguality})
-
-
-palielināja valodu, kas izmantotas trenēšanā, skaitu līdz pat 100. Viņi secināja, ka, palielināt valodu skaitu (un nemainot kopējo neironu skaitu), modeļa efektivitāte mazāk populārām valodām sākumā pieaug, bet pēc tam sāk samazināties. To nosauca par "daudzvalodības lāstu" (curse of multilinguality), ko var novērst, vienkāršu palielinot kopējo neironu skaitu. Minētas arī konkrētas precizitātes vērtības: "Our best model XLM-RoBERTa (XLM-R) outperforms mBERT on cross-lingual classification by up to 23% accuracy on low-resource languages. It outperforms the previous state of the art by 5.1% average accuracy on XNLI..."
-
-
-
-XLM-R ievērojami pārspēj daudzvalodu BERTU (mBert) daudzvalodu klasifikācijā līdz pat 23\% maz-resursu valodās.
-
-Kas padara valodu par maz-resursu? Mazāks skaits vārdu un teikumu datu kopās, tātad mazāks skaits tokenu uz kuriem trenēt daudzvalodu jēdzientelpu modeli. Piemēram, Common Crawl-100 korpusā, uz kura trenēts XLM-R modelis, svahili un urdu valodās ir 275M un 730M tokenu attiecīgi, darbā izmantotajās - lietuviešu, latviešu igauņu - ir 1835M, 1198M un 843M tokenu attiecīgi (\ref{tab:cc-100} tabula), tātad šīs datukopas kontekstā tās var uzskatīt par maz-resursu. 
-
-Pētījumā XLM-R pārspēj 
-
-Vai latviešu, igauņu un lietuviešu valodas ir maz-resursu? Pirmkārt
-
-
-Konkrēti minēti skaitļi svahili un urdu, kur izmantotajā CC-100 korpusā ir 275M un 730M tokenu attiecīgi,
-
-salīdzinājumam latviešu valodā ir 1835M tokenu, 
-
-
-Our model, dubbed XLM-R, significantly outperforms multilingual BERT (mBERT) on a variety of cross-lingual benchmarks, including +14.6\% average accu- racy on XNLI, +13\% average F1 score on MLQA, and +2.4\% F1 score on NER. XLM-R performs particularly well on low-resource languages, improving 15.7\% in XNLI accuracy for Swahili and 11.4\% for Urdu over previous XLM models. 
-
-
-Mūsu modelis, saukts par XLM-R, ievērojami pārspēj daudzvalodu BERT (mBERT) dažādos starpvalodu etalonos (\textit{benchmarks}), tostarp +14.6\% vidējo precizitāti XNLI, +13\% vidējo F1 rezultātu MLQA un +2.4\% F1 rezultāts NER. XLM-R īpaši labi darbojas maz-resursu valodās, uzlabojot XNLI precizitāti par 15.7\% svahili valodā un 11.4\% urdu valodā salīdzinājumā ar iepriekšējiem XLM modeļiem.
-
-
-% Table generated by Excel2LaTeX from sheet 'cc-100'
-\begin{table}[htbp]
-  \centering
-  \caption{Common Crawl-100 valodas un statistika: valodu saraksts ar marķieru (\textit{tokens}) skaitu (miljonos) un datu izmēru gigibitos (GiB) katrai valodai}
-    \begin{tabular}{llrr} \toprule
-    ISO kods &  Valoda & Marķieri (M) & Izmērs (GiB) \\\midrule
-    en    &  angļu & 55608 & 300.8 \\
-    ru    &  krievu & 23408 & 278.0 \\
-    lt    &  lietuviešu & 1835  & 13.7 \\
-    lv    &  latviešu & 1198  & 8.8 \\
-    et    &  igauņu & 843   & 6.1 \\
-    ur    &  urdu & 730   & 5.7 \\
-    sw    &  svahili & 275   & 1.6 \\\bottomrule
-    \end{tabular}
-  \label{tab:cc-100}
-\end{table}
+Salīdzinot mBERT un XLM-RoBERTa jēdzientelpu daudzvalodu klasifikāciju, tika secināts, ka XLM-RoBERTa ir precīzāks līdz pat 23\% maz-resursu valodās (svahili un urdu) \cite{conneau2020}.
 
 
 \section{Trenēšana un testēšana vienā valodā}
