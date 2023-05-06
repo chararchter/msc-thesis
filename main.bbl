@@ -201,10 +201,10 @@
     \verb 10.1145/3442188.3445922
     \endverb
     \field{isbn}{9781450383097}
-    \field{pages}{610–623}
+    \field{pages}{610\bibrangedash 623}
     \field{series}{FAccT '21}
     \field{title}{On the Dangers of Stochastic Parrots: Can Language Models Be
-  Too Big? 🦜}
+  Too Big?}
     \verb{url}
     \verb https://doi.org/10.1145/3442188.3445922
     \endverb
@@ -213,6 +213,77 @@
     }
     \field{year}{2021}
     \warn{\item Can't use 'location' + 'address'}
+  \endentry
+
+  \entry{wikimedia2020}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=FW}{%
+         family={Foundation},
+         familyi={F\bibinitperiod},
+         given={Wikimedia},
+         giveni={W\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{FW1}
+    \strng{fullhash}{FW1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+  \field{howpublished}{\url{https://meta.wikimedia.org/wiki/Community_Insights/Community_Insights_2020_Report/Thriving_Movement\#Community_and_Newcomer_Diversity}}
+    \field{title}{Community Insights: Community Insights 2020 Report: Thriving
+  Movement}
+    \field{year}{2020}
+  \endentry
+
+  \entry{1percent}{book}{}
+    \name{author}{2}{}{%
+      {{hash=BBC}{%
+         family={Britt},
+         familyi={B\bibinitperiod},
+         given={Brian\bibnamedelima C.},
+         giveni={B\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+      {{hash=MSA}{%
+         family={Matei},
+         familyi={M\bibinitperiod},
+         given={Sorin\bibnamedelima Adam},
+         giveni={S\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer}%
+    }
+    \strng{namehash}{BBCMSA1}
+    \strng{fullhash}{BBCMSA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{isbn}{978-3-319-64425-7, 3319644254, 978-3-319-64424-0}
+    \field{series}{Lecture notes in social networks}
+    \field{title}{Structural differentiation in social media: adhocracy,
+  entropy, and the "1 \% effect"}
+    \verb{url}
+    \verb http://gen.lib.rus.ec/book/index.php?md5=416b9349cbf6cff824e540feb422
+    \verb 8cb6
+    \endverb
+    \field{year}{2017}
+  \endentry
+
+  \entry{ngram-viewer}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=TGNV}{%
+         family={Team},
+         familyi={T\bibinitperiod},
+         given={Google Ngram\bibnamedelima Viewer},
+         giveni={G\bibinitperiod\bibinitdelim N\bibinitperiod\bibinitdelim
+  V\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{TGNV1}
+    \strng{fullhash}{TGNV1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{howpublished}{\url{https://books.google.com/ngrams/}}
+    \field{note}{Aplūkots 2023-05-06}
+    \field{title}{Google Books Ngram Viewer}
   \endentry
 
   \entry{dangeti2017}{book}{}
@@ -231,7 +302,7 @@
     \strng{fullhash}{DP1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{isbn}{978}
+    \field{isbn}{9781788295758}
     \field{title}{Statistics for Machine Learning: Techniques for exploring
   supervised, unsupervised, and reinforcement learning models with Python and
   R}
