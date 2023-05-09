@@ -149,10 +149,10 @@
 \renewcommand\cftdotsep{0.1}
 \setlength{\cftbeforechapskip}{0em}
 
-\makeatletter
-    % Display uppercase chapters     
-    \patchcmd{\l@chapter}{#1}{\MakeUppercase{#1}}{}{} 
-\makeatother
+%\makeatletter
+%    % Display uppercase chapters
+%    \patchcmd{\l@chapter}{#1}{\MakeUppercase{#1}}{}{}
+%\makeatother
 
 	
 % Special sections
