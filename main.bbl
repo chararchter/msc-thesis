@@ -559,6 +559,23 @@
     \field{year}{2019}
   \endentry
 
+  \entry{snips-docs}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=S}{%
+         family={Snips},
+         familyi={S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{S1}
+    \strng{fullhash}{S1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+  \field{howpublished}{\url{https://snips-nlu.readthedocs.io/en/latest/data_model.html\#intent}}
+    \field{note}{Aplūkots 2023-05-10}
+    \field{title}{Snips Natural Language Understanding Documentation: Key
+  Concepts \& Data Model}
+  \endentry
+
   \entry{paikens2020}{inproceedings}{}
     \name{author}{3}{}{%
       {{hash=PP}{%

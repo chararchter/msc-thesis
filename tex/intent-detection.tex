@@ -1,4 +1,4 @@
-Nodoms ir mērķis, kas lietotājam ir padomā, rakstot jautājumu. Nodomu noteikšana ir lietotāja ievades teksta klasifikācija tam piešķirot visvarbūtīgāko nodomu no iepriekš definētu nodomu kopas \cite{fasttext2019}. Piemēram, klasificējot lietotāja nodomu kā vilciena atiešanas laiks, čatbots var sniegt lietotājam nepieciešamo atbildi no vilcienu grafika (\ref{tab:input-intent} tabula).
+Nodoms ir mērķis, kas lietotājam ir padomā, rakstot jautājumu. Nodomu noteikšana ir lietotāja ievades teksta klasifikācija tam piešķirot visvarbūtīgāko nodomu no iepriekš definētu nodomu kopas \cite{fasttext2019}. Piemēram, klasificējot lietotāja nodomu kā vilciena atiešanas laiks, čatbots var sniegt lietotājam nepieciešamo atbildi no vilcienu grafika (\ref{tab:input-intent} tabula). Dabiskā valodā ir vairāki veidi kā izteikt vienu un to pašu nodomu (\ref{tab:input-intent-ambiguous} tabula).
 
 
 \begin{table}[htbp]
@@ -9,6 +9,18 @@ Nodoms ir mērķis, kas lietotājam ir padomā, rakstot jautājumu. Nodomu notei
 		Nodoms & vilciena atiešanas laiks \\\bottomrule
 	\end{tabular}%
 	\label{tab:input-intent}%
+\end{table}
+
+
+\begin{table}[htbp]
+	\centering
+	\caption{Lietotāja dažādi ievadi ar vienu nodomu \cite{snips-docs}}
+	\begin{tabular}{ll}\toprule
+		Nodoms & Ievads \\
+		switchLightOn & Ieslēdz gaismu \\
+		switchLightOn & Istabā ir pārāk tumši, vai vari to izlabot? \\\bottomrule
+	\end{tabular}%
+	\label{tab:input-intent-ambiguous}%
 \end{table}
 
 % kā dara nodomu noteikšanu?
