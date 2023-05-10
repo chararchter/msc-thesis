@@ -1,124 +1,79 @@
 Daudzvalodu nodomu noteikšana ir lietotāja vaicājumu nolūka identificēšana dažādās valodās. Šajā sadaļā tiks dots ieskats trīs pieejās daudzvalodu nodomu noteikšanas modeļu apmācībai un testēšanai, tās pamatojot ar pieejamo teorētisko literatūru par šo tēmu:
 \begin{enumerate}
 	\item apmācība vienā valodā, un testēšana tajā pašā valodā, piemēram, apmācība latviešu valodā, un testēšana arī latviešu valodā;
-	\item apmācība visās valodās kopā, testēšana vienā valodā, piemēram, apmācība izmantojot datu kopu, kurā angļu, latviešu, krievu, igauņu, lietuviešu datu kopas ir apvienotas vienā, testēšana latviešu valodā;
+	\item apmācība visās valodās kopā, testēšana vienā valodā, piemēram, apmācībā izmantojot datu kopu, kurā angļu, latviešu, krievu, igauņu, lietuviešu datu kopas ir apvienotas vienā, testēšana latviešu valodā;
 	\item apmācība angļu valodā, testēšana ne-angļu valodā.
 \end{enumerate}
 
 Katrai no trijām pieejām ir savas priekšrocības un ierobežojumi, un pieejas izvēle ir atkarīga no konkrētajām uzdevuma prasībām. Apmācība un testēšana vienā un tajā pašā valodā var nodrošināt augstāku precizitāti, savukārt, apmācot visas valodas kopā, var izveidot vienu modeli vairākām valodām, taču dažās valodās var būt zemāka precizitāte. Apmācība angļu valodā un testēšana valodās, kas nav angļu valoda, ir noderīgas, ja ir ierobežoti resursi citām valodām un ir sagaidāms, ka modelis labi darbosies angļu valodā. Pieejas izvēlei jābūt balstītai uz uzdevuma īpašajām prasībām un resursiem.
 
 
+\section{Apmācība un testēšana vienā valodā}
 
-Cilvēki sagaida precīzu mijiedarbību ar virtuālajiem asistentiem neatkarīgi no viņu lietotās valodas, tomēr mērogot (\textit{scaling}) nodomu noteikšanu uz vairākām valodām ir izaicinājums \cite{de-bruyn-2022}. 
+Modeļa apmācība un testēšana vienā un tajā pašā valodā ir piemērota, ja paredzams, ka nodomu noteikšanas modelis konkrētajā valodā darbosies ar labi precizitāti. Vairāki pētījumi ir parādījuši, ka apmācība un testēšana vienā un tajā pašā valodā var nodrošināt lielāku nodomu noteikšanas modeļu precizitāti. 
+%Piemēram, savā pētījumā par nodomu noteikšanu (valodā) valodā autors (gads) atklāja, ka uz tās pašas valodas trenēta modeļa izmantošana uzlaboja klasifikācijas precizitāti. Līdzīgi savā pētījumā par nodomu noteikšanu (valodā) valodā autors (gads) atklāja, ka apmācība un testēšana vienā un tajā pašā valodā nodrošināja lielāku precizitāti, salīdzinot ar apmācību vairākās valodās. Autors (gads) veica eksperimentu, kurā apmācīja un pārbaudīja nodomu noteikšanas modeļus (datu kopa) datu kopā (skaits) dažādās valodās: (valodu uzskaitījums). Rezultāti parādīja, ka apmācība uz vienas valodas datu kopas ievērojami uzlaboja modeļa veiktspēju salīdzinot ar apmācību uz vairākām valodām vienlaicīgi. Turklāt autors (gads) novērtēja dažādu pārsūtīšanas mācīšanās paņēmienu efektivitāti daudzvalodu nodomu noteikšanai un noteica, ka iepriekš apmācīta modeļa pietrenēšana (\textit{fine-tuning}) mērķa valodas datu kopā pārspēja citas metodes.
 
+%[jāatrod varbūt vēl kāds no avotiem ko piemin Li]
 
+Pētījumā uz XTREME datu kopas \cite{hu2020} tika parādīts, ka, apmācot mBERT modeli \cite{devlin2019} ne-angļu valodas nodomu noteikšanai uz datiem tajā pašā valodā var sasniegt par 17--20\% augstāku precizitāti, nekā apmācot uz datiem angļu valodā. Pētījumā aplūkotas 40 valodas no 12 saimēm, un secināts, ka rezultāti ir labāki indo-eiropiešu valodu saimei, tāpēc ka citām saimēm var pastāvēt tokenizācijas grūtības.
 
-Izveidotais daudzvalodu modelis sasniedza 93.4\% vidējo precizitāti nodomu noteikšanā uz MASSIVE datu kopas, kas satur (angļu tekstu iztulkotu 51 valodās) paralēlus (katrs izteikums tulkots 51 valodā) anotētus datus, izmantojot lielajiem modeļiem (\textit{large language model}) raksturīgo daudzvalodu aspektu \cite{de-bruyn-2022}.
+H. Li un citi \cite{li2021} izmantoja savā pētījumā paštaisītu datu kopu ar izteikumiem sešās valodās (angļu, spāņu, franču, vācu, hindi un taju). Vidējā precizitāte ne-angļu valodām sasniedza 78\% gadījumā, kad apmācība notika vienā valodā, 80\% -- gadījumā, kad apmācība notika visās valodās, un 66\% -- kad apmācība notika tikai angļu valodā. Tika parādīts, ka XLM modelis \cite{conneau2020} uz šīs datu kopas ļauj sasniegt par 10--11\% augstāku precizitāti, nekā XLU modelis \cite{schuster2019}.
 
-Atrada, ka modeļu precizitāti var uzlabot mākslīgi palielinot treniņkopas izmēru. Tomēr treniņkopas palielināšana palielināja arī pārklājumu ar testa kopu, kas pārvērtēja (\textit{overestimating}) patieso precizitāti \cite{de-bruyn-2022}. Citā pētījumā tika secināts, ka pie nemainīgas modeļa arhitektūras palielinot trenēšanā izmantoto valodu skaitu līdz pat 100 modeļa efektivitāte mazāk populārām valodām sākumā pieaug, bet pēc tam sāk samazināties. Tas tiek dēvēts par "daudzvalodības lāstu" (\textit{curse of multilinguality}), ko var novērst, palielinot kopējo neironu skaitu \cite{conneau2020}.
+Citā pētījumā autori izmantoja daudzvalodu (angļu, japāņu) modeli un parādīja, ka tas ir efektīvāks, ja tikai daļa no modeļa tiek izmantota abās valodās, bet otra daļa ir specifiska katrai valodai. Apmācot un testējot šo modeli vienā un tajā pašā valodā, nodomu klasifikācijas precizitāte uzlabojās par 0.5--2\%, salīdzinot ar modeļa apmācību uz visām valodām \cite{masumura2018}. Pētījumā izmantotā datu kopa sastāvēja no dialoga replikām un jautājumiem angļu un japāņu valodās \cite{sekine2004}.
 
+Priekšrocības šādai pieejai ir iespēja ieviest nepārtrauktu attīstību (\textit{continuous integration}), kurā ienākošie lietotāju ievades teksti un nodomi tiek izmantoti papildus apmācībai, izolējot efektus vienā valodā. %Trūkums ir resursietilpīgāka vairāku modeļu apmācība un uzturēšana.
+Tomēr ļoti daudzās valodās datu kopas, ko var izmantot neironu tīkla apmācībā, ir salīdzinoši mazas, kā parādīts \ref{fig:dataset-size} att..
+Izplatīta stratēģija nepietiekama apjoma treniņdatu problēmas risināšanai ir ievākt vairāk datu un apmācīt katru vienvalodu nodomu noteikšanas modeli atsevišķi, taču tas ir dārgi un resursietilpīgi. Bet izmantojot vienu daudzvalodu modeli (pieeja, kas aprakstīta nākamajā apakšnodaļā) zināšanas no liel-resursu valodas tiek pārnestas uz maz-resursu mērķvalodu \cite{liu2020}.
 
-
-Ir divas iespējas: viens modelis katrai valodai vai kopīgs modelis visām valodām. Katrai valodai savs modelis labi darbojas resursietilpīgās valodās, piemēram, angļu valodā. Tomēr maz-resursu valodas gūst labumu no starp-valodu zināšanu pārneses (\textit{cross-lingual knowledge transfer}), kas raksturīga kopīgam modelim \cite{de-bruyn-2022}.
-
-Tipisks daudzvalodu nodomu noteikšanas risinājums ir transformeru daudzvalodu modeļu izmantošana, piemēram, mBert un XLM-RoBERTa. Atšķirībā no monolingvāliem modeļiem, daudzvalodu modeļi tiek trenēti uz daudzvalodu datu kopām \cite{de-bruyn-2022}. 
-
-Izmantojot kopīgu modeli angļu, hindi un bengali valodu mBERT jēdzientelpām precizitāte palielinās par ~2\% nekā atsevišķi trenējot katrā valodā (salīdzinot ar individuāliem nodomu noteikšanas modeļiem) \cite{firdaus2023}.
-
-
-
-Izplatīta stratēģija nepietiekama apjoma treniņdatu problēmas risināšanai ir ievākt vairāk datu un apmācīt katru vienvalodu nodomu noteikšanas modeli atsevišķi, taču tas ir dārgi un resursietilpīgi. Izmantojot vienu daudzvalodu modeli zināšanas no liel-resursu valodas tiek pārnestas uz maz-resursu mērķvalodu \cite{liu2020}.
-
-Visbeidzot, būtu svarīgi izpētīt, kā virtuālais asistents tiek galā ar jauktu valodu vaicājumiem (\textit{code switching}), kas ir izplatīti daudzvalodu vidēs, piemēram, kombinācija latviešu-angļu. Tas ietver pieeju izpēti vairāku valodu identificēšanai un atdalīšanai vienā izteikumā, kā arī efektīvi pielietotas daudzvalodu jēdzientelpas. Piemēram, pētījumā datu kopa, kas sastāv tikai no jauktu angļu un hindi valodu vaicājumiem, bija ar ~2\% zemāku precizitāti (F1 score) nekā angļu, hindi un jauktu valodu datu kopa, ar ELMO jēdzientelpām \cite{jayarao2018}.
-
-Vēl viens jauktu valodu paņēmiens ir aizvietot izvēlētus vārdus ar to tulkojumiem maz-resursu valodām. Pētījumā salīdzinot modeļa trenēšanu tikai uz angļu datu kopas un testēšanu uz spāņu datiem ar modeļa trenēšanu uz jauktiem angļu un spāņu valodu vaicājumiem ar multilingual BERT jēdzientelpām precizitāte uzlabojās no 73.7\% uz 86.5\%, ar XLM jēdzientelpām no 60.8\% uz 83.9\% \cite{liu2020}. Jauktu valodu vaicājumi tika ģenerēti automātiski aizvietojot vārdus, kas izvēlēti balstoties uz uzmanības slāņa (\textit{attention layer}) aprēķinātajiem rādītājiem (scores) uz angļu valodas modeļa, ar to tulkojumiem bilingvālā vārdnīcā \cite{liu2020}. 
-% table 2 
-
-Salīdzinot mBERT un XLM-RoBERTa jēdzientelpu daudzvalodu klasifikāciju, tika secināts, ka XLM-RoBERTa ir precīzāks līdz pat 23\% maz-resursu valodās (svahili un urdu) \cite{conneau2020}.
-
-
-\section{Trenēšana un testēšana vienā valodā}
-
-Modeļa apmācība un testēšana vienā un tajā pašā valodā ir piemērota, ja paredzams, ka nodomu noteikšanas modelis konkrētajā valodā darbosies ar labi precizitāti. Vairāki pētījumi ir parādījuši, ka apmācība un testēšana vienā un tajā pašā valodā var nodrošināt lielāku nodomu noteikšanas modeļu precizitāti. Piemēram, savā pētījumā par nodomu noteikšanu (valodā) valodā autors (gads) atklāja, ka uz tās pašas valodas trenēta modeļa izmantošana uzlaboja klasifikācijas precizitāti. Līdzīgi savā pētījumā par nodomu noteikšanu (valodā) valodā autors (gads) atklāja, ka apmācība un testēšana vienā un tajā pašā valodā nodrošināja lielāku precizitāti, salīdzinot ar apmācību vairākās valodās. Autors (gads) veica eksperimentu, kurā apmācīja un pārbaudīja nodomu noteikšanas modeļus (datu kopa) datu kopā (skaits) dažādās valodās: (valodu uzskaitījums). Rezultāti parādīja, ka apmācība uz vienas valodas datu kopas ievērojami uzlaboja modeļa veiktspēju salīdzinot ar apmācību uz vairākām valodām vienlaicīgi. Turklāt autors (gads) novērtēja dažādu pārsūtīšanas mācīšanās paņēmienu efektivitāti daudzvalodu nodomu noteikšanai un noteica, ka iepriekš apmācīta modeļa pietrenēšana (\textit{fine-tuning}) mērķa valodas datu kopā pārspēja citas metodes.
-
-Priekšrocības šādai pieejai ir iespēja ieviest nepārtrauktu attīstību (\textit{continuous integration}), kurā ienākošie lietotāju ievades teksti un nodomi tiek izmantoti papildus apmācībai, izolējot efektus vienā valodā. Trūkums ir resursietilpīgāka vairāku modeļu trenēšana un uzturēšana.
-
-\section{Trenēšana uz visām valodām, testēšana vienā valodā}
+\section{Apmācība uz visām valodām, testēšana vienā valodā}
 
 Otrā pieeja ir modeļa apmācība daudzvalodu datu kopā, kas ietver visas interesējošās valodas, un tā testēšana konkrētā valodā. Šī pieeja ir noderīga, ja paredzams, ka modelis dažādās valodās darbosies pietiekami labi un mērķis ir izveidot vienu nodomu noteikšanas modeli, kas spēj apstrādāt vairākas valodas. 
+Cilvēki sagaida precīzu mijiedarbību ar virtuālajiem asistentiem neatkarīgi no viņu lietotās valodas, tomēr mērogot (\textit{scaling}) nodomu noteikšanu uz vairākām valodām ir izaicinājums.
+Tipisks daudzvalodu nodomu noteikšanas risinājums ir transformeru daudzvalodu modeļu izmantošana, piemēram, mBERT un XLM-RoBERTa. 
+Atšķirībā no monolingvāliem modeļiem, daudzvalodu modeļi tiek apmācīti uz daudzvalodu datu kopām.
+ 
+2022. gada pētījumā \cite{de-bruyn-2022} tika parādīts, ka modeļu precizitāti var uzlabot, mākslīgi palielinot treniņkopas izmēru. Tomēr treniņkopas palielināšana palielināja arī pārklājumu ar testa kopu, kas pārvērtēja (\textit{overestimating}) patieso precizitāti.
+Izveidotais daudzvalodu modelis sasniedza 93.4\% vidējo precizitāti nodomu noteikšanā uz MASSIVE datu kopas, kas satur paralēlus anotētus datus (angļu izteikumi ar tulkojumiem 51 valodā) \cite{fitzgerald2022}.
 
-Vairāki pētījumi ir izmantojuši šo pieeju un parādījuši, ka tā var būt efektīva. Piemēram, autors (gads) pētīja modeļa apmācības efektivitāti daudzvalodu datu kopā, kas ietvēra (skaits) valodas: (valodu uzskaitījums), un testēja to noteiktā valodā. Rezultāti parādīja, ka modelis var sasniegt labu veiktspēju (\%) visās valodās. Līdzīgi autors (gads) izmantoja daudzvalodu datu kopu, kurā bija (skaits) valodas: (valodu uzskaitījums), un apmācīja nodomu noteikšanas modeli, kas sasniedza konkurētspējīgus rezultātus (valodu uzskaitījums) valodās. Tomēr šī pieeja var izraisīt zemāku precizitāti valodām, kurām ir mazāk apmācības piemēru. Savā pētījumā par daudzvalodu nodomu noteikšanu autors (gads) skaidroja, ka visu valodu apmācība kopā un konkrētas valodas testēšana var izraisīt šīs valodas precizitātes samazināšanos.
+Citā pētījumā tika secināts, ka pie nemainīgas modeļa arhitektūras palielinot apmācībā izmantoto valodu skaitu līdz pat 100 modeļa efektivitāte mazāk populārām valodām sākumā pieaug, bet pēc tam sāk samazināties. Tas tiek dēvēts par "daudzvalodības lāstu" (\textit{curse of multilinguality}), ko var novērst, palielinot kopējo neironu skaitu.
+Šā pētījuma ietvaros salīdzinot mBERT un XLM-RoBERTa jēdzientelpu daudzvalodu klasifikāciju, tika secināts, ka XLM-RoBERTa ir precīzāks līdz pat 23\% maz-resursu valodās (svahili un urdu) \cite{conneau2020}.
 
-Priekšrocības ir mazākas modeļa apmācības izmaksas (viens modelis visiem datiem). Taču ir vairākas negatīvas sekas trenējot daudzvalodu jēdzientelpu modeli uz datu kopas, kurā kāda valoda, piemēram, angļu, ir disproporcionāli pārstāvēta (\textit{over represented}) un testējot uz maz-resursu (\textit{low-resource}) valodu, piemēram, latviešu. Pirmkārt, modelim var būt zemāka precizitāte latviešu valodā, kas nozīmē nepareizi klasificētus lietotāja nodomus un lietotāju neapmierinātību ar virtuālo asistentu. Otrkārt, modelis, kas trenēts uz disbalansētas datu kopas var ciest no katastrofiskas aizmiršanas (\textit{catastrophic interference}) fenomena, kurā modelis "aizmirst" maz-resursu valodu kad tiek iepazīstināts ar jauniem datiem citās valodās, kas noved pie zemas precizitātes un nepieciešamības pārtrenēt modeli. Šī darba kontekstā klasifikators ir uz 
-Jābūt daudz pētījumu par šo, jo angļu valodas korpusi ir būtiski lielāki nekā citās valodās.
+Vēl vienā pētījumā parādīts, ka, izmantojot kopīgu modeli angļu, hindi un bengali valodu mBERT jēdzientelpām precizitāte palielinās par $\sim2\%$, salīdzinot ar atsevišķu apmācību katrā valodā, t.i., individuāliem nodomu noteikšanas modeļiem \cite{firdaus2023}.
+
+%Vairāki pētījumi ir izmantojuši šo pieeju un parādījuši, ka tā var būt efektīva. Piemēram, autors (gads) pētīja modeļa apmācības efektivitāti daudzvalodu datu kopā, kas ietvēra (skaits) valodas: (valodu uzskaitījums), un testēja to noteiktā valodā. Rezultāti parādīja, ka modelis var sasniegt labu veiktspēju (\%) visās valodās. Līdzīgi autors (gads) izmantoja daudzvalodu datu kopu, kurā bija (skaits) valodas: (valodu uzskaitījums), un apmācīja nodomu noteikšanas modeli, kas sasniedza konkurētspējīgus rezultātus (valodu uzskaitījums) valodās. Tomēr šī pieeja var izraisīt zemāku precizitāti valodām, kurām ir mazāk apmācības piemēru. Savā pētījumā par daudzvalodu nodomu noteikšanu autors (gads) skaidroja, ka visu valodu apmācība kopā un konkrētas valodas testēšana var izraisīt šīs valodas precizitātes samazināšanos.
+
+Šīs pieejas (apmācība uz visām valodām) priekšrocības ir mazākas modeļa apmācības izmaksas (viens modelis visiem datiem), kā arī maz-resursu valodas var gūt labumu no starp-valodu zināšanu pārneses (\textit{cross-lingual knowledge transfer}), kas raksturīga kopīgam modelim \cite{de-bruyn-2022}. Taču var parādīties vairākas negatīvas sekas, ja daudzvalodu jēdzientelpu modeli apmāca uz datu kopas, kurā kāda valoda, piemēram, angļu, ir disproporcionāli pārstāvēta (\textit{over represented}) un testējot uz maz-resursu (\textit{low-resource}) valodas, piemēram, latviešu. Pirmkārt, modelim var būt zemāka precizitāte latviešu valodā, kas nozīmē nepareizi klasificētus lietotāja nodomus un lietotāju neapmierinātību ar virtuālo asistentu. Otrkārt, modelis, kas apmācīts uz disbalansētas datu kopas var ciest no katastrofiskas aizmiršanas (\textit{catastrophic interference}) fenomena, kurā modelis "aizmirst" maz-resursu valodu kad tiek iepazīstināts ar jauniem datiem citās valodās, kas noved pie zemas precizitātes un nepieciešamības apmācīt modeli no jauna.
 
 
-\section{Trenēšana angļu valodā, testēšana valodās, kas nav angļu}
+\section{Apmācība angļu valodā, testēšana valodās, kas nav angļu}
 
-Trešā pieeja ietver modeļa apmācību angļu valodā un tā testēšanu valodā, kas nav angļu valoda. Lasītājam var rasties šaubas, kā modelis kaut ko var paredzēt valodā, uz kuras nav apmācīts. Daudzvalodu modeļi tika trenēti uz 100 dažādām valodām (precīzāk mBERT -- 104 valodas, XLM-Roberta -- 100 valodas), kas iemācīja tiem izveidot jēdzientelpas dažādās valodās. Šie modeļi izmanto no daudzvalodu korpusa iemācīto kopējo reprezentāciju (\textit{shared representations}), lai reprezentētu tekstu kā vektoru, kas tālāk tiek izmantots klasifikācijai. Būtībā modelis iemācās reprezentēt tekstu veidā, kas vispārina valodai raksturīgās nianses, tādējādi ļaujot tam strādāt dažādās valodās. 
+Trešā pieeja ietver modeļa apmācību angļu valodā un tā testēšanu valodā, kas nav angļu valoda. Lasītājam var rasties šaubas, kā modelis kaut ko var paredzēt valodā, uz kuras nav apmācīts. Daudzvalodu modeļi tika apmācīti uz 100 dažādām valodām (precīzāk mBERT -- 104 valodas, XLM-Roberta -- 100 valodas), kas iemācīja tiem izveidot jēdzientelpas dažādās valodās. Šie modeļi izmanto no daudzvalodu korpusa iemācīto kopējo reprezentāciju (\textit{shared representations}), lai reprezentētu tekstu kā vektoru, kas tālāk tiek izmantots klasifikācijai. Būtībā modelis iemācās reprezentēt tekstu veidā, kas vispārina valodai raksturīgās nianses, tādējādi ļaujot tam strādāt dažādās valodās. 
 
-Lai gan klasificējot ne-angļu tekstu var samazināties precizitāte, jo apmācībā modelim nebija pieejami valodai raksturīgie dati, daudzvalodu modeļi joprojām spēj sasniegt pietiekami labus rezultātus, jo ir iemācījusies uztvert valodas lietojumu plašā valodu diapazonā.
+Daudzvalodu modeļi spēj sasniegt pietiekami labus rezultātus, jo ir "iemācījušies" uztvert valodas lietojumu plašā valodu diapazonā. Tomēr klasificējot ne-angļu tekstu var samazināties precizitāte, jo apmācībā modelim nebija pieejami valodai raksturīgie dati.
+Piemēram, pētījumā ar MASSIVE datu kopu \cite{fitzgerald2022} autori apmācīja daudzvalodu modeļus XLM-Roberta un mT5 uz ļoti lielas (1 miljons rindiņu) datu kopas. Veikti dažādi eksperimenti: gan apmācot tikai uz angļu valodas (šajā gadījumā rezultātu variance bija ļoti liela), gan uz visām valodām (iegūti par 25-37\% labāki rezultāti, nekā apmācot tikai uz angļu valodas).
+Arī citā pētījumā \cite{xue2021} parādīts, ka, neatkarīgi no izmantotā modeļa (mBERT, XLM-R, mT5), apmācība uz visām valodām ļauj sasniegt par 1--5\% augstāku teikumu klasifikācijas precizitāti, nekā apmācība tikai uz angļu valodas. 
 
-Šī pieeja ir noderīga, ja ne-angļu valodām ir ierobežoti treniņkopas resursi un ja paredzams, ka modelis labi darbosies angļu valodā. Vairāki pētījumi ir izmantojuši šo pieeju un parādījuši, ka tā var būt efektīva, piemēram, autors (gads) izmantoja (datu kopa) datu kopu un parādīja, ka, apmācot nodomu noteikšanas modeli angļu valodā un testējot to (valoda) valodā, tika sasniegta līdzīga veiktspēja (\% precizitātes angļu, \% precizitāte citā valodā) ar modeļa apmācību (citā valodā) datu kopā. Tomēr šī pieeja paredz, ka valodu struktūra ir pietiekami līdzīga, lai modelis varētu pārnest zināšanas no angļu valodas uz citām valodām. Savā pētījumā par nodomu noteikšanu vairākās valodās autors (gads) atklāja, ka angļu valodas apmācība un citu valodu testēšana var izraisīt zemāku precizitāti, salīdzinot ar apmācību un testēšanu tajā pašā valodā.
+Šī pieeja ir noderīga, ja ne-angļu valodām ir ierobežoti treniņkopas resursi un ja paredzams, ka modelis labi darbosies angļu valodā. 
+%Vairāki pētījumi ir izmantojuši šo pieeju un parādījuši, ka tā var būt efektīva, piemēram, autors (gads) izmantoja (datu kopa) datu kopu un parādīja, ka, apmācot nodomu noteikšanas modeli angļu valodā un testējot to (valoda) valodā, tika sasniegta līdzīga veiktspēja (\% precizitātes angļu, \% precizitāte citā valodā) ar modeļa apmācību (citā valodā) datu kopā. 
+Tomēr šī pieeja paredz, ka valodu struktūra ir pietiekami līdzīga, lai modelis varētu pārnest zināšanas no angļu valodas uz citām valodām. 
+%Savā pētījumā par nodomu noteikšanu vairākās valodās autors (gads) atklāja, ka angļu valodas apmācība un citu valodu testēšana var izraisīt zemāku precizitāti, salīdzinot ar apmācību un testēšanu tajā pašā valodā.
 
 
 \section{Mašīntulkošana uz angļu valodu}
 
 
-Mašīntulkošana izvēlēta lai apietu šķērsli kurā maz-resursu valodās ir mazāk datu uz kā trenēt modeli. Ideja ir nevis gaidīt līdz tiks savākti pietiekami daudz datu, bet nodrošināt iespēju ienākt maz-resursu valodas lietotāju tirgū un sākt nodomu noteikšanu jau no pirmās dienas, lietotāju ievadus mašīntulkojot angļu valodā un izmantojot jau eksistējošos klasificēšanas modeļus angļu valodās. 
+Mašīntulkošana izvēlēta lai apietu šķērsli kurā maz-resursu valodās ir mazāk datu uz kā apmācīt modeli. Ideja ir nevis gaidīt līdz tiks savākti pietiekami daudz datu, bet nodrošināt iespēju ienākt maz-resursu valodas lietotāju tirgū un sākt nodomu noteikšanu jau no pirmās dienas, lietotāju ievadus mašīntulkojot angļu valodā un izmantojot jau eksistējošos klasificēšanas modeļus angļu valodās. 
 
-Pieļaujamā nodomu noteikšanas precizitāte ir katra uzņēmuma biznesa plāna ziņā. Nav obligāti, lai tā sasniegtu 100\%, jo ir iespējams lietot human-in-the-loop pieeju, kurā noteikto nodomu pārbauda klientu apkalpošanas speciālists vēl pirms lietotājam tiek nosūtīta atbilde \cite{paikens2020}. Arī nepilna automatizācija ir noderīga, jo strādniekam novērtēt vaicājuma atbilstību konkrētam nodomam ir vieglāk (source) nekā izvērtēt kuram no daudziem nodomiem tas atbilst.
+Pieļaujamā nodomu noteikšanas precizitāte ir katra uzņēmuma biznesa plāna ziņā. Nav obligāti, lai tā sasniegtu 100\%, jo ir iespējams lietot human-in-the-loop pieeju, kurā noteikto nodomu pārbauda klientu apkalpošanas speciālists vēl pirms lietotājam tiek nosūtīta atbilde \cite{paikens2020}. Arī nepilna automatizācija ir noderīga, jo strādniekam novērtēt vaicājuma atbilstību konkrētam nodomam ir vieglāk, nekā izvērtēt kuram no daudziem nodomiem tas atbilst.
 
 Taču mašīntulkošana rada papildu trokšņus un kļūdas, kas var ietekmēt ievades datu kvalitāti un klasifikācijas modeļu veiktspēju. Turklāt mašīntulkošanas rezultātā var tikt zaudētas svarīgas nianses un katrai valodai raksturīgā semantiskā informācija, kas var vēl vairāk pasliktināt ievades datu kvalitāti un apgrūtināt precīzu nodomu noteikšanu.
 
 Mani darbā interesē tieši noskaidrot pielietojamības robežas maz-resursu valodām un kādi kompromisi (\textit{trade-offs}) uzlabo modeļa precizitāti; šajā gadījumā vai modeļa veiktspēja ar mašīntulkošanas troksni atsver nepietiekamos datos. Tāpēc ir svarīgi novērtēt modeļu veiktspēju gan ar oriģinālajiem, gan mašīntulkotajiem ievades datiem un salīdzināt rezultātus, lai labāk izprastu modeļu stiprās puses un ierobežojumus daudzvalodu nodomu noteikšanas uzdevumos.
 
 
-% \section{Dati}
+\section{Citas pieejas}
 
+Visbeidzot, būtu svarīgi izpētīt, kā virtuālais asistents tiek galā ar jauktu valodu vaicājumiem (\textit{code switching}), kas ir izplatīti daudzvalodu vidēs, piemēram, kombinācija latviešu-angļu. Tas ietver pieeju izpēti vairāku valodu identificēšanai un atdalīšanai vienā izteikumā, kā arī efektīvi pielietotas daudzvalodu jēdzientelpas. Piemēram, pētījumā datu kopa, kas sastāv tikai no jauktu angļu un hindi valodu vaicājumiem, bija ar ~2\% zemāku precizitāti (F1 score) nekā angļu, hindi un jauktu valodu datu kopa, ar ELMO jēdzientelpām \cite{jayarao2018}.
 
-% \begin{table}[htbp]
-%   \centering
-%   \caption{Unikālo anotāciju skaits "chatbot" treniņkopā un testa kopā.}
-%     \begin{tabular}{lrr}
-%     Labels & Train & Test \\
-%     FindConnection & 57    & 71 \\
-%     DepartureTime & 43    & 35 \\
-%     \end{tabular}%
-%   \label{tab:chatbot-labels}%
-% \end{table}%
+Vēl viens jauktu valodu paņēmiens ir aizvietot izvēlētus vārdus ar to tulkojumiem maz-resursu valodām. Pētījumā \cite{liu2020} tika salīdzināta (a) modeļa apmācība tikai uz angļu valodas datu kopas un testēšana uz datiem spāņu valodā un (b) modeļa apmācība uz jauktiem angļu un spāņu valodu vaicājumiem. Izmainot pieeju no (a) uz (b), nodomu noteikšanas precizitāte uzlabojās no 73.7\% uz 86.5\% ar multilingvālām BERT jēdzientelpām un no 60.8\% uz 83.9\% ar XLM jēdzientelpām. Jaukti vaicājumi tika ģenerēti automātiski aizvietojot vārdus, kas izvēlēti balstoties uz uzmanības slāņa (\textit{attention layer}) aprēķinātajiem rādītājiem (\textit{scores}) uz angļu valodas modeļa, ar to tulkojumiem bilingvālā vārdnīcā \cite{liu2020}.
 
-
-
-% % Table generated by Excel2LaTeX from sheet 'Sheet1'
-% \begin{table}[htbp]
-%   \centering
-%   \caption{Unikālo anotāciju skaits "askubuntu" treniņkopā un testa kopā.}
-%     \begin{tabular}{lrr}
-%     Labels & Train & Test \\
-%     Software Recommendation & 17    & 40 \\
-%     Make Update & 10    & 37 \\
-%     Shutdown Computer & 13    & 14 \\
-%     Setup Printer & 10    & 13 \\
-%     None  & 3     & 5 \\
-%     \end{tabular}%
-%   \label{tab:askubuntu-labels}%
-% \end{table}%
-
-
-% \begin{table}[htbp]
-%   \centering
-%   \caption{Unikālo anotāciju skaits "webapps" treniņkopā un testa kopā. Ar treknrakstu iezīmētas anotācijas, kuras ir pietiekami pārstāvētas, pārējās anotācijas tika apvienotas vienā jaunā anotācijā: "Other"}
-%     \begin{tabular}{lrr}
-%     Labels & Train & Test \\
-%     \textbf{Find Alternative} & \textbf{7} & \textbf{16} \\
-%     \textbf{Delete Account} & \textbf{7} & \textbf{10} \\
-%     \textbf{Filter Spam} & \textbf{6} & \textbf{14} \\
-%     \textbf{Sync Accounts} & \textbf{3} & \textbf{6} \\
-%     Change Password & 2     & 6 \\
-%     None  & 2     & 4 \\
-%     Export Data & 2     & 3 \\
-%     Download Video & 1     & 0 \\
-%     \end{tabular}%
-%   \label{tab:webapps-labels}%
-% \end{table}%

@@ -30,13 +30,15 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {5}Eksperimentu dizains/metadoloģija/apraksts}{22}{chapter.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.1}Trenēšana un testēšana vienā valodā}{24}{section.5.1}%
+\contentsline {section}{\numberline {5.1}Apmācība un testēšana vienā valodā}{22}{section.5.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.2}Trenēšana uz visām valodām, testēšana vienā valodā}{24}{section.5.2}%
+\contentsline {section}{\numberline {5.2}Apmācība uz visām valodām, testēšana vienā valodā}{23}{section.5.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.3}Trenēšana angļu valodā, testēšana valodās, kas nav angļu}{25}{section.5.3}%
+\contentsline {section}{\numberline {5.3}Apmācība angļu valodā, testēšana valodās, kas nav angļu}{24}{section.5.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.4}Mašīntulkošana uz angļu valodu}{26}{section.5.4}%
+\contentsline {section}{\numberline {5.4}Mašīntulkošana uz angļu valodu}{25}{section.5.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.5}Citas pieejas}{26}{section.5.5}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {6}Rezultāti}{27}{chapter.6}%
 \defcounter {refsection}{0}\relax 
@@ -50,6 +52,6 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{Izmantotā literatūra un avoti}{30}{chapter*.21}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Pielikums}{33}{chapter*.23}%
+\contentsline {chapter}{Pielikums}{34}{chapter*.23}%
 \defcounter {refsection}{0}\relax 
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

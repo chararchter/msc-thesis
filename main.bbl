@@ -663,6 +663,324 @@
     \warn{\item Invalid format of field 'month'}
   \endentry
 
+  \entry{hu2020}{inproceedings}{}
+    \name{author}{6}{}{%
+      {{hash=HJ}{%
+         family={Hu},
+         familyi={H\bibinitperiod},
+         given={Junjie},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=RS}{%
+         family={Ruder},
+         familyi={R\bibinitperiod},
+         given={Sebastian},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=SA}{%
+         family={Siddhant},
+         familyi={S\bibinitperiod},
+         given={Aditya},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=NG}{%
+         family={Neubig},
+         familyi={N\bibinitperiod},
+         given={Graham},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=FO}{%
+         family={Firat},
+         familyi={F\bibinitperiod},
+         given={Orhan},
+         giveni={O\bibinitperiod},
+      }}%
+      {{hash=JM}{%
+         family={Johnson},
+         familyi={J\bibinitperiod},
+         given={Melvin},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{HJ+1}
+    \strng{fullhash}{HJRSSANGFOJM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Proceedings of the 37th International Conference on
+  Machine Learning}
+    \field{title}{{XTREME}: A Massively Multilingual Multi-task Benchmark for
+  Evaluating Cross-lingual Generalization}
+    \verb{url}
+    \verb https://arxiv.org/abs/2003.11080
+    \endverb
+    \field{year}{2020}
+  \endentry
+
+  \entry{devlin2019}{inproceedings}{}
+    \name{author}{4}{}{%
+      {{hash=DJ}{%
+         family={Devlin},
+         familyi={D\bibinitperiod},
+         given={Jacob},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=CMW}{%
+         family={Chang},
+         familyi={C\bibinitperiod},
+         given={Ming-Wei},
+         giveni={M\bibinithyphendelim W\bibinitperiod},
+      }}%
+      {{hash=LK}{%
+         family={Lee},
+         familyi={L\bibinitperiod},
+         given={Kenton},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=TK}{%
+         family={Toutanova},
+         familyi={T\bibinitperiod},
+         given={Kristina},
+         giveni={K\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{DJ+1}
+    \strng{fullhash}{DJCMWLKTK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{NAACL-HLT 2019: Minneapolis, MN, USA}
+    \field{pages}{4171\bibrangedash 4186}
+    \field{title}{{BERT}: Pre-training of Deep Bidirectional Transformers for
+  Language Understanding}
+    \verb{url}
+    \verb https://aclanthology.org/N19-1423.pdf
+    \endverb
+    \field{year}{2019}
+  \endentry
+
+  \entry{li2021}{inproceedings}{}
+    \name{author}{6}{}{%
+      {{hash=LH}{%
+         family={Li},
+         familyi={L\bibinitperiod},
+         given={Haoran},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=AA}{%
+         family={Arora},
+         familyi={A\bibinitperiod},
+         given={Abhinav},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=CS}{%
+         family={Chen},
+         familyi={C\bibinitperiod},
+         given={Shuohui},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=GA}{%
+         family={Gupta},
+         familyi={G\bibinitperiod},
+         given={Anchit},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=GS}{%
+         family={Gupta},
+         familyi={G\bibinitperiod},
+         given={Sonal},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=MY}{%
+         family={Mehdad},
+         familyi={M\bibinitperiod},
+         given={Yashar},
+         giveni={Y\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{LH+1}
+    \strng{fullhash}{LHAACSGAGSMY1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Proceedings of the 16th Conference of the European
+  Chapter of the Association for Computational Linguistics: Main Volume}
+    \field{pages}{2950\bibrangedash 2962}
+    \field{title}{{MTOP}: A Comprehensive Multilingual Task-Oriented Semantic
+  Parsing Benchmark}
+    \verb{url}
+    \verb https://aclanthology.org/2021.eacl-main.257
+    \endverb
+    \field{year}{2021}
+  \endentry
+
+  \entry{schuster2019}{inproceedings}{}
+    \name{author}{4}{}{%
+      {{hash=SS}{%
+         family={Schuster},
+         familyi={S\bibinitperiod},
+         given={Sebastian},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=GS}{%
+         family={Gupta},
+         familyi={G\bibinitperiod},
+         given={Sonal},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=SR}{%
+         family={Shah},
+         familyi={S\bibinitperiod},
+         given={Rushin},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=LM}{%
+         family={Lewis},
+         familyi={L\bibinitperiod},
+         given={Mike},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SS+1}
+    \strng{fullhash}{SSGSSRLM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Proceedings of the 2019 Conference of the North American
+  Chapter of the Association for Computational Linguistics: Human Language
+  Technologies, Volume 1}
+    \field{pages}{3795\bibrangedash 3805}
+    \field{title}{Cross-Lingual Transfer Learning for Multilingual Task
+  Oriented Dialog}
+    \verb{url}
+    \verb https://doi.org/10.18653/v1/N19-1380
+    \endverb
+    \field{year}{2019}
+  \endentry
+
+  \entry{masumura2018}{inproceedings}{}
+    \name{author}{5}{}{%
+      {{hash=MR}{%
+         family={Masumura},
+         familyi={M\bibinitperiod},
+         given={Ryo},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=TT}{%
+         family={Tanaka},
+         familyi={T\bibinitperiod},
+         given={Tomohiro},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=HR}{%
+         family={Higashinaka},
+         familyi={H\bibinitperiod},
+         given={Ryuichiro},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=MH}{%
+         family={Masataki},
+         familyi={M\bibinitperiod},
+         given={Hirokazu},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=AY}{%
+         family={Aono},
+         familyi={A\bibinitperiod},
+         given={Yushi},
+         giveni={Y\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{MR+1}
+    \strng{fullhash}{MRTTHRMHAY1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Proceedings of the 27th International Conference on
+  Computational Linguistics}
+    \field{pages}{1137\bibrangedash 1155}
+    \field{title}{Multi-task and Multi-lingual Joint Learning of Neural Lexical
+  Utterance Classification based on Partially-shared Modeling}
+    \verb{url}
+    \verb https://aclanthology.org/C18-1304.pdf
+    \endverb
+    \field{year}{2018}
+  \endentry
+
+  \entry{sekine2004}{inproceedings}{}
+    \name{author}{2}{}{%
+      {{hash=SS}{%
+         family={Sekine},
+         familyi={S\bibinitperiod},
+         given={Satoshi},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=NC}{%
+         family={Nobata},
+         familyi={N\bibinitperiod},
+         given={Chikashi},
+         giveni={C\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SSNC1}
+    \strng{fullhash}{SSNC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Proc. Language Resources and Evaluation Conference}
+    \field{title}{Definition, dictionaries and tagger for extended named entity
+  hierarchy}
+    \field{year}{2004}
+  \endentry
+
+  \entry{liu2020}{article}{}
+    \name{author}{5}{}{%
+      {{hash=LZ}{%
+         family={Liu},
+         familyi={L\bibinitperiod},
+         given={Zihan},
+         giveni={Z\bibinitperiod},
+      }}%
+      {{hash=WGI}{%
+         family={Winata},
+         familyi={W\bibinitperiod},
+         given={Genta\bibnamedelima Indra},
+         giveni={G\bibinitperiod\bibinitdelim I\bibinitperiod},
+      }}%
+      {{hash=LZ}{%
+         family={Lin},
+         familyi={L\bibinitperiod},
+         given={Zhaojiang},
+         giveni={Z\bibinitperiod},
+      }}%
+      {{hash=XP}{%
+         family={Xu},
+         familyi={X\bibinitperiod},
+         given={Peng},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=FP}{%
+         family={Fung},
+         familyi={F\bibinitperiod},
+         given={Pascale},
+         giveni={P\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{LZ+1}
+    \strng{fullhash}{LZWGILZXPFP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1609/aaai.v34i05.6362
+    \endverb
+    \field{number}{05}
+    \field{pages}{8433\bibrangedash 8440}
+    \field{title}{Attention-Informed Mixed-Language Training for Zero-Shot
+  Cross-Lingual Task-Oriented Dialogue Systems}
+    \verb{url}
+    \verb https://ojs.aaai.org/index.php/AAAI/article/view/6362
+    \endverb
+    \field{volume}{34}
+    \field{journaltitle}{Proceedings of the AAAI Conference on Artificial
+  Intelligence}
+    \field{year}{2020}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
   \entry{de-bruyn-2022}{inproceedings}{}
     \name{author}{4}{}{%
       {{hash=DbM}{%
@@ -723,6 +1041,119 @@
       {Abu Dhabi, United Arab Emirates (Hybrid)}%
     }
     \field{month}{12}
+    \field{year}{2022}
+  \endentry
+
+  \entry{fitzgerald2022}{article}{}
+    \name{author}{16}{}{%
+      {{hash=FJ}{%
+         family={FitzGerald},
+         familyi={F\bibinitperiod},
+         given={Jack},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=HC}{%
+         family={Hench},
+         familyi={H\bibinitperiod},
+         given={Christopher},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=PC}{%
+         family={Peris},
+         familyi={P\bibinitperiod},
+         given={Charith},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=MS}{%
+         family={Mackie},
+         familyi={M\bibinitperiod},
+         given={Scott},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=RK}{%
+         family={Rottmann},
+         familyi={R\bibinitperiod},
+         given={Kay},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=SA}{%
+         family={Sanchez},
+         familyi={S\bibinitperiod},
+         given={Ana},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=NA}{%
+         family={Nash},
+         familyi={N\bibinitperiod},
+         given={Aaron},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=UL}{%
+         family={Urbach},
+         familyi={U\bibinitperiod},
+         given={Liam},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=KV}{%
+         family={Kakarala},
+         familyi={K\bibinitperiod},
+         given={Vishesh},
+         giveni={V\bibinitperiod},
+      }}%
+      {{hash=SR}{%
+         family={Singh},
+         familyi={S\bibinitperiod},
+         given={Richa},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=RS}{%
+         family={Ranganath},
+         familyi={R\bibinitperiod},
+         given={Swetha},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=CL}{%
+         family={Crist},
+         familyi={C\bibinitperiod},
+         given={Laurie},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=BM}{%
+         family={Britan},
+         familyi={B\bibinitperiod},
+         given={Misha},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=LW}{%
+         family={Leeuwis},
+         familyi={L\bibinitperiod},
+         given={Wouter},
+         giveni={W\bibinitperiod},
+      }}%
+      {{hash=TG}{%
+         family={Tur},
+         familyi={T\bibinitperiod},
+         given={Gokhan},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=NP}{%
+         family={Natarajan},
+         familyi={N\bibinitperiod},
+         given={Prem},
+         giveni={P\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{FJ+1}
+    \strng{fullhash}{FJHCPCMSRKSANAULKVSRRSCLBMLWTGNP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{Jun}
+    \field{title}{{MASSIVE}: A 1{M}-Example Multilingual Natural Language
+  Understanding Dataset with 51 Typologically-Diverse Languages}
+    \verb{url}
+    \verb https://arxiv.org/abs/2204.08582
+    \endverb
+    \field{journaltitle}{Arxiv.org}
     \field{year}{2022}
   \endentry
 
@@ -792,58 +1223,71 @@
     \field{year}{2023}
   \endentry
 
-  \entry{liu2020}{article}{}
-    \name{author}{5}{}{%
-      {{hash=LZ}{%
-         family={Liu},
-         familyi={L\bibinitperiod},
-         given={Zihan},
-         giveni={Z\bibinitperiod},
-      }}%
-      {{hash=WGI}{%
-         family={Winata},
-         familyi={W\bibinitperiod},
-         given={Genta\bibnamedelima Indra},
-         giveni={G\bibinitperiod\bibinitdelim I\bibinitperiod},
-      }}%
-      {{hash=LZ}{%
-         family={Lin},
-         familyi={L\bibinitperiod},
-         given={Zhaojiang},
-         giveni={Z\bibinitperiod},
-      }}%
-      {{hash=XP}{%
-         family={Xu},
+  \entry{xue2021}{inproceedings}{}
+    \name{author}{8}{}{%
+      {{hash=XL}{%
+         family={Xue},
          familyi={X\bibinitperiod},
-         given={Peng},
-         giveni={P\bibinitperiod},
+         given={Linting},
+         giveni={L\bibinitperiod},
       }}%
-      {{hash=FP}{%
-         family={Fung},
-         familyi={F\bibinitperiod},
-         given={Pascale},
-         giveni={P\bibinitperiod},
+      {{hash=CN}{%
+         family={Constant},
+         familyi={C\bibinitperiod},
+         given={Noah},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=RA}{%
+         family={Roberts},
+         familyi={R\bibinitperiod},
+         given={Adam},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=KM}{%
+         family={Kale},
+         familyi={K\bibinitperiod},
+         given={Mihir},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=ARR}{%
+         family={Al-Rfou},
+         familyi={A\bibinithyphendelim R\bibinitperiod},
+         given={Rami},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=SA}{%
+         family={Siddhant},
+         familyi={S\bibinitperiod},
+         given={Aditya},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=BA}{%
+         family={Barua},
+         familyi={B\bibinitperiod},
+         given={Aditya},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=RC}{%
+         family={Raffel},
+         familyi={R\bibinitperiod},
+         given={Colin},
+         giveni={C\bibinitperiod},
       }}%
     }
-    \strng{namehash}{LZ+1}
-    \strng{fullhash}{LZWGILZXPFP1}
+    \strng{namehash}{XL+1}
+    \strng{fullhash}{XLCNRAKMARRSABARC1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \verb{doi}
-    \verb 10.1609/aaai.v34i05.6362
-    \endverb
-    \field{number}{05}
-    \field{pages}{8433\bibrangedash 8440}
-    \field{title}{Attention-Informed Mixed-Language Training for Zero-Shot
-  Cross-Lingual Task-Oriented Dialogue Systems}
+    \field{booktitle}{Proceedings of the 2021 Conference of the North American
+  Chapter of the Association for Computational Linguistics: Human Language
+  Technologies}
+    \field{pages}{483\bibrangedash 498}
+    \field{title}{m{T}5: A Massively Multilingual Pre-trained Text-to-Text
+  Transformer}
     \verb{url}
-    \verb https://ojs.aaai.org/index.php/AAAI/article/view/6362
+    \verb https://aclanthology.org/2021.naacl-main.41
     \endverb
-    \field{volume}{34}
-    \field{journaltitle}{Proceedings of the AAAI Conference on Artificial
-  Intelligence}
-    \field{year}{2020}
-    \warn{\item Invalid format of field 'month'}
+    \field{year}{2021}
   \endentry
 
   \entry{jayarao2018}{inproceedings}{}

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (MiKTeX 21.12.10) (preloaded format=xelatex 2022.1.1)  10 MAY 2023 18:37
+This is XeTeX, Version 3.141592653-2.6-0.999993 (MiKTeX 21.12.10) (preloaded format=xelatex 2022.1.1)  10 MAY 2023 18:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1667,26 +1667,26 @@ $[]\TU/FreeSerif.ttf(0)/m/n/12 .
 
 
 
-]
+] [31]
+Overfull \hbox (1.74782pt too wide) in paragraph at lines 104--104
+[]\TU/FreeSerif.ttf(0)/m/n/12 Zihan Liu u. c. „  Attention-Informed Mixed-Langu
+age Training for Zero-Shot Cross-Lingual
+ []
+
+
 Overfull \hbox (10.28981pt too wide) in paragraph at lines 104--104
 \TU/FreeSerif.ttf(0)/m/n/12 Filling”. \TU/FreeSerif.ttf(0)/m/it/12 Proceedings 
 of the Massively Multilingual Natural Language Understanding Workshop
  []
 
-[31]
+[32]
 Overfull \hbox (16.10435pt too wide) in paragraph at lines 104--104
 \TU/FreeSerif.ttf(0)/m/sc/12 url\TU/FreeSerif.ttf(0)/m/n/12 : []$[][][][][] [] 
 [] [] [][][] [] [][][][][][][][][][][][][] [] [][][] [] [][][][][][][] [] [][][
 ][][][][] [] [][][] [] [][][][][][][][][][][][][][][][][]$[]. 
  []
 
-
-Overfull \hbox (1.74782pt too wide) in paragraph at lines 104--104
-[]\TU/FreeSerif.ttf(0)/m/n/12 Zihan Liu u. c. „  Attention-Informed Mixed-Langu
-age Training for Zero-Shot Cross-Lingual
- []
-
-[32] (tex/appendix.tex (tex/code.tex
+[33] (tex/appendix.tex (tex/code.tex
 Overfull \hbox (20.19026pt too wide) in paragraph at lines 3--5
 \TU/FreeSerif.ttf(0)/m/n/12 Koda piemērs literatūras ievadā. Krāsu dati ”xkcd.j
 son” []$[][][][][] [] [] [] [][][][][][] [] [][][] [] [][][][][][][] [] [][][][
@@ -1695,7 +1695,7 @@ son” []$[][][][][] [] [] [] [][][][][][] [] [][][] [] [][][][][][][] [] [][][]
 
 LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <10> not available
 (Font)              Font shape `TU/lmtt/b/n' tried instead on input line 7.
-[33
+[34
 
 
 
@@ -1750,7 +1750,7 @@ braces):
 >  {english/babelname}  =>  {american}
 >  {english/localnumeral}  =>  {polyglossia@C@localnumeral}
 >  {english/Localnumeral}  =>  {polyglossia@C@localnumeral}.
- [34] (main.aux
+ [35] (main.aux
 LaTeX Info: Redefining \rmfamily on input line 27.
 LaTeX Info: Redefining \sffamily on input line 27.
 LaTeX Info: Redefining \ttfamily on input line 27.
@@ -1768,12 +1768,12 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 33477 strings out of 411044
- 700371 string characters out of 2829678
- 1749090 words of memory out of 3000000
- 53724 multiletter control sequences out of 15000+600000
+ 33502 strings out of 411044
+ 701344 string characters out of 2829678
+ 1749260 words of memory out of 3000000
+ 53749 multiletter control sequences out of 15000+600000
  410215 words of font info for 81 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  122i,9n,131p,10633b,5700s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.pdf (35 pages).
+Output written on main.pdf (36 pages).
