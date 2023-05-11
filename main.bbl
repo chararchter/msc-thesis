@@ -78,40 +78,6 @@
     \field{year}{2018}
   \endentry
 
-  \entry{atis1990}{inproceedings}{}
-    \name{author}{3}{}{%
-      {{hash=HCT}{%
-         family={Hemphill},
-         familyi={H\bibinitperiod},
-         given={Charles\bibnamedelima T.},
-         giveni={C\bibinitperiod\bibinitdelim T\bibinitperiod},
-      }}%
-      {{hash=GJJ}{%
-         family={Godfrey},
-         familyi={G\bibinitperiod},
-         given={John\bibnamedelima J.},
-         giveni={J\bibinitperiod\bibinitdelim J\bibinitperiod},
-      }}%
-      {{hash=DGR}{%
-         family={Doddington},
-         familyi={D\bibinitperiod},
-         given={George\bibnamedelima R.},
-         giveni={G\bibinitperiod\bibinitdelim R\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{HCTGJJDGR1}
-    \strng{fullhash}{HCTGJJDGR1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{booktitle}{Speech and Natural Language: Proceedings of a Workshop
-  Held at Hidden Valley}
-    \field{title}{The {ATIS} Spoken Language Systems Pilot Corpus}
-    \verb{url}
-    \verb https://catalog.ldc.upenn.edu/docs/LDC93S4B/corpus.html
-    \endverb
-    \field{year}{1990}
-  \endentry
-
   \entry{brown-corpus}{manual}{}
     \name{author}{2}{}{%
       {{hash=FWN}{%
@@ -390,6 +356,198 @@
     }
     \field{month}{07}
     \field{year}{2020}
+  \endentry
+
+  \entry{atis1990}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=HCT}{%
+         family={Hemphill},
+         familyi={H\bibinitperiod},
+         given={Charles\bibnamedelima T.},
+         giveni={C\bibinitperiod\bibinitdelim T\bibinitperiod},
+      }}%
+      {{hash=GJJ}{%
+         family={Godfrey},
+         familyi={G\bibinitperiod},
+         given={John\bibnamedelima J.},
+         giveni={J\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=DGR}{%
+         family={Doddington},
+         familyi={D\bibinitperiod},
+         given={George\bibnamedelima R.},
+         giveni={G\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{HCTGJJDGR1}
+    \strng{fullhash}{HCTGJJDGR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Speech and Natural Language: Proceedings of a Workshop
+  Held at Hidden Valley}
+    \field{title}{The {ATIS} Spoken Language Systems Pilot Corpus}
+    \verb{url}
+    \verb https://catalog.ldc.upenn.edu/docs/LDC93S4B/corpus.html
+    \endverb
+    \field{year}{1990}
+  \endentry
+
+  \entry{snips-2018}{misc}{}
+    \name{author}{12}{}{%
+      {{hash=CA}{%
+         family={Coucke},
+         familyi={C\bibinitperiod},
+         given={Alice},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=SA}{%
+         family={Saade},
+         familyi={S\bibinitperiod},
+         given={Alaa},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=BA}{%
+         family={Ball},
+         familyi={B\bibinitperiod},
+         given={Adrien},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=BT}{%
+         family={Bluche},
+         familyi={B\bibinitperiod},
+         given={Théodore},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=CA}{%
+         family={Caulier},
+         familyi={C\bibinitperiod},
+         given={Alexandre},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=LD}{%
+         family={Leroy},
+         familyi={L\bibinitperiod},
+         given={David},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=DC}{%
+         family={Doumouro},
+         familyi={D\bibinitperiod},
+         given={Clément},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=GT}{%
+         family={Gisselbrecht},
+         familyi={G\bibinitperiod},
+         given={Thibault},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=CF}{%
+         family={Caltagirone},
+         familyi={C\bibinitperiod},
+         given={Francesco},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=LT}{%
+         family={Lavril},
+         familyi={L\bibinitperiod},
+         given={Thibaut},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=PM}{%
+         family={Primet},
+         familyi={P\bibinitperiod},
+         given={Maël},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=DJ}{%
+         family={Dureau},
+         familyi={D\bibinitperiod},
+         given={Joseph},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{CA+2}
+    \strng{fullhash}{CASABABTCALDDCGTCFLTPMDJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{eprint}
+    \verb 1805.10190
+    \endverb
+    \field{howpublished}{\url{https://arxiv.org/abs/1805.10190}}
+    \field{note}{Aplūkots 2023-05-10}
+    \field{title}{Snips Voice Platform: an embedded Spoken Language
+  Understanding system for private-by-design voice interfaces}
+    \field{eprinttype}{arXiv}
+    \field{eprintclass}{cs.CL}
+    \field{year}{2018}
+  \endentry
+
+  \entry{braun-2017}{inproceedings}{}
+    \name{author}{4}{}{%
+      {{hash=BD}{%
+         family={Braun},
+         familyi={B\bibinitperiod},
+         given={Daniel},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=HMA}{%
+         family={Hernandez\bibnamedelima Mendez},
+         familyi={H\bibinitperiod\bibinitdelim M\bibinitperiod},
+         given={Adrian},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=MF}{%
+         family={Matthes},
+         familyi={M\bibinitperiod},
+         given={Florian},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=LM}{%
+         family={Langen},
+         familyi={L\bibinitperiod},
+         given={Manfred},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Association for Computational Linguistics}%
+    }
+    \strng{namehash}{BD+1}
+    \strng{fullhash}{BDHMAMFLM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Conversational interfaces recently gained a lot of attention. One of the
+  reasons for the current hype is the fact that chatbots (one particularly
+  popular form of conversational interfaces) nowadays can be created without
+  any programming knowledge, thanks to different toolkits and so-called Natural
+  Language Understanding (NLU) services. While these NLU services are already
+  widely used in both, industry and science, so far, they have not been
+  analysed systematically. In this paper, we present a method to evaluate the
+  classification performance of NLU services. Moreover, we present two new
+  corpora, one consisting of annotated questions and one consisting of
+  annotated questions with the corresponding answers. Based on these corpora,
+  we conduct an evaluation of some of the most popular NLU services. Thereby we
+  want to enable both, researchers and companies to make more educated
+  decisions about which service they should use.%
+    }
+    \field{booktitle}{Proceedings of the 18th Annual {SIG}dial Meeting on
+  Discourse and Dialogue}
+    \verb{doi}
+    \verb 10.18653/v1/W17-5522
+    \endverb
+    \field{pages}{174\bibrangedash 185}
+    \field{title}{Evaluating Natural Language Understanding Services for
+  Conversational Question Answering Systems}
+    \verb{url}
+    \verb https://aclanthology.org/W17-5522
+    \endverb
+    \list{location}{1}{%
+      {Saarbr{\"u}cken, Germany}%
+    }
+    \field{month}{08}
+    \field{year}{2017}
   \endentry
 
   \entry{dangeti2017}{book}{}
