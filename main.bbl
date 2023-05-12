@@ -78,6 +78,153 @@
     \field{year}{2018}
   \endentry
 
+  \entry{dangeti2017}{book}{}
+    \name{author}{1}{}{%
+      {{hash=DP}{%
+         family={Dangeti},
+         familyi={D\bibinitperiod},
+         given={Pratap},
+         giveni={P\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Packt Publishing}%
+    }
+    \strng{namehash}{DP1}
+    \strng{fullhash}{DP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{isbn}{9781788295758}
+    \field{title}{Statistics for Machine Learning: Techniques for exploring
+  supervised, unsupervised, and reinforcement learning models with Python and
+  R}
+    \field{year}{2017}
+  \endentry
+
+  \entry{colyer2016}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=CA}{%
+         family={Colyer},
+         familyi={C\bibinitperiod},
+         given={Adrian},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{CA1}
+    \strng{fullhash}{CA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{The amazing power of word vectors}
+    \verb{url}
+    \verb https://blog.acolyer.org/2016/04/21/the-amazing-power-of-word-vectors
+    \verb /
+    \endverb
+    \field{journaltitle}{the morning paper}
+    \field{year}{2016}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{parrish2017}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=PA}{%
+         family={Parrish},
+         familyi={P\bibinitperiod},
+         given={Allison},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{PA1}
+    \strng{fullhash}{PA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Understanding word vectors}
+    \verb{url}
+    \verb https://gist.github.com/aparrish/2f562e3737544cf29aaf1af30362f469
+    \endverb
+    \field{journaltitle}{Github}
+    \field{year}{2017}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{word2vec2013}{article}{}
+    \name{author}{4}{}{%
+      {{hash=MT}{%
+         family={Mikolov},
+         familyi={M\bibinitperiod},
+         given={Tom{\'{a}}s},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=CK}{%
+         family={Chen},
+         familyi={C\bibinitperiod},
+         given={Kai},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=CG}{%
+         family={Corrado},
+         familyi={C\bibinitperiod},
+         given={Greg},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=DJ}{%
+         family={Dean},
+         familyi={D\bibinitperiod},
+         given={Jeffrey},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{MT+1}
+    \strng{fullhash}{MTCKCGDJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{eprint}
+    \verb 1301.3781
+    \endverb
+    \field{title}{Efficient Estimation of Word Representations in Vector Space}
+    \verb{url}
+    \verb https://arxiv.org/abs/1301.3781v3
+    \endverb
+    \field{eprinttype}{arXiv}
+    \field{eprintclass}{cs.CL}
+    \field{year}{2013}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{roy2020}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=RD}{%
+         family={Roy},
+         familyi={R\bibinitperiod},
+         given={Dwaipayan},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=BS}{%
+         family={Bhatia},
+         familyi={B\bibinitperiod},
+         given={Sumit},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=JP}{%
+         family={Jain},
+         familyi={J\bibinitperiod},
+         given={Prateek},
+         giveni={P\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{RDBSJP1}
+    \strng{fullhash}{RDBSJP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Proceedings of the 12th Conference on Language Resources
+  and Evaluation (LREC 2020)}
+    \field{title}{{A Topic-Aligned Multilingual Corpus of Wikipedia Articles
+  for Studying Information Asymmetry in Low Resource Languages}}
+    \verb{url}
+    \verb https://aclanthology.org/2020.lrec-1.289.pdf
+    \endverb
+    \field{year}{2020}
+  \endentry
+
   \entry{brown-corpus}{manual}{}
     \name{author}{2}{}{%
       {{hash=FWN}{%
@@ -358,39 +505,163 @@
     \field{year}{2020}
   \endentry
 
-  \entry{roy2020}{inproceedings}{}
-    \name{author}{3}{}{%
-      {{hash=RD}{%
-         family={Roy},
-         familyi={R\bibinitperiod},
-         given={Dwaipayan},
+  \entry{mccormick2016}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=MC}{%
+         family={McCormick},
+         familyi={M\bibinitperiod},
+         given={Chris},
+         giveni={C\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{MC1}
+    \strng{fullhash}{MC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Word2Vec Tutorial - The Skip-Gram Model}
+    \verb{url}
+    \verb http://mccormickml.com/2016/04/19/word2vec-tutorial-the-skip-gram-mod
+    \verb el/
+    \endverb
+    \field{year}{2016}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{fasttext2019}{article}{}
+    \name{author}{2}{}{%
+      {{hash=BK}{%
+         family={Balodis},
+         familyi={B\bibinitperiod},
+         given={Kaspars},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=DD}{%
+         family={Deksne},
+         familyi={D\bibinitperiod},
+         given={Daiga},
          giveni={D\bibinitperiod},
       }}%
-      {{hash=BS}{%
-         family={Bhatia},
-         familyi={B\bibinitperiod},
-         given={Sumit},
-         giveni={S\bibinitperiod},
+    }
+    \strng{namehash}{BKDD1}
+    \strng{fullhash}{BKDD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.3390/info10050161
+    \endverb
+    \field{issn}{2078-2489}
+    \field{number}{5:161}
+    \field{title}{FastText-Based Intent Detection for Inflected Languages}
+    \verb{url}
+    \verb https://www.mdpi.com/2078-2489/10/5/161
+    \endverb
+    \field{volume}{10}
+    \field{journaltitle}{Information}
+    \field{year}{2019}
+  \endentry
+
+  \entry{snips-docs}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=S}{%
+         family={Snips},
+         familyi={S\bibinitperiod},
       }}%
-      {{hash=JP}{%
-         family={Jain},
-         familyi={J\bibinitperiod},
-         given={Prateek},
+    }
+    \strng{namehash}{S1}
+    \strng{fullhash}{S1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+  \field{howpublished}{\url{https://snips-nlu.readthedocs.io/en/latest/data_model.html\#intent}}
+    \field{note}{Aplūkots 2023-05-10}
+    \field{title}{Snips Natural Language Understanding Documentation: Key
+  Concepts \& Data Model}
+  \endentry
+
+  \entry{paikens2020}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=PP}{%
+         family={Paikens},
+         familyi={P\bibinitperiod},
+         given={P{\={e}}teris},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=ZA}{%
+         family={Znoti{\c{n}}{\v{s}}},
+         familyi={Z\bibinitperiod},
+         given={Art{\={u}}rs},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=BG}{%
+         family={B{\={a}}rzdi{\c{n}}{\v{s}}},
+         familyi={B\bibinitperiod},
+         given={Guntis},
+         giveni={G\bibinitperiod},
+      }}%
+    }
+    \name{editor}{4}{}{%
+      {{hash=ME}{%
+         family={M{\'e}tais},
+         familyi={M\bibinitperiod},
+         given={Elisabeth},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=MF}{%
+         family={Meziane},
+         familyi={M\bibinitperiod},
+         given={Farid},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=HH}{%
+         family={Horacek},
+         familyi={H\bibinitperiod},
+         given={Helmut},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=CP}{%
+         family={Cimiano},
+         familyi={C\bibinitperiod},
+         given={Philipp},
          giveni={P\bibinitperiod},
       }}%
     }
-    \strng{namehash}{RDBSJP1}
-    \strng{fullhash}{RDBSJP1}
+    \list{publisher}{1}{%
+      {Springer International Publishing}%
+    }
+    \strng{namehash}{PPZABG1}
+    \strng{fullhash}{PPZABG1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{booktitle}{Proceedings of the 12th Conference on Language Resources
-  and Evaluation (LREC 2020)}
-    \field{title}{{A Topic-Aligned Multilingual Corpus of Wikipedia Articles
-  for Studying Information Asymmetry in Low Resource Languages}}
-    \verb{url}
-    \verb https://aclanthology.org/2020.lrec-1.289.pdf
+    \field{abstract}{%
+    This paper describes a prototype system for partial automation of customer
+  service operations of a mobile telecommunications operator with a
+  human-in-the loop conversational agent. The agent consists of an intent
+  detection system for identifying the types of customer requests that it can
+  handle appropriately, a slot filling information extraction system that
+  integrates with the customer service database for a rule-based treatment of
+  the common scenarios, and a template-based language generation system that
+  builds response candidates that can be approved or amended by customer
+  service operators. The main focus of this paper is on the system architecture
+  and machine learning system structure design, and the observations of a
+  limited pilot study performed to evaluate the proposed system on customer
+  messages in Latvian. We also discuss the business requirements and practical
+  application limitations and their influence on the design of the natural
+  language processing components.%
+    }
+    \field{booktitle}{Natural Language Processing and Information Systems}
+    \verb{doi}
+    \verb https://doi.org/10.1007/978-3-030-51310-8_25
     \endverb
+    \field{isbn}{978-3-030-51310-8}
+    \field{pages}{277\bibrangedash 284}
+    \field{title}{Human-in-the-Loop Conversation Agent for Customer Service}
+    \verb{url}
+    \verb https://link.springer.com/chapter/10.1007/978-3-030-51310-8_25
+    \endverb
+    \list{location}{1}{%
+      {Cham}%
+    }
     \field{year}{2020}
+    \warn{\item Invalid format of field 'month'}
   \endentry
 
   \entry{atis1990}{inproceedings}{}
@@ -583,277 +854,6 @@
     }
     \field{month}{08}
     \field{year}{2017}
-  \endentry
-
-  \entry{fasttext2019}{article}{}
-    \name{author}{2}{}{%
-      {{hash=BK}{%
-         family={Balodis},
-         familyi={B\bibinitperiod},
-         given={Kaspars},
-         giveni={K\bibinitperiod},
-      }}%
-      {{hash=DD}{%
-         family={Deksne},
-         familyi={D\bibinitperiod},
-         given={Daiga},
-         giveni={D\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{BKDD1}
-    \strng{fullhash}{BKDD1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \verb{doi}
-    \verb 10.3390/info10050161
-    \endverb
-    \field{issn}{2078-2489}
-    \field{number}{5:161}
-    \field{title}{FastText-Based Intent Detection for Inflected Languages}
-    \verb{url}
-    \verb https://www.mdpi.com/2078-2489/10/5/161
-    \endverb
-    \field{volume}{10}
-    \field{journaltitle}{Information}
-    \field{year}{2019}
-  \endentry
-
-  \entry{dangeti2017}{book}{}
-    \name{author}{1}{}{%
-      {{hash=DP}{%
-         family={Dangeti},
-         familyi={D\bibinitperiod},
-         given={Pratap},
-         giveni={P\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {Packt Publishing}%
-    }
-    \strng{namehash}{DP1}
-    \strng{fullhash}{DP1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{isbn}{9781788295758}
-    \field{title}{Statistics for Machine Learning: Techniques for exploring
-  supervised, unsupervised, and reinforcement learning models with Python and
-  R}
-    \field{year}{2017}
-  \endentry
-
-  \entry{colyer2016}{misc}{}
-    \name{author}{1}{}{%
-      {{hash=CA}{%
-         family={Colyer},
-         familyi={C\bibinitperiod},
-         given={Adrian},
-         giveni={A\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{CA1}
-    \strng{fullhash}{CA1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{title}{The amazing power of word vectors}
-    \verb{url}
-    \verb https://blog.acolyer.org/2016/04/21/the-amazing-power-of-word-vectors
-    \verb /
-    \endverb
-    \field{journaltitle}{the morning paper}
-    \field{year}{2016}
-    \warn{\item Invalid format of field 'month'}
-  \endentry
-
-  \entry{parrish2017}{misc}{}
-    \name{author}{1}{}{%
-      {{hash=PA}{%
-         family={Parrish},
-         familyi={P\bibinitperiod},
-         given={Allison},
-         giveni={A\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{PA1}
-    \strng{fullhash}{PA1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{title}{Understanding word vectors}
-    \verb{url}
-    \verb https://gist.github.com/aparrish/2f562e3737544cf29aaf1af30362f469
-    \endverb
-    \field{journaltitle}{Github}
-    \field{year}{2017}
-    \warn{\item Invalid format of field 'month'}
-  \endentry
-
-  \entry{word2vec2013}{article}{}
-    \name{author}{4}{}{%
-      {{hash=MT}{%
-         family={Mikolov},
-         familyi={M\bibinitperiod},
-         given={Tom{\'{a}}s},
-         giveni={T\bibinitperiod},
-      }}%
-      {{hash=CK}{%
-         family={Chen},
-         familyi={C\bibinitperiod},
-         given={Kai},
-         giveni={K\bibinitperiod},
-      }}%
-      {{hash=CG}{%
-         family={Corrado},
-         familyi={C\bibinitperiod},
-         given={Greg},
-         giveni={G\bibinitperiod},
-      }}%
-      {{hash=DJ}{%
-         family={Dean},
-         familyi={D\bibinitperiod},
-         given={Jeffrey},
-         giveni={J\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{MT+1}
-    \strng{fullhash}{MTCKCGDJ1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \verb{eprint}
-    \verb 1301.3781
-    \endverb
-    \field{title}{Efficient Estimation of Word Representations in Vector Space}
-    \verb{url}
-    \verb https://arxiv.org/abs/1301.3781v3
-    \endverb
-    \field{eprinttype}{arXiv}
-    \field{eprintclass}{cs.CL}
-    \field{year}{2013}
-    \warn{\item Invalid format of field 'month'}
-  \endentry
-
-  \entry{mccormick2016}{misc}{}
-    \name{author}{1}{}{%
-      {{hash=MC}{%
-         family={McCormick},
-         familyi={M\bibinitperiod},
-         given={Chris},
-         giveni={C\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{MC1}
-    \strng{fullhash}{MC1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{title}{Word2Vec Tutorial - The Skip-Gram Model}
-    \verb{url}
-    \verb http://mccormickml.com/2016/04/19/word2vec-tutorial-the-skip-gram-mod
-    \verb el/
-    \endverb
-    \field{year}{2016}
-    \warn{\item Invalid format of field 'month'}
-  \endentry
-
-  \entry{snips-docs}{misc}{}
-    \name{author}{1}{}{%
-      {{hash=S}{%
-         family={Snips},
-         familyi={S\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{S1}
-    \strng{fullhash}{S1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-  \field{howpublished}{\url{https://snips-nlu.readthedocs.io/en/latest/data_model.html\#intent}}
-    \field{note}{Aplūkots 2023-05-10}
-    \field{title}{Snips Natural Language Understanding Documentation: Key
-  Concepts \& Data Model}
-  \endentry
-
-  \entry{paikens2020}{inproceedings}{}
-    \name{author}{3}{}{%
-      {{hash=PP}{%
-         family={Paikens},
-         familyi={P\bibinitperiod},
-         given={P{\={e}}teris},
-         giveni={P\bibinitperiod},
-      }}%
-      {{hash=ZA}{%
-         family={Znoti{\c{n}}{\v{s}}},
-         familyi={Z\bibinitperiod},
-         given={Art{\={u}}rs},
-         giveni={A\bibinitperiod},
-      }}%
-      {{hash=BG}{%
-         family={B{\={a}}rzdi{\c{n}}{\v{s}}},
-         familyi={B\bibinitperiod},
-         given={Guntis},
-         giveni={G\bibinitperiod},
-      }}%
-    }
-    \name{editor}{4}{}{%
-      {{hash=ME}{%
-         family={M{\'e}tais},
-         familyi={M\bibinitperiod},
-         given={Elisabeth},
-         giveni={E\bibinitperiod},
-      }}%
-      {{hash=MF}{%
-         family={Meziane},
-         familyi={M\bibinitperiod},
-         given={Farid},
-         giveni={F\bibinitperiod},
-      }}%
-      {{hash=HH}{%
-         family={Horacek},
-         familyi={H\bibinitperiod},
-         given={Helmut},
-         giveni={H\bibinitperiod},
-      }}%
-      {{hash=CP}{%
-         family={Cimiano},
-         familyi={C\bibinitperiod},
-         given={Philipp},
-         giveni={P\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {Springer International Publishing}%
-    }
-    \strng{namehash}{PPZABG1}
-    \strng{fullhash}{PPZABG1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{abstract}{%
-    This paper describes a prototype system for partial automation of customer
-  service operations of a mobile telecommunications operator with a
-  human-in-the loop conversational agent. The agent consists of an intent
-  detection system for identifying the types of customer requests that it can
-  handle appropriately, a slot filling information extraction system that
-  integrates with the customer service database for a rule-based treatment of
-  the common scenarios, and a template-based language generation system that
-  builds response candidates that can be approved or amended by customer
-  service operators. The main focus of this paper is on the system architecture
-  and machine learning system structure design, and the observations of a
-  limited pilot study performed to evaluate the proposed system on customer
-  messages in Latvian. We also discuss the business requirements and practical
-  application limitations and their influence on the design of the natural
-  language processing components.%
-    }
-    \field{booktitle}{Natural Language Processing and Information Systems}
-    \verb{doi}
-    \verb https://doi.org/10.1007/978-3-030-51310-8_25
-    \endverb
-    \field{isbn}{978-3-030-51310-8}
-    \field{pages}{277\bibrangedash 284}
-    \field{title}{Human-in-the-Loop Conversation Agent for Customer Service}
-    \verb{url}
-    \verb https://link.springer.com/chapter/10.1007/978-3-030-51310-8_25
-    \endverb
-    \list{location}{1}{%
-      {Cham}%
-    }
-    \field{year}{2020}
-    \warn{\item Invalid format of field 'month'}
   \endentry
 
   \entry{hu2020}{inproceedings}{}

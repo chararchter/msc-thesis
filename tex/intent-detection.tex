@@ -38,3 +38,54 @@ Tipiski soļi nodomu noteikšanas pielietojumam uzņēmējdarbībā:
 	\item Klientu apkalpošanas speciālists izvērtē un koriģē atbildi pirms nosūtīšanas;
 	\item Automātiski uzlabot nodomu noteikšanas sistēmu, balstoties uz speciālista veiktajām korekcijām \cite{paikens2020}.
 \end{enumerate}
+
+
+
+\section{Nodomu noteikšanas korpusi}
+
+
+Viens no svarīgākajiem korpusiem tieši nodomu noteikšanā ir aviokompāniju ceļojumu informācijas sistēmu (ATIS -- \textit{Airline Travel Information Systems}) datu kopa. Tā ir audioierakstu un manuālu transkriptu datu kopa, kas sastāv no cilvēku sarunām ar automatizētām aviolīniju ceļojumu informācijas sistēmām. ATIS datu kopa nodrošina lielu ziņojumu un ar tiem saistīto nodomu skaitu, ko plaši izmanto kā novērtējuma (\textit{benchmark}) datu kopu klasifikatoru apmācībai nodomu noteikšanā \cite{atis1990}.
+
+
+SNIPS -- \textit{Spoken Natural Language Interaction for Personal Assistant}) datu kopā ir 16 000 ievadi, kas sadalīti septiņos nodomos: SearchCreativeWork, GetWeather, BookRestaurant, PlayMusic, AddToPlaylist, RateBook, SearchScreeningEvent \cite{snips-2018}.
+
+
+Lietotāja dabiskās valodas ievads tiek pārveidots jēdzientelpā, un tad pēc tam klasifikators nosaka lietotāja nodomu.
+
+Dabisko valodu saprašanas (Natural Language Understanding (NLU)) uzdevumi iedalās divās daļās: nodomu noteikšana un parametru \textit{slots}) iegūšana no ievadiem \textit{slot filling}) (\ref{tab:slots} tabula) \cite{snips-2018}. Šajā darbā tiks apskatīts pirmais solis -- nodomu noteikšana.
+
+
+\begin{table}[htbp]
+    \centering
+    \caption{``Weather" datu kopa, uz kuras tika apmācīts virtuālais asistents, kas apstrādā lietotāja vaicājumus par laikapstākļiem  \cite{snips-2018}}
+    \begin{tabular}{rlr}
+        Nodoms            & Parametrs                                           & Piemēri                                                                                                                                            \\
+        & \textcolor[rgb]{ .439,  .188,  .627}{ region}           & Is it \textcolor[rgb]{ 1,  .753,  0}{cloudy} in \textcolor[rgb]{ 1,  0,  0}{Germany} \textcolor[rgb]{ .573,  .816,  .314}{ right now}?                         \\
+        & \textcolor[rgb]{ 1,  0,  0}{ country}                   & Is \textcolor[rgb]{ .439,  .188,  .627}{South Carolina} expected to be \textcolor[rgb]{ 1,  .753,  0}{sunny} \textcolor[rgb]{ .573,  .816,  .314}{in 2 hours}? \\
+        ForecastCondition & \textcolor[rgb]{ .573,  .816,  .314}{ datetime}         & Is there \textcolor[rgb]{ 1,  .753,  0}{snow} in \textcolor[rgb]{ 0,  .69,  .941}{Paris}?                                                                  \\
+        & \textcolor[rgb]{ 0,  .69,  .941}{ locality}             & Should I expect a \textcolor[rgb]{ 1,  .753,  0}{storm} near \textcolor[rgb]{ .929,  .49,  .192}{Mount Rushmore}?                                          \\
+        & \textcolor[rgb]{ 1,  .753,  0}{ condition}              &                                                                                                                                                    \\
+        & \textcolor[rgb]{ .929,  .49,  .192}{ point of interest} &                                                                                                                                                    \\
+    \end{tabular}%
+    \label{tab:slots}%
+\end{table}%
+
+
+Korpusi ir paredzēti izmantošanai dabiskās valodas izpratnes uzdevumiem -- nodomu noteikšanai un entītiju atpazīšanai.
+
+Ask Ubuntu korpuss sastāv no 162 jautājumiem un atbildēm, kas iegūti vietnē \url{https://askubuntu.com}. Šis korpuss ir anotēts ar pieciem dažādiem nolūkiem: MakeUpdate, SetupPrinter, ShutdownComputer, SoftwareRecommendation un None. Papildus šiem nolūkiem korpusā ir iekļauti arī trīs entītiju veidi: printeris, programmatūra un versija, tomēr entītiju noteikšana ir ārpus šī darba tvēruma \textit{scope}) \cite{braun-2017}. Pateicoties konkrētiem nodomiem un entītiju veidiem, izstrādātāji var koncentrēties uz precīzāku modeļu izveidi konkrētiem uzdevumiem, piemēram, printera iestatīšanai vai programmatūras atjaunināšanai.
+
+Ask Ubuntu korpuss ir noderīgs resurss Ubuntu un citu Linux operētājsistēmu lietotāju pieredzes uzlabošanai. Tā kā Ubuntu ir pieejams daudzās valodās virutālā asistenta spēja atbildēt uz Ubuntu jautājumiem lietotāja izvēlētajā valodā var ievērojami palielināt operētājsistēmas pieejamību un lietojamību. Piemēram, trenējot virtuālos asistentus uz šī korpusa izstrādātāji var izveidot lietotājiem draudzīgas saskarnes \textit{interfaces}). 
+
+
+Tīmekļa lietojumprogrammu korpuss (\textit{Web Applications Corpus}), turpmāk "webapps" korpuss ir vērtīgs resurss virtuālo asistentu izstrādei, kas var palīdzēt lietotājiem orientēties un novērst ar tīmekļa lietojumprogrammām saistītas problēmas. Ar 89 jautājumiem un atbildēm, kas iegūtas vietnē \url{https://webapps.stackexchange.com}, šis korpuss aptver dažādas tēmas un scenārijus, ar kuriem lietotāji var saskarties, izmantojot tīmekļa lietojumprogrammas. Korpusam ir astoņas anotācijas -- ChangePassword, DeleteAccount, DownloadVideo, ExportData, FilterSpam, FindAlternative, SyncAccounts un None --, kā arī trīs entītiju veidi: WebService, OS un Browser \cite{braun-2017}. Uz šī korpusa apmācīti mašīnmācīšanās modeļi var noteikt lietotāju nodomus un sniegt atbildes, tādā veidā uzlabojot lietotāja pieredzi ar tīmekļa lietojumprogrammām.
+
+Chatbot korpuss tika iegūts no Telegram virtuālā asistenta Minhenes sabiedriskajam transportam. Tas satur 206 jautājumus, kas tika anotēti divos nolūkos -- DepartureTime un FindConnection --, kā arī piecus entītiju veidus: StationStart, StationDest, Criterion, Vehicle un Line \cite{braun-2017}. Šis korpuss ir īpaši noderīgs, lai izstrādātu virtuālos asistentus, kas palīdz lietotājiem orientēties sabiedriskajā transportā, jo tas nodrošina skaidru un kodolīgu jautājumu un entītiju kopumu šajā jomā. 
+
+Askubuntu, Webapps un Chatbot korpusi tika izveidoti, lai novērtētu komerciāli pieejamo NLU servisu precizitāti Braun et al. rakstā \cite{braun-2017}, un ir pieejami \url{https://github.com/sebischair/NLU-Evaluation-Corpora}. Darbā tika izmantots uz šī korpusa balstīta datu kopa, kas tika izmantota nodomu noteikšanai \cite{fasttext2019} rakstā un ir pieejama \url{https://github.com/tilde-nlp/NLU-datasets}.
+
+Jaunievedumi Balodis et al datu kopā:
+\begin{itemize}
+    \item iztulkota latviešu, krievu, igauņu un lietuviešu valodās
+    \item attīrīta no entītijām, atbildēm uz lietotāju jautājumiem un lietotājvārdiem
+\end{itemize}
