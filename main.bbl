@@ -358,6 +358,41 @@
     \field{year}{2020}
   \endentry
 
+  \entry{roy2020}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=RD}{%
+         family={Roy},
+         familyi={R\bibinitperiod},
+         given={Dwaipayan},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=BS}{%
+         family={Bhatia},
+         familyi={B\bibinitperiod},
+         given={Sumit},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=JP}{%
+         family={Jain},
+         familyi={J\bibinitperiod},
+         given={Prateek},
+         giveni={P\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{RDBSJP1}
+    \strng{fullhash}{RDBSJP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Proceedings of the 12th Conference on Language Resources
+  and Evaluation (LREC 2020)}
+    \field{title}{{A Topic-Aligned Multilingual Corpus of Wikipedia Articles
+  for Studying Information Asymmetry in Low Resource Languages}}
+    \verb{url}
+    \verb https://aclanthology.org/2020.lrec-1.289.pdf
+    \endverb
+    \field{year}{2020}
+  \endentry
+
   \entry{atis1990}{inproceedings}{}
     \name{author}{3}{}{%
       {{hash=HCT}{%
@@ -550,6 +585,39 @@
     \field{year}{2017}
   \endentry
 
+  \entry{fasttext2019}{article}{}
+    \name{author}{2}{}{%
+      {{hash=BK}{%
+         family={Balodis},
+         familyi={B\bibinitperiod},
+         given={Kaspars},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=DD}{%
+         family={Deksne},
+         familyi={D\bibinitperiod},
+         given={Daiga},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BKDD1}
+    \strng{fullhash}{BKDD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.3390/info10050161
+    \endverb
+    \field{issn}{2078-2489}
+    \field{number}{5:161}
+    \field{title}{FastText-Based Intent Detection for Inflected Languages}
+    \verb{url}
+    \verb https://www.mdpi.com/2078-2489/10/5/161
+    \endverb
+    \field{volume}{10}
+    \field{journaltitle}{Information}
+    \field{year}{2019}
+  \endentry
+
   \entry{dangeti2017}{book}{}
     \name{author}{1}{}{%
       {{hash=DP}{%
@@ -682,39 +750,6 @@
     \endverb
     \field{year}{2016}
     \warn{\item Invalid format of field 'month'}
-  \endentry
-
-  \entry{fasttext2019}{article}{}
-    \name{author}{2}{}{%
-      {{hash=BK}{%
-         family={Balodis},
-         familyi={B\bibinitperiod},
-         given={Kaspars},
-         giveni={K\bibinitperiod},
-      }}%
-      {{hash=DD}{%
-         family={Deksne},
-         familyi={D\bibinitperiod},
-         given={Daiga},
-         giveni={D\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{BKDD1}
-    \strng{fullhash}{BKDD1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \verb{doi}
-    \verb 10.3390/info10050161
-    \endverb
-    \field{issn}{2078-2489}
-    \field{number}{5:161}
-    \field{title}{FastText-Based Intent Detection for Inflected Languages}
-    \verb{url}
-    \verb https://www.mdpi.com/2078-2489/10/5/161
-    \endverb
-    \field{volume}{10}
-    \field{journaltitle}{Information}
-    \field{year}{2019}
   \endentry
 
   \entry{snips-docs}{misc}{}

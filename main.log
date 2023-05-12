@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (MiKTeX 21.12.10) (preloaded format=xelatex 2022.1.1)  12 MAY 2023 10:07
+This is XeTeX, Version 3.141592653-2.6-0.999993 (MiKTeX 21.12.10) (preloaded format=xelatex 2022.1.1)  12 MAY 2023 15:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1621,15 +1621,19 @@ File: figures/comprised.png Graphic file (type bmp)
  [7]
 File: figures/dataset-size.png Graphic file (type bmp)
 <figures/dataset-size.png>
- [8] [9])
-Overfull \hbox (0.61452pt too wide) in paragraph at lines 102--72
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[8] [9]
+Overfull \hbox (0.61452pt too wide) in paragraph at lines 102--103
 \TU/FreeSerif.ttf(0)/m/n/12 portam. Tas satur 206 jautājumus, kas tika anotēti 
 divos nolūkos – DepartureTime un FindConnec-
  []
 
-[10]
+[10]) [11]
 chapter 2.
-(tex/word-embeddings.tex [11
+(tex/word-embeddings.tex [12
 
 
 ]
@@ -1638,21 +1642,21 @@ File: figures/word2vec-distributed-representation.png Graphic file (type bmp)
 
 (C:\Program Files\MiKTeX\tex/latex/listings\lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
-) [12] [13]
+) [13] [14]
 File: figures/word2vec-country-capital.png Graphic file (type bmp)
 <figures/word2vec-country-capital.png>
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[14] [15]) [16
+[15] [16]) [17
 
 ]
 chapter 3.
 (tex/models.tex
 File: figures/word2vec-models.png Graphic file (type bmp)
 <figures/word2vec-models.png>
- [17
+ [18
 
 
 ]
@@ -1662,17 +1666,17 @@ File: figures/skip_gram_net_arch.png Graphic file (type bmp)
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) [18] [19]
+) [19] [20]
 chapter 4.
-(tex/intent-detection.tex [20
+(tex/intent-detection.tex [21
 
 
-]) [21]
+]) [22]
 chapter 5.
-(tex/experimental-setup.tex [22
+(tex/experimental-setup.tex [23
 
 
-] [23] [24] [25]) [26]
+] [24] [25] [26]) [27]
 chapter 6.
 (tex/results.tex
 Overfull \hbox (55.13986pt too wide) in paragraph at lines 22--31
@@ -1739,10 +1743,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 121--121
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[27
+[28
 
 
-] [28] [29] [30] [31]
+] [29] [30] [31] [32]
 Overfull \hbox (55.13986pt too wide) in paragraph at lines 149--158
  [][][] 
  []
@@ -1812,9 +1816,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 251--251
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[32
+[33
 
-] [33] [34] [35] [36]
+] [34] [35] [36] [37]
 Overfull \hbox (55.13986pt too wide) in paragraph at lines 288--297
  [][][] 
  []
@@ -1884,9 +1888,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 387--387
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) [37
+) [38
 
-] [38] [39] [40] [41] (tex/conclusions.tex) [42
+] [39] [40] [41] [42] (tex/conclusions.tex) [43
 
 
 ]
@@ -1903,17 +1907,17 @@ Overfull \hbox (18.52731pt too wide) in paragraph at lines 103--103
 $[]\TU/FreeSerif.ttf(0)/m/n/12 .
  []
 
-[43
+[44
 
 
 
-] [44]
+] [45] [46]
 Overfull \hbox (1.74782pt too wide) in paragraph at lines 103--103
 []\TU/FreeSerif.ttf(0)/m/n/12 Zihan Liu u. c. „  Attention-Informed Mixed-Langu
 age Training for Zero-Shot Cross-Lingual
  []
 
-[45]
+
 Overfull \hbox (10.28981pt too wide) in paragraph at lines 103--103
 \TU/FreeSerif.ttf(0)/m/n/12 Filling”. \TU/FreeSerif.ttf(0)/m/it/12 Proceedings 
 of the Massively Multilingual Natural Language Understanding Workshop
@@ -1926,7 +1930,7 @@ Overfull \hbox (16.10435pt too wide) in paragraph at lines 103--103
 ][][][][] [] [][][] [] [][][][][][][][][][][][][][][][][]$[]. 
  []
 
-[46] (tex/appendix.tex (tex/code.tex
+[47] [48] (tex/appendix.tex (tex/code.tex
 Overfull \hbox (20.19026pt too wide) in paragraph at lines 3--5
 \TU/FreeSerif.ttf(0)/m/n/12 Koda piemērs literatūras ievadā. Krāsu dati ”xkcd.j
 son” []$[][][][][] [] [] [] [][][][][][] [] [][][] [] [][][][][][][] [] [][][][
@@ -1935,7 +1939,7 @@ son” []$[][][][][] [] [] [] [][][][][][] [] [][][] [] [][][][][][][] [] [][][]
 
 LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <10> not available
 (Font)              Font shape `TU/lmtt/b/n' tried instead on input line 7.
-[47
+[49
 
 
 
@@ -1990,7 +1994,7 @@ braces):
 >  {english/babelname}  =>  {american}
 >  {english/localnumeral}  =>  {polyglossia@C@localnumeral}
 >  {english/Localnumeral}  =>  {polyglossia@C@localnumeral}.
- [48] (main.aux
+ [50] (main.aux
 LaTeX Info: Redefining \rmfamily on input line 27.
 LaTeX Info: Redefining \sffamily on input line 27.
 LaTeX Info: Redefining \ttfamily on input line 27.
@@ -2011,12 +2015,12 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 33845 strings out of 411044
- 718267 string characters out of 2829678
- 1752989 words of memory out of 3000000
- 54055 multiletter control sequences out of 15000+600000
+ 33848 strings out of 411044
+ 718380 string characters out of 2829678
+ 1753176 words of memory out of 3000000
+ 54058 multiletter control sequences out of 15000+600000
  410231 words of font info for 83 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  122i,10n,131p,10639b,5700s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.pdf (49 pages).
+Output written on main.pdf (51 pages).

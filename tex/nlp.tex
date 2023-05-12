@@ -51,11 +51,13 @@ Kas padara valodu par maz-resursu? Mazāks skaits vārdu un teikumu datu kopās,
 \begin{figure}[h]
     \centering
     \includegraphics[width=\textwidth]{figures/dataset-size.png}
-    \caption{Datu apjoms GiB (logaritmiskā skalā) valodām Wiki-100 korpusā, ko izmanto mBERT un XLM-100, un Common Crawl-100, ko izmanto XLM-R. Common Crawl-100 palielina datu apjomu par vairākām kārtām, jo īpaši maz-resursu valodās (lietuviešu, latviešu, igauņu valodas ar sarkanu izdalīju es) \cite{conneau2020}}
+    \caption{Datu apjoms GiB (logaritmiskā skalā) valodām Wiki-100 korpusā, ko izmanto mBERT un XLM-100, un Common Crawl-100, ko izmanto XLM-R. Common Crawl-100 palielina datu apjomu par vairākām kārtām, jo īpaši maz-resursu valodās \cite{conneau2020} Grafikā ir iekļautas piecas konkrētas šajā darbā izmantotās valodas (atzīmētas ar sarkaniem taisnstūriem) parādīšanās secībā: angļu, krievu, lietuviešu, latviešu, igauņu.}
     \label{fig:dataset-size}
 \end{figure}
 
 
+
+Turklāt pat tādām populārām valodām kā spāņu vai hindi Vikipēdijas rakstu skaits ir būtiski mazāks par rakstu skaitu angļu valodas versijā (attiecīgi 26\% un 2.3\%), kā arī vairākums no šiem rakstiem ir īsāki, nekā to angliskie analogi. Šo un vēl sešu Vikipēdijas versiju analīze demonstrēja, ka gandrīz pusei no ne-angļu rakstiem nav attiecīgā analoga angļu versijā, visdrīzāk tāpēc, ka tie raksti ir veltīti specifiskai kulturālai vai ģeogrāfiskajai informācijai. Tas parāda nepieciešamību ņemt vērā saturu vairākās valodās, lai korekti un līdzvērtīgi pārstāvēt mazās valodas mašīnapmācības procesā \cite{roy2020}.
 
 
 % nlu korpusu part
@@ -97,14 +99,12 @@ Ask Ubuntu korpuss ir noderīgs resurss Ubuntu un citu Linux operētājsistēmu 
 
 Tīmekļa lietojumprogrammu korpuss (\textit{Web Applications Corpus}), turpmāk "webapps" korpuss ir vērtīgs resurss virtuālo asistentu izstrādei, kas var palīdzēt lietotājiem orientēties un novērst ar tīmekļa lietojumprogrammām saistītas problēmas. Ar 89 jautājumiem un atbildēm, kas iegūtas vietnē \url{https://webapps.stackexchange.com}, šis korpuss aptver dažādas tēmas un scenārijus, ar kuriem lietotāji var saskarties, izmantojot tīmekļa lietojumprogrammas. Korpusam ir astoņas anotācijas -- ChangePassword, DeleteAccount, DownloadVideo, ExportData, FilterSpam, FindAlternative, SyncAccounts un None --, kā arī trīs entītiju veidi: WebService, OS un Browser \cite{braun-2017}. Uz šī korpusa apmācīti mašīnmācīšanās modeļi var noteikt lietotāju nodomus un sniegt atbildes, tādā veidā uzlabojot lietotāja pieredzi ar tīmekļa lietojumprogrammām.
 
-
-
 Chatbot korpuss tika iegūts no Telegram virtuālā asistenta Minhenes sabiedriskajam transportam. Tas satur 206 jautājumus, kas tika anotēti divos nolūkos -- DepartureTime un FindConnection --, kā arī piecus entītiju veidus: StationStart, StationDest, Criterion, Vehicle un Line \cite{braun-2017}. Šis korpuss ir īpaši noderīgs, lai izstrādātu virtuālos asistentus, kas palīdz lietotājiem orientēties sabiedriskajā transportā, jo tas nodrošina skaidru un kodolīgu jautājumu un entītiju kopumu šajā jomā. 
 
+Askubuntu, Webapps un Chatbot korpusi tika izveidoti, lai novērtētu komerciāli pieejamo NLU servisu precizitāti Braun et al. rakstā \cite{braun-2017}, un ir pieejami \url{https://github.com/sebischair/NLU-Evaluation-Corpora}. Darbā tika izmantots uz šī korpusa balstīta datu kopa, kas tika izmantota nodomu noteikšanai \cite{fasttext2019} rakstā un ir pieejama \url{https://github.com/tilde-nlp/NLU-datasets}.
 
-
-Korpusi tika izveidoti, lai novērtētu komerciāli pieejamo NLU servisu precizitāti Braun et al. rakstā \cite{braun-2017}, un ir pieejami \url{https://github.com/sebischair/NLU-Evaluation-Corpora}. 
-
-
-Darbā tika izmantots uz \cite{braun-2017} balstīta datu kopa, kas tika iztulkota latviešu, krievu, igauņu un lietuviešu valodā, un ir pieejama \url{https://github.com/tilde-nlp/NLU-datasets}.
-
+Jaunievedumi Balodis et al datu kopā:
+\begin{itemize}
+    \item iztulkota latviešu, krievu, igauņu un lietuviešu valodās
+    \item attīrīta no entītijām, atbildēm uz lietotāju jautājumiem un lietotājvārdiem
+\end{itemize}

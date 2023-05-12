@@ -16,42 +16,42 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {1}Korpusi}{6}{chapter.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {2}Jēdzientelpa}{11}{chapter.2}%
+\contentsline {chapter}{\numberline {2}Jēdzientelpa}{12}{chapter.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.1}Daudzvalodīga jēdzientelpa}{16}{section.2.1}%
+\contentsline {section}{\numberline {2.1}Daudzvalodīga jēdzientelpa}{17}{section.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}Jēdzientelpu modeļu apmācība}{17}{chapter.3}%
+\contentsline {chapter}{\numberline {3}Jēdzientelpu modeļu apmācība}{18}{chapter.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}Continuous Bag-of-Words}{17}{section.3.1}%
+\contentsline {section}{\numberline {3.1}Continuous Bag-of-Words}{18}{section.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}Continuous Skip-gram Model}{18}{section.3.2}%
+\contentsline {section}{\numberline {3.2}Continuous Skip-gram Model}{19}{section.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Nodomu noteikšana}{20}{chapter.4}%
+\contentsline {chapter}{\numberline {4}Nodomu noteikšana}{21}{chapter.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Eksperimentu dizains/metadoloģija/apraksts}{22}{chapter.5}%
+\contentsline {chapter}{\numberline {5}Eksperimentu dizains/metadoloģija/apraksts}{23}{chapter.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.1}Apmācība un testēšana vienā valodā}{22}{section.5.1}%
+\contentsline {section}{\numberline {5.1}Apmācība un testēšana vienā valodā}{23}{section.5.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.2}Apmācība uz visām valodām, testēšana vienā valodā}{23}{section.5.2}%
+\contentsline {section}{\numberline {5.2}Apmācība uz visām valodām, testēšana vienā valodā}{24}{section.5.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.3}Apmācība angļu valodā, testēšana valodās, kas nav angļu}{24}{section.5.3}%
+\contentsline {section}{\numberline {5.3}Apmācība angļu valodā, testēšana valodās, kas nav angļu}{25}{section.5.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.4}Mašīntulkošana uz angļu valodu}{25}{section.5.4}%
+\contentsline {section}{\numberline {5.4}Mašīntulkošana uz angļu valodu}{26}{section.5.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.5}Citas pieejas}{26}{section.5.5}%
+\contentsline {section}{\numberline {5.5}Citas pieejas}{27}{section.5.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Rezultāti}{27}{chapter.6}%
+\contentsline {chapter}{\numberline {6}Rezultāti}{28}{chapter.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.1}Chatbot datu kopa}{27}{section.6.1}%
+\contentsline {section}{\numberline {6.1}Chatbot datu kopa}{28}{section.6.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.2}Askubuntu datu kopa}{32}{section.6.2}%
+\contentsline {section}{\numberline {6.2}Askubuntu datu kopa}{33}{section.6.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.3}Webapps datu kopa}{37}{section.6.3}%
+\contentsline {section}{\numberline {6.3}Webapps datu kopa}{38}{section.6.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Secinājumi}{42}{chapter*.48}%
+\contentsline {chapter}{Secinājumi}{43}{chapter*.48}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Izmantotā literatūra un avoti}{43}{chapter*.48}%
+\contentsline {chapter}{Izmantotā literatūra un avoti}{44}{chapter*.48}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Pielikums}{47}{chapter*.50}%
+\contentsline {chapter}{Pielikums}{49}{chapter*.50}%
 \defcounter {refsection}{0}\relax 
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
