@@ -3,6 +3,7 @@ Jēdzientelpa ir vārdu vai frāžu attēlojums daudzdimensionālā vektoru telp
 To, cik tuvu ir vārdi jēdzientelpā, var noteikt, izmantojot kosinusa līdzības (\textit{cosine similarity}) metriku \cite{dangeti2017}. Ja vienam vārdam atbilst vektors $\vec{a}$, bet otram -- vektors $\vec{b}$, tad kosinusa līdzību $K.L.$ var atrast šādā veidā: $$K.L. = \cos(\varphi) = \frac{\vec{a} \cdot \vec{b}}{|\vec{a}| |\vec{b}|},$$ 
 kur $\varphi$ ir leņķis starp vektoriem $\vec{a}$ un $\vec{b}$, bet $||$ apzīmē vektora garumu jeb moduli: $|\vec{a}| = \sqrt{\vec{a} \cdot \vec{a}}$.
 
+
 % Liels lēciens uz vienizcēluma kodējumu, bet vienizcēluma kodējumam jābūt pirms jēdzientelpas, jo tie ir pretstati un tas tālāk nav vajadzīgs. You’ll need a little context for this one before I dive into the story.
 
 Noderīgs sākumpunkts izpratnei par vārdu attēlošanu ar skaitļu vektoriem un šo attēlojumu pielietojamības robežām ir vienizcēluma kodējums (\textit{one hot encoding}). Vienizcēluma kodējums dabiskās valodas apstrādē ir vektors, kurā katrs vektora elements ir sasaistīts ar vārdu krājuma elementu. Līdz ar to katrs vārds ir vektors, kurā atbilstošais elements ir 1 un visi pārējie elemeni ir 0. Piemēram, ja vārdu krājumā ir četri vārdi: karalis, karaliene, sieviete, vīrietis, karaliene tiktu kodēta kā [0, 1, 0, 0] \cite{colyer2016}.
@@ -11,9 +12,13 @@ Taču vektora garuma sasaiste ar vārdu krājuma izmēru ir trūkums, jo vārdu 
 % (tiešām? atrast cik unikālu vārdu kādā konkrētā angļu korpusā)
 vārdu. Visbeidzot vienizcēluma kodējums nesatur kontekstuālu vārdu nozīmi, nav korelācijas starp vārdiem ar līdzīgu nozīmi un lietojumu \cite{colyer2016}.
 
+
+\section{Izkliedētā reprezentācija}
+
 Atšķirībā no dabisko valodu apstrādes metodēm, kas katru vārdu uztver kā vienu atsevišķu vienību un tādēļ vienīgā iespējamā darbība ar vārdiem ir pārbaudīt vienādību, katras jēdzientelpas vektora vērtības ietekmē vārdi tiem apkārt jeb reprezentācija ir izkliedēta (\textit{distributed representation}) un būtībā jēdzientelpas uztver attiecības starp vārdiem. Rezultātā vārdam atbilstošais vektors satur semantisku un sintaktisku informāciju par vārdu. No tā izriet praktiskā implikācija -- ar vektoriem var veikt lineārās algebras operācijas, piemēram, saskaitīt un atņemt \cite{colyer2016}.
 
-Vārdus ir daudz grūtāk salīdzināt nekā skaitļus, tādēļ mēs piešķiram vārdiem vektorus. Tomēr vārdi apraksta objektus ar noteiktām kvantificējamām īpašībām, piemēram, vieglāks/smagāks (svars), lētāks/dārgāks (cena). Šādai reprezentācijai ir jēga, jo dažādus objektus var salīdzināt savā starpā pēc īpašību vērtības jeb izteiktības pakāpes, piemēram, velosipēds ir vieglāks nekā mašīna. Tādā veidā vārda attēlojums tiek sadalīts pa visiem vektora elementiem, un katrs elements pievieno nozīmi daudziem vārdiem (\ref{fig:distributed-representation} attēls). Zinot, ka objektu īpašību skaitliska reprezentācija palīdz tos salīdzināt, atklājas jēga kvantitatīvi izteikt semantiku, tādējādi vārdi tiek attēloti veidā, kas izsaka to nozīmi caur kontekstu. 
+Vārdiem kā tādiem ir grūti piekārtot konkrētu skaitli, taču vārdi apraksta objektus ar noteiktām kvantificējamām īpašībām, piemēram, vieglāks/smagāks (masa), lētāks/dārgāks (cena). Šādai reprezentācijai ir jēga, jo dažādus objektus var salīdzināt savā starpā viendimensionālā telpā pēc konkrētas īpašības vērtības jeb izteiktības pakāpes, piemēram, velosipēds ir vieglāks nekā mašīna. Tomēr ar vienu dimensiju nepietiek lai viennozīmīgi izteiktu vārdu nozīmi, piemēram, ir daudz vārdu, kas apraksta objektus, kuru masa var būt 5 kg: suns, kaķis, soma, maiss ar rīsiem, hantele utml. Tādējādi, lai arī vārdi var tikt salīdzināt pēc vienas konkrētas īpašības, vārdu viendimensionāla reprezentācija nespēj pilnībā ietvert vārda nozīmi. Kvantitatīva semantikas izteikšana kļūst iespējama tikai daudzdimensiju telpā, kur vārda attēlojums tiek sadalīts pa visiem vektora elementiem, un katrs elements pievieno nozīmi daudziem vārdiem, kā redzams \ref{fig:distributed-representation} attēlā. Tas nozīmē, ka vārdu nozīme tiek izteikta caur kontekstu.
+
 
 \begin{figure}[h]
 	\centering
@@ -22,7 +27,7 @@ Vārdus ir daudz grūtāk salīdzināt nekā skaitļus, tādēļ mēs piešķira
 	\label{fig:distributed-representation}
 \end{figure}
 
-Cilvēkiem uztverama jēdzientelpu analoģija ir krāsas nosaukums un tam atbilstošais vektors RGB krāsu modelī ar R, G un B koordinātēm no 0 līdz 255, piemēram, red = (255, 0, 0). Ar krāsu jēdzientelpām ir iespējams veikt saskaitīšanu un atņemšanu, kam ir fizikāla nozīme \cite{parrish2017}.
+Cilvēkiem uztverama jēdzientelpu analoģija ir krāsas nosaukums un tam atbilstošais vektors RGB krāsu modelī ar R (sarkans), G (zaļš) un B (zils) koordinātēm no 0 līdz 255, piemēram, sarkans = (255, 0, 0). Ar krāsu jēdzientelpām ir iespējams veikt saskaitīšanu un atņemšanu, kam ir fizikāla nozīme \cite{parrish2017}.
 
 Atrast tuvākās krāsas sarkanam.
 \begin{python}
@@ -58,7 +63,7 @@ closest(colors, addv(colors['blue'], colors['green']))
 # neon blue (4, 217, 255)
 \end{python}
 
-No vektoru operācijām var nolasīt secinājumus par semantiskajām attiecībām starp vārdiem, piemēram, rozā sarkanam ir tas pats, kas gaiši zils zilam.
+No vektoru operācijām var izdarīt secinājumus par semantiskajām attiecībām starp vārdiem, piemēram, rozā sarkanam ir tas pats, kas gaiši zils zilam.
 $$pink - red + blue = light blue$$
 $$(255, 129, 192) - (229, 0, 0) + (3, 67, 223) = (29, 196, 415)$$
 \begin{python}
@@ -76,6 +81,7 @@ Izrādās, tādas pašas sakarības, kādas ir krāsu nosaukumiem un to attēloj
 
 Spēja noteikt sintaktiskas un semantiskas vārdu attiecības ir īpaši būtiska virtuālo asistentu jomā, jo, pirmkārt, semantiski līdzīgiem nodomiem ir līdzīgi vektori, tātad tie tiks vienādi klasificēti, otrkārt, informācija par sintakses attiecībām noder, jo lietotāji ievada jautājumus brīvā formā un tas ir it īpaši svarīgi fleksīvām valodām kā latviešu.
 
+Fleksīva valoda ir valoda, kurā vārdi var mainīties atkarībā no to funkcijas teikumā, t.i., no dzimtes, skaitļa, locījuma, laika un citiem gramatiskiem faktoriem. Piemēram, lietvārds latviešu valodā var būt sešos dažādos locījumos, un jēdzientelpā viena vārda dažādi locījumi tiks pārstāvēti kā dažādi vārdi. Tas nozīmē, ka modelis var nepareizi interpretēt tos kā atsevišķus vārdus ar atšķirīgu nozīmi, it īpaši vārdus retāk izmantotās gramatiskās formās. To var mēģināt novērst ar lemmatizāciju (\textit{lemmatization}) -- samazinot unikālo vārdu formu skaitu grupējot vārdus pamatformās. Piemēram, "mājas" un "māju" varētu reducēt līdz pamatformai "māja". Atkarībā no valodas sarežģītības lemmatizācija var izrādīties neparocīgāka nekā palielināt korpusu.
 
 
 \begin{table}[htbp]
