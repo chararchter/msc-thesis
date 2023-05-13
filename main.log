@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (MiKTeX 21.12.10) (preloaded format=xelatex 2022.1.1)  12 MAY 2023 20:33
+This is XeTeX, Version 3.141592653-2.6-0.999993 (MiKTeX 21.12.10) (preloaded format=xelatex 2022.1.1)  13 MAY 2023 19:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -897,48 +897,55 @@ Package xcolor Info: Model `wave' substituted by `hsb' on input line 1375.
 (C:\Program Files\MiKTeX\tex/latex/graphics\dvipsnam.def
 File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
 ))
+(C:\Users\Zver\AppData\Roaming\MiKTeX\tex/latex/multirow\multirow.sty
+Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
+\multirow@colwidth=\skip140
+\multirow@cntb=\count446
+\multirow@dima=\skip141
+\bigstrutjot=\dimen179
+)
 (C:\Users\Zver\AppData\Roaming\MiKTeX\tex/latex/booktabs\booktabs.sty
 Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
-\heavyrulewidth=\dimen179
-\lightrulewidth=\dimen180
-\cmidrulewidth=\dimen181
-\belowrulesep=\dimen182
-\belowbottomsep=\dimen183
-\aboverulesep=\dimen184
-\abovetopsep=\dimen185
-\cmidrulesep=\dimen186
-\cmidrulekern=\dimen187
-\defaultaddspace=\dimen188
-\@cmidla=\count446
-\@cmidlb=\count447
-\@aboverulesep=\dimen189
-\@belowrulesep=\dimen190
-\@thisruleclass=\count448
-\@lastruleclass=\count449
-\@thisrulewidth=\dimen191
+\heavyrulewidth=\dimen180
+\lightrulewidth=\dimen181
+\cmidrulewidth=\dimen182
+\belowrulesep=\dimen183
+\belowbottomsep=\dimen184
+\aboverulesep=\dimen185
+\abovetopsep=\dimen186
+\cmidrulesep=\dimen187
+\cmidrulekern=\dimen188
+\defaultaddspace=\dimen189
+\@cmidla=\count447
+\@cmidlb=\count448
+\@aboverulesep=\dimen190
+\@belowrulesep=\dimen191
+\@thisruleclass=\count449
+\@lastruleclass=\count450
+\@thisrulewidth=\dimen192
 )
 (C:\Users\Zver\AppData\Roaming\MiKTeX\tex/latex/pythonhighlight\pythonhighlight
 .sty
 Package: pythonhighlight 2017/02/09 python code highlighting; provided by Olivi
 er Verdier <olivier.verdier@gmail.com>
  (C:\Program Files\MiKTeX\tex/latex/listings\listings.sty
-\lst@mode=\count450
+\lst@mode=\count451
 \lst@gtempboxa=\box70
 \lst@token=\toks40
-\lst@length=\count451
-\lst@currlwidth=\dimen192
-\lst@column=\count452
-\lst@pos=\count453
-\lst@lostspace=\dimen193
-\lst@width=\dimen194
-\lst@newlines=\count454
-\lst@lineno=\count455
-\lst@maxwidth=\dimen195
+\lst@length=\count452
+\lst@currlwidth=\dimen193
+\lst@column=\count453
+\lst@pos=\count454
+\lst@lostspace=\dimen194
+\lst@width=\dimen195
+\lst@newlines=\count455
+\lst@lineno=\count456
+\lst@maxwidth=\dimen196
 
 (C:\Program Files\MiKTeX\tex/latex/listings\lstmisc.sty
 File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
-\c@lstnumber=\count456
-\lst@skipnumbers=\count457
+\c@lstnumber=\count457
+\lst@skipnumbers=\count458
 \lst@framebox=\box71
 )
 (C:\Program Files\MiKTeX\tex/latex/listings\listings.cfg
@@ -948,8 +955,8 @@ Package: listings 2020/03/24 1.8d (Carsten Heinz)
 )
 (C:\Users\Zver\AppData\Roaming\MiKTeX\tex/latex/caption\subcaption.sty
 Package: subcaption 2020/10/07 v1.3j Sub-captions (AR)
-\c@subfigure=\count458
-\c@subtable=\count459
+\c@subfigure=\count459
+\c@subtable=\count460
 )
 (C:\Users\Zver\AppData\Roaming\MiKTeX\tex/latex/polyglossia\gloss-latvian.ldf
 File: gloss-latvian.ldf polyglossia: module for latvian
@@ -1089,8 +1096,8 @@ File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: xetex.def on input line 107.
 )
-\Gin@req@height=\dimen196
-\Gin@req@width=\dimen197
+\Gin@req@height=\dimen197
+\Gin@req@width=\dimen198
 )
 (C:\Program Files\MiKTeX\tex/latex/hyperref\hyperref.sty
 Package: hyperref 2021-06-07 v7.00m Hypertext links for LaTeX
@@ -1109,9 +1116,9 @@ Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
 (C:\Users\Zver\AppData\Roaming\MiKTeX\tex/latex/auxhook\auxhook.sty
 Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
 )
-\@linkdim=\dimen198
-\Hy@linkcounter=\count460
-\Hy@pagecounter=\count461
+\@linkdim=\dimen199
+\Hy@linkcounter=\count461
+\Hy@pagecounter=\count462
 
 (C:\Program Files\MiKTeX\tex/latex/hyperref\pd1enc.def
 File: pd1enc.def 2021-06-07 v7.00m Hyperref: PDFDocEncoding definition (HO)
@@ -1126,7 +1133,7 @@ Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 (C:\Users\Zver\AppData\Roaming\MiKTeX\tex/generic/etexcmds\etexcmds.sty
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 )
-\Hy@SavedSpaceFactor=\count462
+\Hy@SavedSpaceFactor=\count463
 
 (C:\Program Files\MiKTeX\tex/latex/hyperref\puenc.def
 File: puenc.def 2021-06-07 v7.00m Hyperref: PDF Unicode definition (HO)
@@ -1138,9 +1145,9 @@ Package hyperref Info: Plain pages OFF on input line 4207.
 Package hyperref Info: Backreferencing OFF on input line 4212.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4445.
-\c@Hy@tempcnt=\count463
+\c@Hy@tempcnt=\count464
 LaTeX Info: Redefining \url on input line 4804.
-\XeTeXLinkMargin=\dimen199
+\XeTeXLinkMargin=\dimen256
 
 (C:\Users\Zver\AppData\Roaming\MiKTeX\tex/generic/bitset\bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
@@ -1149,9 +1156,9 @@ Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
-\Fld@menulength=\count464
-\Field@Width=\dimen256
-\Fld@charsize=\dimen257
+\Fld@menulength=\count465
+\Field@Width=\dimen257
+\Fld@charsize=\dimen258
 Package hyperref Info: Hyper figures OFF on input line 6076.
 Package hyperref Info: Link nesting OFF on input line 6081.
 Package hyperref Info: Hyper index ON on input line 6084.
@@ -1166,9 +1173,9 @@ LaTeX Info: Redefining \pageref on input line 6150.
 Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
 package with kernel methods
 )
-\Hy@abspage=\count465
-\c@Item=\count466
-\c@Hfootnote=\count467
+\Hy@abspage=\count466
+\c@Item=\count467
+\c@Hfootnote=\count468
 )
 Package hyperref Info: Driver (autodetected): hxetex.
 
@@ -1180,10 +1187,10 @@ Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
 )
 )
 \pdfm@box=\box72
-\c@Hy@AnnotLevel=\count468
-\HyField@AnnotCount=\count469
-\Fld@listcount=\count470
-\c@bookmark@seq@number=\count471
+\c@Hy@AnnotLevel=\count469
+\HyField@AnnotCount=\count470
+\Fld@listcount=\count471
+\c@bookmark@seq@number=\count472
 
 (C:\Users\Zver\AppData\Roaming\MiKTeX\tex/latex/rerunfilecheck\rerunfilecheck.s
 ty
@@ -1200,15 +1207,15 @@ Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 86.
 )
-\Hy@SectionHShift=\skip140
+\Hy@SectionHShift=\skip142
 ) (C:\Users\Zver\AppData\Roaming\MiKTeX\tex/latex/placeins\placeins.sty
 Package: placeins 2005/04/18  v 2.2
 )
 (C:\Users\Zver\AppData\Roaming\MiKTeX\tex/latex/appendix\appendix.sty
 Package: appendix 2020/02/08 v1.2c extra appendix facilities
-\c@@pps=\count472
-\c@@ppsavesec=\count473
-\c@@ppsaveapp=\count474
+\c@@pps=\count473
+\c@@ppsavesec=\count474
+\c@@ppsaveapp=\count475
 )
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'polyglossia' package.
@@ -1225,6 +1232,9 @@ LaTeX Info: Redefining \ttfamily on input line 36.
 LaTeX Info: Redefining \rmfamily on input line 44.
 LaTeX Info: Redefining \sffamily on input line 44.
 LaTeX Info: Redefining \ttfamily on input line 44.
+
+
+LaTeX Warning: Label `tab:addlabel' multiply defined.
 
 
 LaTeX Warning: Label `tab:chatbot-bert' multiply defined.
@@ -1247,34 +1257,34 @@ LaTeX Warning: Label `tab:webapps-xml' multiply defined.
 )
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 38.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 39.
 LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 3
-8.
+9.
  (C:\Program Files\MiKTeX\tex/latex/base\ts1cmr.fd
 File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-Package scrbase Info: activating latvian \contentsname on input line 38.
-Package scrbase Info: activating latvian \listfigurename on input line 38.
-Package scrbase Info: activating latvian \listtablename on input line 38.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+Package scrbase Info: activating latvian \contentsname on input line 39.
+Package scrbase Info: activating latvian \listfigurename on input line 39.
+Package scrbase Info: activating latvian \listtablename on input line 39.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
@@ -1316,65 +1326,65 @@ Package fontspec Info: Adjusting the maths setup (use [no-math] to avoid
 
 \symlegacymaths=\mathgroup6
 LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
-(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 38.
-LaTeX Font Info:    Redeclaring math accent \acute on input line 38.
-LaTeX Font Info:    Redeclaring math accent \grave on input line 38.
-LaTeX Font Info:    Redeclaring math accent \ddot on input line 38.
-LaTeX Font Info:    Redeclaring math accent \tilde on input line 38.
-LaTeX Font Info:    Redeclaring math accent \bar on input line 38.
-LaTeX Font Info:    Redeclaring math accent \breve on input line 38.
-LaTeX Font Info:    Redeclaring math accent \check on input line 38.
-LaTeX Font Info:    Redeclaring math accent \hat on input line 38.
-LaTeX Font Info:    Redeclaring math accent \dot on input line 38.
-LaTeX Font Info:    Redeclaring math accent \mathring on input line 38.
-LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 38.
-LaTeX Font Info:    Redeclaring math symbol \Delta on input line 38.
-LaTeX Font Info:    Redeclaring math symbol \Theta on input line 38.
-LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 38.
-LaTeX Font Info:    Redeclaring math symbol \Xi on input line 38.
-LaTeX Font Info:    Redeclaring math symbol \Pi on input line 38.
-LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 38.
-LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 38.
-LaTeX Font Info:    Redeclaring math symbol \Phi on input line 38.
-LaTeX Font Info:    Redeclaring math symbol \Psi on input line 38.
-LaTeX Font Info:    Redeclaring math symbol \Omega on input line 38.
-LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 38.
-LaTeX Font Info:    Redeclaring symbol font `operators' on input line 38.
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 39.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 39.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 39.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 39.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 39.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 39.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 39.
+LaTeX Font Info:    Redeclaring math accent \check on input line 39.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 39.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 39.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 39.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 39.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 39.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 39.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 39.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 39.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 39.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 39.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 39.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 39.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 39.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 39.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 39.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 39.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 38.
+(Font)              `operators' in the math version `normal' on input line 39.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  OT1/cmr/m/n --> TU/FreeSerif.ttf(0)/m/n on input line 3
-8.
+9.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 38.
+(Font)              `operators' in the math version `bold' on input line 39.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
 (Font)                  OT1/cmr/bx/n --> TU/FreeSerif.ttf(0)/m/n on input line 
-38.
+39.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  TU/FreeSerif.ttf(0)/m/n --> TU/FreeSerif.ttf(0)/m/n on 
-input line 38.
+input line 39.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
 (Font)                  OT1/cmr/m/it --> TU/FreeSerif.ttf(0)/m/it on input line
- 38.
+ 39.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
 (Font)                  OT1/cmr/bx/n --> TU/FreeSerif.ttf(0)/b/n on input line 
-38.
+39.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 38.
+(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 39.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 38.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 39.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
 (Font)                  TU/FreeSerif.ttf(0)/m/n --> TU/FreeSerif.ttf(0)/b/n on 
-input line 38.
+input line 39.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
 (Font)                  OT1/cmr/bx/it --> TU/FreeSerif.ttf(0)/b/it on input lin
-e 38.
+e 39.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 38.
+(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 39.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 38.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 39.
 Package translations Info: no dictionary file `translations-basic-dictionary-la
-tvian.trsl' found. on input line 38.
+tvian.trsl' found. on input line 39.
 
 LaTeX hooks Warning: Generic hook
 (hooks)              'file/after/translations-basic-dictionary-english.trsl'
@@ -1390,7 +1400,7 @@ File: translations-basic-dictionary-english.trsl (english translation file `tra
 nslations-basic-dictionary')
 )
 Package translations Info: loading dictionary `translations-basic-dictionary' f
-or `english'. on input line 38.
+or `english'. on input line 39.
 Package biblatex Info: Trying to load language 'american'...
 Package biblatex Info: ... file 'american.lbx' found.
 
@@ -1482,18 +1492,18 @@ Package biblatex Warning: BibTeX reported the following issues
 (biblatex)                - Invalid format of field 'month'.
 
 )
-Package biblatex Info: Reference section=0 on input line 38.
-Package biblatex Info: Reference segment=0 on input line 38.
-Package scrbase Info: activating latvian \@keywordname on input line 38.
-Package scrbase Info: activating latvian \@keywordname on input line 38.
-Package scrbase Info: activating latvian \abbrevname on input line 38.
-Package scrbase Info: activating latvian \abbrevname on input line 38.
+Package biblatex Info: Reference section=0 on input line 39.
+Package biblatex Info: Reference segment=0 on input line 39.
+Package scrbase Info: activating latvian \@keywordname on input line 39.
+Package scrbase Info: activating latvian \@keywordname on input line 39.
+Package scrbase Info: activating latvian \abbrevname on input line 39.
+Package scrbase Info: activating latvian \abbrevname on input line 39.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\c@lstlisting=\count475
-Package hyperref Info: Link coloring OFF on input line 38.
+\c@lstlisting=\count476
+Package hyperref Info: Link coloring OFF on input line 39.
  (C:\Program Files\MiKTeX\tex/latex/hyperref\nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
 
@@ -1504,17 +1514,17 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 .sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count476
+\c@section@level=\count477
 LaTeX Info: Redefining \Ref on input line 520.
 )
-LaTeX Info: Redefining \ref on input line 38.
-LaTeX Info: Redefining \pageref on input line 38.
-LaTeX Info: Redefining \nameref on input line 38.
+LaTeX Info: Redefining \ref on input line 39.
+LaTeX Info: Redefining \pageref on input line 39.
+LaTeX Info: Redefining \nameref on input line 39.
  (main.out) (main.out)
 \@outlinefile=\write4
 \openout4 = `main.out'.
 
-LaTeX Info: Redefining \Ref on input line 38.
+LaTeX Info: Redefining \Ref on input line 39.
 Class scrreprt Info: loading recommended package `bookmark'.
 (scrreprt)           Using `bookmark' together with `hyperref' is recommended,
 (scrreprt)           because of handling of possible bookmark level gaps.
@@ -1522,18 +1532,18 @@ Class scrreprt Info: loading recommended package `bookmark'.
 (scrreprt)           `bookmarkpackage=false' before \begin{document} and
 (scrreprt)           you can avoid this message adding:
 (scrreprt)             \usepackage{bookmark}
-(scrreprt)           before \begin{document} on input line 38.
+(scrreprt)           before \begin{document} on input line 39.
 
 (C:\Users\Zver\AppData\Roaming\MiKTeX\tex/latex/bookmark\bookmark.sty
 Package: bookmark 2020-11-06 v1.29 PDF bookmarks (HO)
 
 (C:\Users\Zver\AppData\Roaming\MiKTeX\tex/latex/bookmark\bkm-dvipdfm.def
 File: bkm-dvipdfm.def 2020-11-06 v1.29 bookmark driver for dvipdfm (HO)
-\BKM@id=\count477
+\BKM@id=\count478
 ))
-LaTeX Info: Redefining \rmfamily on input line 38.
-LaTeX Info: Redefining \sffamily on input line 38.
-LaTeX Info: Redefining \ttfamily on input line 38.
+LaTeX Info: Redefining \rmfamily on input line 39.
+LaTeX Info: Redefining \sffamily on input line 39.
+LaTeX Info: Redefining \ttfamily on input line 39.
 
 [1
 
@@ -1545,13 +1555,13 @@ LaTeX Info: Redefining \ttfamily on input line 38.
 
 
 ]
-LaTeX Info: Redefining \rmfamily on input line 51.
-LaTeX Info: Redefining \sffamily on input line 51.
-LaTeX Info: Redefining \ttfamily on input line 51.
+LaTeX Info: Redefining \rmfamily on input line 52.
+LaTeX Info: Redefining \sffamily on input line 52.
+LaTeX Info: Redefining \ttfamily on input line 52.
  (tex/abstract-en.tex)
-LaTeX Info: Redefining \rmfamily on input line 54.
-LaTeX Info: Redefining \sffamily on input line 54.
-LaTeX Info: Redefining \ttfamily on input line 54.
+LaTeX Info: Redefining \rmfamily on input line 55.
+LaTeX Info: Redefining \sffamily on input line 55.
+LaTeX Info: Redefining \ttfamily on input line 55.
  [2
 
 
@@ -1585,7 +1595,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 ]
 (tex/abbreviations.tex)
-Underfull \hbox (badness 10000) in paragraph at lines 1--63
+Underfull \hbox (badness 10000) in paragraph at lines 1--64
 
  []
 
@@ -1668,7 +1678,12 @@ chapter 3.
 (tex/experimental-setup.tex [22
 
 
-] [23] [24] [25]) [26]
+] [23] [24] [25]
+Overfull \hbox (23.4718pt too wide) in paragraph at lines 86--96
+ [][][] 
+ []
+
+) [26] [27]
 chapter 4.
 (tex/results.tex
 File: graphs/bert-base-multilingual-cased_lv-accuracy.png Graphic file (type bm
@@ -1710,17 +1725,17 @@ File: graphs/xlm-roberta-base_all-accuracy.png Graphic file (type bmp)
 File: graphs/xlm-roberta-base_all_en-accuracy.png Graphic file (type bmp)
 <graphs/xlm-roberta-base_all_en-accuracy.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 126--126
+Underfull \hbox (badness 10000) in paragraph at lines 129--129
 [][]|\TU/FreeSerif.ttf(0)/b/n/10 XLM-RoBERTa apvienotā mašīntulkoto tre-
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[27
+[28
 
 
-] [28] [29] [30] [31]
+] [29] [30] [31] [32]
 File: results-5/graphs/askubuntu_bert-base-multilingual-cased_lv-accuracy.png G
 raphic file (type bmp)
 <results-5/graphs/askubuntu_bert-base-multilingual-cased_lv-accuracy.png>
@@ -1765,16 +1780,16 @@ File: results-5/graphs/askubuntu_xlm-roberta-base_all_en-accuracy.png Graphic f
 ile (type bmp)
 <results-5/graphs/askubuntu_xlm-roberta-base_all_en-accuracy.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 260--260
+Underfull \hbox (badness 10000) in paragraph at lines 264--264
 [][]|\TU/FreeSerif.ttf(0)/b/n/10 XLM-RoBERTa apvienotā mašīntulkoto tre-
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[32
+[33
 
-] [33] [34] [35] [36]
+] [34] [35] [36] [37]
 File: results-5/graphs/webapps_bert-base-multilingual-cased_lv-accuracy.png Gra
 phic file (type bmp)
 <results-5/graphs/webapps_bert-base-multilingual-cased_lv-accuracy.png>
@@ -1819,56 +1834,56 @@ File: results-5/graphs/webapps_xlm-roberta-base_all_en-accuracy.png Graphic fil
 e (type bmp)
 <results-5/graphs/webapps_xlm-roberta-base_all_en-accuracy.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 400--400
+Underfull \hbox (badness 10000) in paragraph at lines 405--405
 [][]|\TU/FreeSerif.ttf(0)/b/n/10 XLM-RoBERTa apvienotā mašīntulkoto tre-
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) [37
+) [38
 
-] [38] [39] [40] [41] (tex/conclusions.tex) [42
+] [39] [40] [41] [42] (tex/conclusions.tex) [43
 
 
 ]
-Overfull \hbox (6.34935pt too wide) in paragraph at lines 103--103
+Overfull \hbox (6.34935pt too wide) in paragraph at lines 104--104
 \TU/FreeSerif.ttf(0)/m/it/12 Movement\TU/FreeSerif.ttf(0)/m/n/12 . []$[][][][][
 ] [] [] [] [][][][] [] [][][][][][][][][] [] [][][] [] [][][][] [] [][][][][][]
 [][][] [] [][][][][][][][] [] [][][][][][][][][] []
  []
 
 
-Overfull \hbox (18.52731pt too wide) in paragraph at lines 103--103
+Overfull \hbox (18.52731pt too wide) in paragraph at lines 104--104
 [][][][][][][][] [] [][][][] [] [][][][][][] [] [][][][][][][][] [] [][][][][][
 ][][] [] [][][][][][][][][] [] [][][] [] [][][][][][][][] [] [][][][][][][][][]
 $[]\TU/FreeSerif.ttf(0)/m/n/12 .
  []
 
-[43
+[44
 
 
 
-] [44] [45]
-Overfull \hbox (1.74782pt too wide) in paragraph at lines 103--103
+] [45] [46]
+Overfull \hbox (1.74782pt too wide) in paragraph at lines 104--104
 []\TU/FreeSerif.ttf(0)/m/n/12 Zihan Liu u. c. „  Attention-Informed Mixed-Langu
 age Training for Zero-Shot Cross-Lingual
  []
 
 
-Overfull \hbox (10.28981pt too wide) in paragraph at lines 103--103
+Overfull \hbox (10.28981pt too wide) in paragraph at lines 104--104
 \TU/FreeSerif.ttf(0)/m/n/12 Filling”. \TU/FreeSerif.ttf(0)/m/it/12 Proceedings 
 of the Massively Multilingual Natural Language Understanding Workshop
  []
 
 
-Overfull \hbox (16.10435pt too wide) in paragraph at lines 103--103
+Overfull \hbox (16.10435pt too wide) in paragraph at lines 104--104
 \TU/FreeSerif.ttf(0)/m/sc/12 url\TU/FreeSerif.ttf(0)/m/n/12 : []$[][][][][] [] 
 [] [] [][][] [] [][][][][][][][][][][][][] [] [][][] [] [][][][][][][] [] [][][
 ][][][][] [] [][][] [] [][][][][][][][][][][][][][][][][]$[]. 
  []
 
-[46] [47] (tex/appendix.tex (tex/code.tex
+[47] [48] (tex/appendix.tex (tex/code.tex
 Overfull \hbox (20.19026pt too wide) in paragraph at lines 3--5
 \TU/FreeSerif.ttf(0)/m/n/12 Koda piemērs literatūras ievadā. Krāsu dati ”xkcd.j
 son” []$[][][][][] [] [] [] [][][][][][] [] [][][] [] [][][][][][][] [] [][][][
@@ -1877,7 +1892,7 @@ son” []$[][][][][] [] [] [] [][][][][][] [] [][][] [] [][][][][][][] [] [][][]
 
 LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <10> not available
 (Font)              Font shape `TU/lmtt/b/n' tried instead on input line 7.
-[48
+[49
 
 
 
@@ -1932,7 +1947,7 @@ braces):
 >  {english/babelname}  =>  {american}
 >  {english/localnumeral}  =>  {polyglossia@C@localnumeral}
 >  {english/Localnumeral}  =>  {polyglossia@C@localnumeral}.
- [49] (main.aux
+ [50] (main.aux
 LaTeX Info: Redefining \rmfamily on input line 27.
 LaTeX Info: Redefining \sffamily on input line 27.
 LaTeX Info: Redefining \ttfamily on input line 27.
@@ -1953,12 +1968,12 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 33848 strings out of 411044
- 718377 string characters out of 2829678
- 1738178 words of memory out of 3000000
- 54061 multiletter control sequences out of 15000+600000
+ 33916 strings out of 411044
+ 719597 string characters out of 2829678
+ 1739067 words of memory out of 3000000
+ 54126 multiletter control sequences out of 15000+600000
  410231 words of font info for 83 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 122i,10n,131p,10639b,5700s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 122i,11n,131p,10639b,5700s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.pdf (50 pages).
+Output written on main.pdf (51 pages).
