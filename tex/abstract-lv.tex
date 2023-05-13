@@ -1,4 +1,6 @@
-Daudzvalodīga lietotāja nodomu noteikšana ir būtiska virtuālo asistentu darbībā, un klientu apkalpošanas automatizācija kļūst arvien izdevīgāka un aktuālāka. Lietotāju nodomi tiek noteikti, izmantojot daudzdimensionālas vektoru telpas, kurās tiek reprezentēts ievadītais teksts. Mašīnmācīšanas modelis pēc tam klasificē nodomu, lai piegādātu lietotājiem nepieciešamo informāciju.
+Daudzvalodīga lietotāja nodomu noteikšana ir būtiska virtuālo asistentu darbībā, un klientu apkalpošanas automatizācija kļūst arvien izdevīgāka un aktuālāka. 
+
+Lietotāju nodomi tiek noteikti vispirms attēlojot lietotāja ievadīto tekstu daudzdimensionālā vektoru telpā jeb jēdzientelpā. Tad mašīnmācīšanās modelis klasificē vektorā izteikto nodomu, lai piegādātu lietotājiem nepieciešamo informāciju.
 
 Darbā tiek izmantots anotēts nodomu noteikšanas korpuss, kas satur lietotāja ievadu un nodomu pārus angļu, latviešu, krievu, igauņu un lietuviešu valodās. Pētījumā tiek salīdzināta nodomu noteikšanas precizitāte divām daudzvalodu jēdzientelpām (ģenerētas ar mBERT un XLM-RoBERTa modeļiem) un divu veidu ievaddatu valodām (oriģinālvalodā un mašīntulkojumā uz angļu valodu), testējot nodomu klasifikācijas modeli, kas apmācīts:
 \begin{itemize}
