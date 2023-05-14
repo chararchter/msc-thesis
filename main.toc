@@ -50,14 +50,14 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.1}Chatbot datu kopa}{28}{section.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Askubuntu datu kopa}{34}{section.4.2}%
+\contentsline {section}{\numberline {4.2}Askubuntu datu kopa}{33}{section.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.3}Webapps datu kopa}{39}{section.4.3}%
+\contentsline {section}{\numberline {4.3}Webapps datu kopa}{38}{section.4.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Secinājumi}{44}{chapter*.50}%
+\contentsline {chapter}{Secinājumi}{43}{chapter*.48}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Izmantotā literatūra un avoti}{45}{chapter*.50}%
+\contentsline {chapter}{Izmantotā literatūra un avoti}{44}{chapter*.48}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Pielikums}{50}{chapter*.52}%
+\contentsline {chapter}{Pielikums}{49}{chapter*.50}%
 \defcounter {refsection}{0}\relax 
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

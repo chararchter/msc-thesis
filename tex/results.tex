@@ -1,3 +1,6 @@
+
+Šajā nodaļā ir izklāstīti pētījuma rezultāti, kuru mērķis ir salīdzināt dažādu lietotāju nodomu noteikšanas metožu precizitāti angļu, latviešu, krievu, igauņu un lietuviešu valodās, izmantojot mBERT un XLM-RoBERTa jēdzientelpas un dažādu valodu datus. Nodaļā rezultāti tiek analizēti pēc precizitātes un tiek apskatīti modeļu apmācības grafiki. Tāpat nodaļā ir apskatīta atklājumu ietekme uz virtuālo asistentu sistēmu izstrādi un uzlabošanu.
+
 \ref{tab:legend} tabula sniedz visaptverošu pārskatu par atšķirībām starp dažādām lietotāju nodomu noteikšanai izmantotajām metodēm, pamatojoties uz apmācībā izmantoto valodu un to, vai korpuss ir bijis mašīntulkots uz angļu valodu. Tabulā ir īsi izskaidrotas 1a, 1b, 2a, 2b, 3a, 3b metodes, ļaujot interpretēt turpmākās tabulas ar rezultātiem.
 
 
@@ -50,34 +53,39 @@
 \end{table}%
 
 
+Nodomu noteikšanas precizitāte Chatbot datu kopā divās dažādas jēdzientelpas: mBERT (\ref{tab:chatbot-bert} tabula) un XLM-RoBERTa (\ref{tab:chatbot-xlm} tabula). Salīdzinot šīs jēdzientelpas, redzams, ka angļu valodā uz XLM-RoBERTa jēdzientelpām precizitāte ir augstāka, bet lietuviešu valodā -- zemāka nekā mBERT jēdzientelpām. Kopumā mBERT un XLM-RoBERTa modeļi uzrāda līdzīgus rezultātus.
+% Kopumā rezultāti liecina, ka XLM-RoBERTa jēdzientelpas ir piemērotākas nodomu noteikšanai Chatbot datu kopā.
 
-The tables show the accuracy of intent detection on a chatbot dataset using two different word embeddings: mBERT and XLM-RoBERTa. Each table shows the accuracy for six languages (en, lv, ru, et, lt) across three different scenarios (1a, 1b, 2a, 2b, 3a, 3b). In general, the results show that XLM-RoBERTa outperformed mBERT in most scenarios and languages. For example, in scenario 1b for English, XLM-RoBERTa achieved an accuracy of 95.28\%, while mBERT achieved an accuracy of 91.51\%. Similarly, in scenario 3b for Lithuanian, XLM-RoBERTa achieved an accuracy of 77.36\%, while mBERT achieved an accuracy of only 79.25\%. However, in some scenarios, mBERT performed better than XLM-RoBERTa, such as in scenario 3b for English, where mBERT achieved an accuracy of 95.28\%, while XLM-RoBERTa achieved an accuracy of only 96.23\%. Overall, the results suggest that XLM-RoBERTa is a more effective word embedding for intent detection on the chatbot dataset.
+% Kopumā rezultāti liecina, ka XLM-RoBERT pārspēja mBERT lielākajā daļā scenāriju un valodu.
+% Stratēģijā, kas apmāca tikai uz angļu valodas datiem un testē citā valodā:
+
+Igauņu valodā ir vislielākais kritums stratēģijā, kas apmāca tikai uz angļu valodas datiem un testē igauņu valodā, tas atbilst paredzētajam, jo igauņu valoda ir vismazāk pārstāvēta korpusos, uz kuriem apmācīti mBERT un XLM-RoBERTa modeļi. Lai gan intuitīvi varētu šķist, ka modelis, kas apmācīts tikai angļu valodā, slikti spēs klasificēt nodomus citā valodā, rezultāti pierāda pretējo -- 3b kolonnā neslikti rezultāti uz testa kopām krievu un latviešu valodās (85.85--93.40\%). Tas tādēļ, ka daudzvalodu jēdzientelpas angļu datu kopās ir līdzīgas tādu pašu teikumu jēdzientelpām citās valodās.
 
 
+% maz-resursu valodas iegūst no tulkošanas uz angļu valodu
 
-Nodomu noteikšanas precizitāte Chatbot datu kopā divos dažādas jēdzientelpas: mBERT (\ref{tab:chatbot-bert} tabula) un XLM-RoBERTa (\ref{tab:chatbot-xlm} tabula). Katra tabula attēlo precizitāti piecās valodās 
+Vidēji latviešu valodas mašīntulkojums uz angļu valodu ir ar lielāku precizitāti nekā oriģinālvalodā (1ab--2ab) abās jēdzientelpās, taču krievu valodas korpusa tulkojums uz angļu valodu precizitāti zaudēja. Gadījumā, kad modelis apmācīts tikai uz angļu valodas korpusa, precizitāte būtiski uzlabojos testa kopu mašīntulkojot uz angļu valodu, igauņu un lietuviešu valodās precizitātei vidēji pieaugot par 30\% un 12\% attiecīgi, izņemot krievu valodu, kur precizitāte mazliet samazinās -- par 3.8\% mBERT un 1\% XLM-RoBERTa jēdzientelpām. 
+% Tas nozīmē, ka maz-resursu valodās (latviešu, lietuviešu, igauņu) ir iespējams 
 
-
-
-Tabulās ir parādīta nodomu noteikšanas precizitāte tērzēšanas robota datu kopā, izmantojot divus dažādus vārdu iegulšanas veidus: mBERT un XLM-RoBERTa. Katra tabula parāda precizitāti sešām valodām (en, lv, ru, et, lt) trīs dažādos scenārijos (1a, 1b, 2a, 2b, 3a, 3b). Kopumā rezultāti liecina, ka XLM-RoBERT pārspēja mBERT lielākajā daļā scenāriju un valodu. Piemēram, 1b scenārijā angļu valodai XLM-RoBERTa sasniedza 95,28% precizitāti, bet mBERT sasniedza 91,51% precizitāti. Līdzīgi 3.b scenārijā Lietuvai XLM-RoBERTa sasniedza 77,36% precizitāti, savukārt mBERT sasniedza tikai 79,25% precizitāti. Tomēr dažos scenārijos mBERT darbojās labāk nekā XLM-RoBERTa, piemēram, 3.b scenārijā angļu valodai, kur mBERT sasniedza 95,28% precizitāti, bet XLM-RoBERTa sasniedza tikai 96,23% precizitāti. Kopumā rezultāti liecina, ka XLM-RoBERTa ir efektīvāka vārdu iegulšana nodomu noteikšanai tērzēšanas robota datu kopā.
+Maz-resursu valodās (latviešu, lietuviešu, igauņu) tipiski precizitāte ieguva no apmācības uz datiem, kas mašīntulkoti angļu valodā (1ab). Visās valodās visstabilākā performance ir metodē, kas apmāca modeli uz visām valodām apvienotām vienā korpusā (2ab), kas nebūtiski atšķiras no tā, vai dati pirms tam ir mašīntulkoti uz angļu valodu.
 
 
 % Table generated by Excel2LaTeX from sheet 'chatbot_bert-base-multilingual-'
-\begin{table}[htbp]
-  \centering
-  \caption{Nodomu noteikšanas precizitāte uz \textit{Chatbot} datukopas ar mBERT modeli, \%}
-  % \caption{mBERT rezultāti}
-    \begin{tabular}{lrrrrrr} \toprule
-    languages & 1a & 1b & 2a & 2b & 3a & 3b \\\midrule
-    % languages & 1\_translated & 1\_untranslated & 2\_translated & 2\_untranslated & 3\_translated & 3\_untranslated \\\midrule
-    en    &   --  & 91.51 &  --   & 90.57 &  --   & 95.28 \\
-    lv    & 90.57 & 88.68 & 94.34 & 93.40 & 92.45 & 85.85 \\
-    ru    & 89.62 & 92.45 & 93.40 & 91.51 & 89.62 & 93.40 \\
-    et    & 89.62 & 87.74 & 86.79 & 88.68 & 90.57 & 58.49 \\
-    lt    & 95.28 & 94.34 & 94.34 & 94.34 & 91.51 & 79.25 \\\bottomrule
-    \end{tabular}%
-  \label{tab:chatbot-bert}%
-\end{table}%
+% \begin{table}[htbp]
+%   \centering
+%   \caption{Nodomu noteikšanas precizitāte uz \textit{Chatbot} datukopas ar mBERT modeli, \%}
+%   % \caption{mBERT rezultāti}
+%     \begin{tabular}{lrrrrrr} \toprule
+%     languages & 1a & 1b & 2a & 2b & 3a & 3b \\\midrule
+%     % languages & 1\_translated & 1\_untranslated & 2\_translated & 2\_untranslated & 3\_translated & 3\_untranslated \\\midrule
+%     en    &   --  & 91.51 &  --   & 90.57 &  --   & 95.28 \\
+%     lv    & 90.57 & 88.68 & 94.34 & 93.40 & 92.45 & 85.85 \\
+%     ru    & 89.62 & 92.45 & 93.40 & 91.51 & 89.62 & 93.40 \\
+%     et    & 89.62 & 87.74 & 86.79 & 88.68 & 90.57 & 58.49 \\
+%     lt    & 95.28 & 94.34 & 94.34 & 94.34 & 91.51 & 79.25 \\\bottomrule
+%     \end{tabular}%
+%   \label{tab:chatbot-bert}%
+% \end{table}%
 
 % Table generated by Excel2LaTeX from sheet 'chatbot_bert-base-multilingual-'
 \begin{table}[htbp]
@@ -98,21 +106,21 @@ Tabulās ir parādīta nodomu noteikšanas precizitāte tērzēšanas robota dat
 
 
 % Table generated by Excel2LaTeX from sheet 'chatbot_xlm-roberta-base_result'
-\begin{table}[htbp]
-  \centering
-  \caption{Nodomu noteikšanas precizitāte uz \textit{Chatbot} datukopas ar XLM-RoBERTa modeli, \%}
-  % \caption{Add caption}
-    \begin{tabular}{lrrrrrr} \toprule
-    languages & 1a & 1b & 2a & 2b & 3a & 3b \\\midrule
-    % languages & 1\_translated & 1\_untranslated & 2\_translated & 2\_untranslated & 3\_translated & 3\_untranslated \\\midrule
-    en    &   --  & 95.28 &   --  & 95.28 &  --   & 96.23 \\
-    lv    & 91.51 & 88.68 & 93.40 & 93.40 & 94.34 & 85.85 \\
-    ru    & 92.45 & 94.34 & 88.68 & 94.34 & 91.51 & 90.57 \\
-    et    & 88.68 & 91.51 & 88.68 & 89.62 & 91.51 & 63.21 \\
-    lt    & 92.45 & 91.51 & 91.51 & 93.40 & 90.57 & 77.36 \\\bottomrule
-    \end{tabular}%
-  \label{tab:chatbot-xlm}%
-\end{table}%
+% \begin{table}[htbp]
+%   \centering
+%   \caption{Nodomu noteikšanas precizitāte uz \textit{Chatbot} datukopas ar XLM-RoBERTa modeli, \%}
+%   % \caption{Add caption}
+%     \begin{tabular}{lrrrrrr} \toprule
+%     languages & 1a & 1b & 2a & 2b & 3a & 3b \\\midrule
+%     % languages & 1\_translated & 1\_untranslated & 2\_translated & 2\_untranslated & 3\_translated & 3\_untranslated \\\midrule
+%     en    &   --  & 95.28 &   --  & 95.28 &  --   & 96.23 \\
+%     lv    & 91.51 & 88.68 & 93.40 & 93.40 & 94.34 & 85.85 \\
+%     ru    & 92.45 & 94.34 & 88.68 & 94.34 & 91.51 & 90.57 \\
+%     et    & 88.68 & 91.51 & 88.68 & 89.62 & 91.51 & 63.21 \\
+%     lt    & 92.45 & 91.51 & 91.51 & 93.40 & 90.57 & 77.36 \\\bottomrule
+%     \end{tabular}%
+%   \label{tab:chatbot-xlm}%
+% \end{table}%
 
 
 % Table generated by Excel2LaTeX from sheet 'chatbot_xlm-roberta-base_result'
