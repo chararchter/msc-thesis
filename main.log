@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (MiKTeX 21.12.10) (preloaded format=xelatex 2022.1.1)  18 MAY 2023 15:47
+This is XeTeX, Version 3.141592653-2.6-0.999993 (MiKTeX 21.12.10) (preloaded format=xelatex 2022.1.1)  18 MAY 2023 17:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1236,6 +1236,9 @@ LaTeX Info: Redefining \ttfamily on input line 44.
 
 LaTeX Warning: Label `tab:legend' multiply defined.
 
+
+LaTeX Warning: Label `tab:legend' multiply defined.
+
 )
 \openout1 = `main.aux'.
 
@@ -1445,12 +1448,12 @@ Package biblatex Warning: BibTeX reported the following issues
 
 
 Package biblatex Warning: BibTeX reported the following issues
-(biblatex)                with 'parrish2017':
+(biblatex)                with 'word2vec2013':
 (biblatex)                - Invalid format of field 'month'.
 
 
 Package biblatex Warning: BibTeX reported the following issues
-(biblatex)                with 'word2vec2013':
+(biblatex)                with 'parrish2017':
 (biblatex)                - Invalid format of field 'month'.
 
 
@@ -1610,75 +1613,82 @@ Class scrreprt Warning: \float@addtolists detected!
 ]
 File: figures/word2vec-distributed-representation.png Graphic file (type bmp)
 <figures/word2vec-distributed-representation.png>
-
+ [7]
 (C:\Program Files\MiKTeX\tex/latex/listings\lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
-) [7] [8] [9]
+) [8] [9]
 File: figures/word2vec-country-capital.png Graphic file (type bmp)
 <figures/word2vec-country-capital.png>
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[10] [11] [12]
+[10] [11] [12
+
+] [13]
 File: figures/comprised.png Graphic file (type bmp)
 <figures/comprised.png>
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[13]
 File: figures/dataset-size.png Graphic file (type bmp)
 <figures/dataset-size.png>
-) [14] (tex/models.tex
-File: figures/word2vec-models.png Graphic file (type bmp)
-<figures/word2vec-models.png>
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[15]
+) [14] [15] (tex/models.tex
+File: figures/word2vec-models.png Graphic file (type bmp)
+<figures/word2vec-models.png>
+ [16
+
+]
 File: figures/skip_gram_net_arch.png Graphic file (type bmp)
 <figures/skip_gram_net_arch.png>
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) [16] [17]
+) [17] [18]
 chapter 2.
-(tex/intent-detection.tex [18
+(tex/intent-detection.tex [19
 
 
-] [19] [20]
+] [20] [21]
 Overfull \hbox (0.61452pt too wide) in paragraph at lines 83--84
 \TU/FreeSerif.ttf(0)/m/n/12 portam. Tas satur 206 jautājumus, kas tika anotēti 
 divos nolūkos – DepartureTime un FindConnec-
  []
 
-) [21]
+) [22]
 chapter 3.
-(tex/experimental-setup.tex [22
+(tex/experimental-setup.tex [23
 
 
-] [23] [24] [25]) [26] [27]
+] [24] [25] [26]) [27] [28]
 chapter 4.
-(tex/results.tex [28
+(tex/results.tex
+Overfull \hbox (24.37184pt too wide) in paragraph at lines 45--57
+ [][][] 
+ []
+
+[29
 
 
-] [29] [30]
+] [30] [31]
 File: graphs/bert-base-multilingual-cased_lv-accuracy.png Graphic file (type bm
 p)
 <graphs/bert-base-multilingual-cased_lv-accuracy.png>
 File: graphs/bert-base-multilingual-cased_lv_en-accuracy.png Graphic file (type
  bmp)
 <graphs/bert-base-multilingual-cased_lv_en-accuracy.png>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 File: graphs/bert-base-multilingual-cased_all-accuracy.png Graphic file (type b
 mp)
 <graphs/bert-base-multilingual-cased_all-accuracy.png>
 File: graphs/bert-base-multilingual-cased_all_en-accuracy.png Graphic file (typ
 e bmp)
 <graphs/bert-base-multilingual-cased_all_en-accuracy.png>
-
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
@@ -1702,14 +1712,14 @@ File: graphs/xlm-roberta-base_all-accuracy.png Graphic file (type bmp)
 File: graphs/xlm-roberta-base_all_en-accuracy.png Graphic file (type bmp)
 <graphs/xlm-roberta-base_all_en-accuracy.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 194--194
+Underfull \hbox (badness 10000) in paragraph at lines 213--213
 [][]|\TU/FreeSerif.ttf(0)/b/n/10 XLM-RoBERTa apvienotā mašīntulkoto tre-
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[31] [32] [33]
+[32] [33] [34] [35]
 File: results-5/graphs/askubuntu_bert-base-multilingual-cased_lv-accuracy.png G
 raphic file (type bmp)
 <results-5/graphs/askubuntu_bert-base-multilingual-cased_lv-accuracy.png>
@@ -1754,16 +1764,16 @@ File: results-5/graphs/askubuntu_xlm-roberta-base_all_en-accuracy.png Graphic f
 ile (type bmp)
 <results-5/graphs/askubuntu_xlm-roberta-base_all_en-accuracy.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 337--337
+Underfull \hbox (badness 10000) in paragraph at lines 356--356
 [][]|\TU/FreeSerif.ttf(0)/b/n/10 XLM-RoBERTa apvienotā mašīntulkoto tre-
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[34
+[36
 
-] [35] [36] [37] [38]
+] [37] [38] [39] [40]
 File: results-5/graphs/webapps_bert-base-multilingual-cased_lv-accuracy.png Gra
 phic file (type bmp)
 <results-5/graphs/webapps_bert-base-multilingual-cased_lv-accuracy.png>
@@ -1808,16 +1818,16 @@ File: results-5/graphs/webapps_xlm-roberta-base_all_en-accuracy.png Graphic fil
 e (type bmp)
 <results-5/graphs/webapps_xlm-roberta-base_all_en-accuracy.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 504--504
+Underfull \hbox (badness 10000) in paragraph at lines 523--523
 [][]|\TU/FreeSerif.ttf(0)/b/n/10 XLM-RoBERTa apvienotā mašīntulkoto tre-
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) [39
+) [41
 
-] [40] [41] [42] [43] (tex/conclusions.tex) [44
+] [42] [43] [44] [45] (tex/conclusions.tex) [46
 
 
 ]
@@ -1834,11 +1844,11 @@ Overfull \hbox (18.52731pt too wide) in paragraph at lines 104--104
 $[]\TU/FreeSerif.ttf(0)/m/n/12 .
  []
 
-[45
+[47
 
 
 
-] [46] [47]
+] [48] [49]
 Overfull \hbox (1.74782pt too wide) in paragraph at lines 104--104
 []\TU/FreeSerif.ttf(0)/m/n/12 Zihan Liu u. c. „  Attention-Informed Mixed-Langu
 age Training for Zero-Shot Cross-Lingual
@@ -1857,7 +1867,7 @@ Overfull \hbox (16.10435pt too wide) in paragraph at lines 104--104
 ][][][][] [] [][][] [] [][][][][][][][][][][][][][][][][]$[]. 
  []
 
-[48] [49] (tex/appendix.tex (tex/code.tex
+[50] [51] (tex/appendix.tex (tex/code.tex
 Overfull \hbox (20.19026pt too wide) in paragraph at lines 3--5
 \TU/FreeSerif.ttf(0)/m/n/12 Koda piemērs literatūras ievadā. Krāsu dati ”xkcd.j
 son” []$[][][][][] [] [] [] [][][][][][] [] [][][] [] [][][][][][][] [] [][][][
@@ -1866,7 +1876,7 @@ son” []$[][][][][] [] [] [] [][][][][][] [] [][][] [] [][][][][][][] [] [][][]
 
 LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <10> not available
 (Font)              Font shape `TU/lmtt/b/n' tried instead on input line 7.
-[50
+[52
 
 
 
@@ -1921,7 +1931,7 @@ braces):
 >  {english/babelname}  =>  {american}
 >  {english/localnumeral}  =>  {polyglossia@C@localnumeral}
 >  {english/Localnumeral}  =>  {polyglossia@C@localnumeral}.
- [51] (main.aux
+ [53] (main.aux
 LaTeX Info: Redefining \rmfamily on input line 27.
 LaTeX Info: Redefining \sffamily on input line 27.
 LaTeX Info: Redefining \ttfamily on input line 27.
@@ -1942,12 +1952,12 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 33920 strings out of 411044
- 719754 string characters out of 2829678
- 1739326 words of memory out of 3000000
- 54130 multiletter control sequences out of 15000+600000
- 410231 words of font info for 83 fonts, out of 8000000 for 9000
+ 33934 strings out of 411044
+ 720034 string characters out of 2829678
+ 1730281 words of memory out of 3000000
+ 54140 multiletter control sequences out of 15000+600000
+ 411946 words of font info for 93 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  122i,11n,131p,10639b,5700s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.pdf (52 pages).
+Output written on main.pdf (54 pages).

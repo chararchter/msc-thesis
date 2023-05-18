@@ -124,28 +124,6 @@
     \warn{\item Invalid format of field 'month'}
   \endentry
 
-  \entry{parrish2017}{misc}{}
-    \name{author}{1}{}{%
-      {{hash=PA}{%
-         family={Parrish},
-         familyi={P\bibinitperiod},
-         given={Allison},
-         giveni={A\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{PA1}
-    \strng{fullhash}{PA1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{title}{Understanding word vectors}
-    \verb{url}
-    \verb https://gist.github.com/aparrish/2f562e3737544cf29aaf1af30362f469
-    \endverb
-    \field{journaltitle}{Github}
-    \field{year}{2017}
-    \warn{\item Invalid format of field 'month'}
-  \endentry
-
   \entry{word2vec2013}{article}{}
     \name{author}{4}{}{%
       {{hash=MT}{%
@@ -187,6 +165,28 @@
     \field{eprinttype}{arXiv}
     \field{eprintclass}{cs.CL}
     \field{year}{2013}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{parrish2017}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=PA}{%
+         family={Parrish},
+         familyi={P\bibinitperiod},
+         given={Allison},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{PA1}
+    \strng{fullhash}{PA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Understanding word vectors}
+    \verb{url}
+    \verb https://gist.github.com/aparrish/2f562e3737544cf29aaf1af30362f469
+    \endverb
+    \field{journaltitle}{Github}
+    \field{year}{2017}
     \warn{\item Invalid format of field 'month'}
   \endentry
 
