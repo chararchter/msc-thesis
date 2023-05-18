@@ -70,6 +70,25 @@ Taču mašīntulkošana rada papildu trokšņus un kļūdas, kas var ietekmēt i
 
 Mani darbā interesē tieši noskaidrot pielietojamības robežas maz-resursu valodām un kādi kompromisi (\textit{trade-offs}) uzlabo modeļa precizitāti; šajā gadījumā vai modeļa veiktspēja ar mašīntulkošanas troksni atsver nepietiekamos datos. Tāpēc ir svarīgi novērtēt modeļu veiktspēju gan ar oriģinālajiem, gan mašīntulkotajiem ievades datiem un salīdzināt rezultātus, lai labāk izprastu modeļu stiprās puses un ierobežojumus daudzvalodu nodomu noteikšanas uzdevumos.
 
+Lai rezultāti būtu reproducējami, mašīntulkošana no latviešu, krievu, igauņu, lietuviešu valodām uz angļu tika veikta ar \cite{tiedemann-2020} rakstā aprakstītajiem modeļiem (\ref{tab:machine-translation} tabula).
+
+% Lai rezultāti būtu reproducējami mašīntulkošana no latviešu, krievu, igauņu, lietuviešu valodām uz angļu tika veikta ar \cite{tiedemann-2020} rakstā aprakstītajiem modeļiem, kas ir pieejami attiecīgi: \url{https://huggingface.co/Helsinki-NLP/opus-mt-tc-big-en-lv}, \url{https://huggingface.co/Helsinki-NLP/opus-mt-ru-en}, \url{https://huggingface.co/Helsinki-NLP/opus-mt-tc-big-et-en}, \url{https://huggingface.co/Helsinki-NLP/opus-mt-tc-big-lt-en}.
+
+
+\begin{table}[htbp]
+  \centering
+  \caption{Modeļi, kas mašīntulkoja attiecīgo valodu uz angļu valodu.}
+    \begin{tabular}{ll}\toprule
+    Valoda & Mašīntulkošanas modelis \\\midrule
+    lv    & \url{https://huggingface.co/Helsinki-NLP/opus-mt-tc-big-en-lv} \\
+    ru    & \url{https://huggingface.co/Helsinki-NLP/opus-mt-ru-en} \\
+    et    & \url{https://huggingface.co/Helsinki-NLP/opus-mt-tc-big-et-en} \\
+    lt    & \url{https://huggingface.co/Helsinki-NLP/opus-mt-tc-big-lt-en} \\\bottomrule
+    \end{tabular}%
+  \label{tab:machine-translation}%
+\end{table}%
+
+
 
 \section{Citas pieejas}
 

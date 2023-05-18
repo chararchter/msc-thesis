@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (MiKTeX 21.12.10) (preloaded format=xelatex 2022.1.1)  18 MAY 2023 14:43
+This is XeTeX, Version 3.141592653-2.6-0.999993 (MiKTeX 21.12.10) (preloaded format=xelatex 2022.1.1)  18 MAY 2023 15:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1660,12 +1660,12 @@ chapter 3.
 (tex/experimental-setup.tex [22
 
 
-] [23] [24] [25]) [26]
+] [23] [24] [25]) [26] [27]
 chapter 4.
-(tex/results.tex [27
+(tex/results.tex [28
 
 
-] [28] [29]
+] [29] [30]
 File: graphs/bert-base-multilingual-cased_lv-accuracy.png Graphic file (type bm
 p)
 <graphs/bert-base-multilingual-cased_lv-accuracy.png>
@@ -1709,7 +1709,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 194--194
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[30] [31] [32]
+[31] [32] [33]
 File: results-5/graphs/askubuntu_bert-base-multilingual-cased_lv-accuracy.png G
 raphic file (type bmp)
 <results-5/graphs/askubuntu_bert-base-multilingual-cased_lv-accuracy.png>
@@ -1761,9 +1761,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 337--337
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[33
+[34
 
-] [34] [35] [36] [37]
+] [35] [36] [37] [38]
 File: results-5/graphs/webapps_bert-base-multilingual-cased_lv-accuracy.png Gra
 phic file (type bmp)
 <results-5/graphs/webapps_bert-base-multilingual-cased_lv-accuracy.png>
@@ -1815,9 +1815,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 504--504
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) [38
+) [39
 
-] [39] [40] [41] [42] (tex/conclusions.tex) [43
+] [40] [41] [42] [43] (tex/conclusions.tex) [44
 
 
 ]
@@ -1834,11 +1834,11 @@ Overfull \hbox (18.52731pt too wide) in paragraph at lines 104--104
 $[]\TU/FreeSerif.ttf(0)/m/n/12 .
  []
 
-[44
+[45
 
 
 
-] [45] [46]
+] [46] [47]
 Overfull \hbox (1.74782pt too wide) in paragraph at lines 104--104
 []\TU/FreeSerif.ttf(0)/m/n/12 Zihan Liu u. c. „  Attention-Informed Mixed-Langu
 age Training for Zero-Shot Cross-Lingual
@@ -1857,7 +1857,7 @@ Overfull \hbox (16.10435pt too wide) in paragraph at lines 104--104
 ][][][][] [] [][][] [] [][][][][][][][][][][][][][][][][]$[]. 
  []
 
-[47] [48] (tex/appendix.tex (tex/code.tex
+[48] [49] (tex/appendix.tex (tex/code.tex
 Overfull \hbox (20.19026pt too wide) in paragraph at lines 3--5
 \TU/FreeSerif.ttf(0)/m/n/12 Koda piemērs literatūras ievadā. Krāsu dati ”xkcd.j
 son” []$[][][][][] [] [] [] [][][][][][] [] [][][] [] [][][][][][][] [] [][][][
@@ -1866,7 +1866,7 @@ son” []$[][][][][] [] [] [] [][][][][][] [] [][][] [] [][][][][][][] [] [][][]
 
 LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <10> not available
 (Font)              Font shape `TU/lmtt/b/n' tried instead on input line 7.
-[49
+[50
 
 
 
@@ -1921,7 +1921,7 @@ braces):
 >  {english/babelname}  =>  {american}
 >  {english/localnumeral}  =>  {polyglossia@C@localnumeral}
 >  {english/Localnumeral}  =>  {polyglossia@C@localnumeral}.
- [50] (main.aux
+ [51] (main.aux
 LaTeX Info: Redefining \rmfamily on input line 27.
 LaTeX Info: Redefining \sffamily on input line 27.
 LaTeX Info: Redefining \ttfamily on input line 27.
@@ -1942,12 +1942,12 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 33916 strings out of 411044
- 719595 string characters out of 2829678
- 1739174 words of memory out of 3000000
- 54126 multiletter control sequences out of 15000+600000
+ 33920 strings out of 411044
+ 719754 string characters out of 2829678
+ 1739326 words of memory out of 3000000
+ 54130 multiletter control sequences out of 15000+600000
  410231 words of font info for 83 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  122i,11n,131p,10639b,5700s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.pdf (51 pages).
+Output written on main.pdf (52 pages).

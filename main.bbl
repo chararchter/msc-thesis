@@ -1483,6 +1483,43 @@
     \field{year}{2021}
   \endentry
 
+  \entry{tiedemann-2020}{inproceedings}{}
+    \name{author}{2}{}{%
+      {{hash=TJ}{%
+         family={Tiedemann},
+         familyi={T\bibinitperiod},
+         given={J{\"o}rg},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=TS}{%
+         family={Thottingal},
+         familyi={T\bibinitperiod},
+         given={Santhosh},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {European Association for Machine Translation}%
+    }
+    \strng{namehash}{TJTS1}
+    \strng{fullhash}{TJTS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Proceedings of the 22nd Annual Conference of the European
+  Association for Machine Translation}
+    \field{pages}{479\bibrangedash 480}
+    \field{title}{{OPUS}-{MT} {--} Building open translation services for the
+  World}
+    \verb{url}
+    \verb https://aclanthology.org/2020.eamt-1.61
+    \endverb
+    \list{location}{1}{%
+      {Lisboa, Portugal}%
+    }
+    \field{month}{11}
+    \field{year}{2020}
+  \endentry
+
   \entry{jayarao2018}{inproceedings}{}
     \name{author}{2}{}{%
       {{hash=JP}{%
