@@ -48,16 +48,18 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {4}Rezultāti}{29}{chapter.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Chatbot datu kopa}{31}{section.4.1}%
+\contentsline {section}{\numberline {4.1}Chatbot datu kopa}{30}{section.4.1}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.2}Askubuntu datu kopa}{36}{section.4.2}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.3}Webapps datu kopa}{41}{section.4.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Secinājumi}{46}{chapter*.46}%
+\contentsline {chapter}{Secinājumi}{46}{chapter*.45}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Izmantotā literatūra un avoti}{47}{chapter*.46}%
+\contentsline {chapter}{Pateicības}{47}{chapter*.46}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Pielikums}{52}{chapter*.48}%
+\contentsline {chapter}{Izmantotā literatūra un avoti}{48}{chapter*.46}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Pielikums}{53}{chapter*.48}%
 \defcounter {refsection}{0}\relax 
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
