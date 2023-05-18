@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (MiKTeX 21.12.10) (preloaded format=xelatex 2022.1.1)  18 MAY 2023 20:53
+This is XeTeX, Version 3.141592653-2.6-0.999993 (MiKTeX 21.12.10) (preloaded format=xelatex 2022.1.1)  18 MAY 2023 21:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1705,7 +1705,7 @@ File: graphs/xlm-roberta-base_all-accuracy.png Graphic file (type bmp)
 File: graphs/xlm-roberta-base_all_en-accuracy.png Graphic file (type bmp)
 <graphs/xlm-roberta-base_all_en-accuracy.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 213--213
+Underfull \hbox (badness 10000) in paragraph at lines 249--249
 [][]|\TU/FreeSerif.ttf(0)/b/n/10 XLM-RoBERTa apvienotā mašīntulkoto tre-
  []
 
@@ -1757,7 +1757,7 @@ File: results-5/graphs/askubuntu_xlm-roberta-base_all_en-accuracy.png Graphic f
 ile (type bmp)
 <results-5/graphs/askubuntu_xlm-roberta-base_all_en-accuracy.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 356--356
+Underfull \hbox (badness 10000) in paragraph at lines 432--432
 [][]|\TU/FreeSerif.ttf(0)/b/n/10 XLM-RoBERTa apvienotā mašīntulkoto tre-
  []
 
@@ -1811,7 +1811,7 @@ File: results-5/graphs/webapps_xlm-roberta-base_all_en-accuracy.png Graphic fil
 e (type bmp)
 <results-5/graphs/webapps_xlm-roberta-base_all_en-accuracy.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 523--523
+Underfull \hbox (badness 10000) in paragraph at lines 635--635
 [][]|\TU/FreeSerif.ttf(0)/b/n/10 XLM-RoBERTa apvienotā mašīntulkoto tre-
  []
 
@@ -1947,7 +1947,7 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 Here is how much of TeX's memory you used:
  33942 strings out of 411044
  720205 string characters out of 2829678
- 1730415 words of memory out of 3000000
+ 1730418 words of memory out of 3000000
  54145 multiletter control sequences out of 15000+600000
  411946 words of font info for 93 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
