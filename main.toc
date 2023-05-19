@@ -54,12 +54,12 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.3}Webapps datu kopa}{41}{section.4.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Secinājumi}{46}{chapter*.45}%
+\contentsline {chapter}{Secinājumi}{48}{chapter*.47}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Pateicības}{47}{chapter*.46}%
+\contentsline {chapter}{Pateicības}{49}{chapter*.48}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Izmantotā literatūra un avoti}{48}{chapter*.46}%
+\contentsline {chapter}{Izmantotā literatūra un avoti}{50}{chapter*.48}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Pielikums}{53}{chapter*.48}%
+\contentsline {chapter}{Pielikums}{55}{chapter*.50}%
 \defcounter {refsection}{0}\relax 
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
