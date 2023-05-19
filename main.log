@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (MiKTeX 21.12.10) (preloaded format=xelatex 2022.1.1)  18 MAY 2023 22:15
+This is XeTeX, Version 3.141592653-2.6-0.999993 (MiKTeX 21.12.10) (preloaded format=xelatex 2022.1.1)  19 MAY 2023 10:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1666,155 +1666,145 @@ Overfull \hbox (24.37184pt too wide) in paragraph at lines 45--57
 
 
 ] [30]
-File: graphs/bert-base-multilingual-cased_lv-accuracy.png Graphic file (type bm
-p)
-<graphs/bert-base-multilingual-cased_lv-accuracy.png>
-File: graphs/bert-base-multilingual-cased_lv_en-accuracy.png Graphic file (type
+File: graphs-newest/chatbot_bert-base-multilingual-cased_lv_en-accuracy.png Gra
+phic file (type bmp)
+<graphs-newest/chatbot_bert-base-multilingual-cased_lv_en-accuracy.png>
+File: graphs-newest/chatbot_bert-base-multilingual-cased_lv-accuracy.png Graphi
+c file (type bmp)
+<graphs-newest/chatbot_bert-base-multilingual-cased_lv-accuracy.png>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+File: graphs-newest/chatbot_bert-base-multilingual-cased_all_en-accuracy.png Gr
+aphic file (type bmp)
+<graphs-newest/chatbot_bert-base-multilingual-cased_all_en-accuracy.png>
+File: graphs-newest/chatbot_bert-base-multilingual-cased_all-accuracy.png Graph
+ic file (type bmp)
+<graphs-newest/chatbot_bert-base-multilingual-cased_all-accuracy.png>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+File: graphs-newest/chatbot_bert-base-multilingual-cased_en-accuracy.png Graphi
+c file (type bmp)
+<graphs-newest/chatbot_bert-base-multilingual-cased_en-accuracy.png>
+File: graphs-newest/chatbot_xlm-roberta-base_en-accuracy.png Graphic file (type
  bmp)
-<graphs/bert-base-multilingual-cased_lv_en-accuracy.png>
-
+<graphs-newest/chatbot_xlm-roberta-base_en-accuracy.png>
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-File: graphs/bert-base-multilingual-cased_all-accuracy.png Graphic file (type b
-mp)
-<graphs/bert-base-multilingual-cased_all-accuracy.png>
-File: graphs/bert-base-multilingual-cased_all_en-accuracy.png Graphic file (typ
+File: graphs-newest/chatbot_xlm-roberta-base_lv_en-accuracy.png Graphic file (t
+ype bmp)
+<graphs-newest/chatbot_xlm-roberta-base_lv_en-accuracy.png>
+File: graphs-newest/chatbot_xlm-roberta-base_lv-accuracy.png Graphic file (type
+ bmp)
+<graphs-newest/chatbot_xlm-roberta-base_lv-accuracy.png>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+File: graphs-newest/chatbot_xlm-roberta-base_all_en-accuracy.png Graphic file (
+type bmp)
+<graphs-newest/chatbot_xlm-roberta-base_all_en-accuracy.png>
+File: graphs-newest/chatbot_xlm-roberta-base_all-accuracy.png Graphic file (typ
 e bmp)
-<graphs/bert-base-multilingual-cased_all_en-accuracy.png>
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-File: graphs/bert-base-multilingual-cased_en-accuracy.png Graphic file (type bm
-p)
-<graphs/bert-base-multilingual-cased_en-accuracy.png>
-File: graphs/xlm-roberta-base_en-accuracy.png Graphic file (type bmp)
-<graphs/xlm-roberta-base_en-accuracy.png>
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-File: graphs/xlm-roberta-base_lv-accuracy.png Graphic file (type bmp)
-<graphs/xlm-roberta-base_lv-accuracy.png>
-File: graphs/xlm-roberta-base_lv_en-accuracy.png Graphic file (type bmp)
-<graphs/xlm-roberta-base_lv_en-accuracy.png>
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-File: graphs/xlm-roberta-base_all-accuracy.png Graphic file (type bmp)
-<graphs/xlm-roberta-base_all-accuracy.png>
-File: graphs/xlm-roberta-base_all_en-accuracy.png Graphic file (type bmp)
-<graphs/xlm-roberta-base_all_en-accuracy.png>
-
-Underfull \hbox (badness 10000) in paragraph at lines 249--249
-[][]|\TU/FreeSerif.ttf(0)/b/n/10 XLM-RoBERTa apvienotā mašīntulkoto tre-
- []
-
+<graphs-newest/chatbot_xlm-roberta-base_all-accuracy.png>
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [31] [32] [33] [34] [35]
-File: results-5/graphs/askubuntu_bert-base-multilingual-cased_lv-accuracy.png G
+File: graphs-newest/askubuntu_bert-base-multilingual-cased_lv_en-accuracy.png G
 raphic file (type bmp)
-<results-5/graphs/askubuntu_bert-base-multilingual-cased_lv-accuracy.png>
-File: results-5/graphs/askubuntu_bert-base-multilingual-cased_lv_en-accuracy.pn
-g Graphic file (type bmp)
-<results-5/graphs/askubuntu_bert-base-multilingual-cased_lv_en-accuracy.png>
+<graphs-newest/askubuntu_bert-base-multilingual-cased_lv_en-accuracy.png>
+File: graphs-newest/askubuntu_bert-base-multilingual-cased_lv-accuracy.png Grap
+hic file (type bmp)
+<graphs-newest/askubuntu_bert-base-multilingual-cased_lv-accuracy.png>
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-File: results-5/graphs/askubuntu_bert-base-multilingual-cased_all-accuracy.png 
+File: graphs-newest/askubuntu_bert-base-multilingual-cased_all_en-accuracy.png 
 Graphic file (type bmp)
-<results-5/graphs/askubuntu_bert-base-multilingual-cased_all-accuracy.png>
-File: results-5/graphs/askubuntu_bert-base-multilingual-cased_all_en-accuracy.p
-ng Graphic file (type bmp)
-<results-5/graphs/askubuntu_bert-base-multilingual-cased_all_en-accuracy.png>
+<graphs-newest/askubuntu_bert-base-multilingual-cased_all_en-accuracy.png>
+File: graphs-newest/askubuntu_bert-base-multilingual-cased_all-accuracy.png Gra
+phic file (type bmp)
+<graphs-newest/askubuntu_bert-base-multilingual-cased_all-accuracy.png>
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-File: results-5/graphs/askubuntu_bert-base-multilingual-cased_en-accuracy.png G
-raphic file (type bmp)
-<results-5/graphs/askubuntu_bert-base-multilingual-cased_en-accuracy.png>
-File: results-5/graphs/askubuntu_xlm-roberta-base_en-accuracy.png Graphic file 
+File: graphs-newest/askubuntu_bert-base-multilingual-cased_en-accuracy.png Grap
+hic file (type bmp)
+<graphs-newest/askubuntu_bert-base-multilingual-cased_en-accuracy.png>
+File: graphs-newest/askubuntu_xlm-roberta-base_en-accuracy.png Graphic file (ty
+pe bmp)
+<graphs-newest/askubuntu_xlm-roberta-base_en-accuracy.png>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+File: graphs-newest/askubuntu_xlm-roberta-base_lv_en-accuracy.png Graphic file 
 (type bmp)
-<results-5/graphs/askubuntu_xlm-roberta-base_en-accuracy.png>
+<graphs-newest/askubuntu_xlm-roberta-base_lv_en-accuracy.png>
+File: graphs-newest/askubuntu_xlm-roberta-base_lv-accuracy.png Graphic file (ty
+pe bmp)
+<graphs-newest/askubuntu_xlm-roberta-base_lv-accuracy.png>
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-File: results-5/graphs/askubuntu_xlm-roberta-base_lv-accuracy.png Graphic file 
-(type bmp)
-<results-5/graphs/askubuntu_xlm-roberta-base_lv-accuracy.png>
-File: results-5/graphs/askubuntu_xlm-roberta-base_lv_en-accuracy.png Graphic fi
-le (type bmp)
-<results-5/graphs/askubuntu_xlm-roberta-base_lv_en-accuracy.png>
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-File: results-5/graphs/askubuntu_xlm-roberta-base_all-accuracy.png Graphic file
+File: graphs-newest/askubuntu_xlm-roberta-base_all_en-accuracy.png Graphic file
  (type bmp)
-<results-5/graphs/askubuntu_xlm-roberta-base_all-accuracy.png>
-File: results-5/graphs/askubuntu_xlm-roberta-base_all_en-accuracy.png Graphic f
-ile (type bmp)
-<results-5/graphs/askubuntu_xlm-roberta-base_all_en-accuracy.png>
-
-Underfull \hbox (badness 10000) in paragraph at lines 432--432
-[][]|\TU/FreeSerif.ttf(0)/b/n/10 XLM-RoBERTa apvienotā mašīntulkoto tre-
- []
-
+<graphs-newest/askubuntu_xlm-roberta-base_all_en-accuracy.png>
+File: graphs-newest/askubuntu_xlm-roberta-base_all-accuracy.png Graphic file (t
+ype bmp)
+<graphs-newest/askubuntu_xlm-roberta-base_all-accuracy.png>
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [36
 
 ] [37] [38] [39] [40]
-File: results-5/graphs/webapps_bert-base-multilingual-cased_lv-accuracy.png Gra
+File: graphs-newest/webapps_bert-base-multilingual-cased_lv_en-accuracy.png Gra
 phic file (type bmp)
-<results-5/graphs/webapps_bert-base-multilingual-cased_lv-accuracy.png>
-File: results-5/graphs/webapps_bert-base-multilingual-cased_lv_en-accuracy.png 
-Graphic file (type bmp)
-<results-5/graphs/webapps_bert-base-multilingual-cased_lv_en-accuracy.png>
+<graphs-newest/webapps_bert-base-multilingual-cased_lv_en-accuracy.png>
+File: graphs-newest/webapps_bert-base-multilingual-cased_lv-accuracy.png Graphi
+c file (type bmp)
+<graphs-newest/webapps_bert-base-multilingual-cased_lv-accuracy.png>
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-File: results-5/graphs/webapps_bert-base-multilingual-cased_all-accuracy.png Gr
+File: graphs-newest/webapps_bert-base-multilingual-cased_all_en-accuracy.png Gr
 aphic file (type bmp)
-<results-5/graphs/webapps_bert-base-multilingual-cased_all-accuracy.png>
-File: results-5/graphs/webapps_bert-base-multilingual-cased_all_en-accuracy.png
- Graphic file (type bmp)
-<results-5/graphs/webapps_bert-base-multilingual-cased_all_en-accuracy.png>
+<graphs-newest/webapps_bert-base-multilingual-cased_all_en-accuracy.png>
+File: graphs-newest/webapps_bert-base-multilingual-cased_all-accuracy.png Graph
+ic file (type bmp)
+<graphs-newest/webapps_bert-base-multilingual-cased_all-accuracy.png>
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-File: results-5/graphs/webapps_bert-base-multilingual-cased_en-accuracy.png Gra
-phic file (type bmp)
-<results-5/graphs/webapps_bert-base-multilingual-cased_en-accuracy.png>
-File: results-5/graphs/webapps_xlm-roberta-base_en-accuracy.png Graphic file (t
+File: graphs-newest/webapps_bert-base-multilingual-cased_en-accuracy.png Graphi
+c file (type bmp)
+<graphs-newest/webapps_bert-base-multilingual-cased_en-accuracy.png>
+File: graphs-newest/webapps_xlm-roberta-base_en-accuracy.png Graphic file (type
+ bmp)
+<graphs-newest/webapps_xlm-roberta-base_en-accuracy.png>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+File: graphs-newest/webapps_xlm-roberta-base_lv_en-accuracy.png Graphic file (t
 ype bmp)
-<results-5/graphs/webapps_xlm-roberta-base_en-accuracy.png>
+<graphs-newest/webapps_xlm-roberta-base_lv_en-accuracy.png>
+File: graphs-newest/webapps_xlm-roberta-base_lv-accuracy.png Graphic file (type
+ bmp)
+<graphs-newest/webapps_xlm-roberta-base_lv-accuracy.png>
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-File: results-5/graphs/webapps_xlm-roberta-base_lv-accuracy.png Graphic file (t
-ype bmp)
-<results-5/graphs/webapps_xlm-roberta-base_lv-accuracy.png>
-File: results-5/graphs/webapps_xlm-roberta-base_lv_en-accuracy.png Graphic file
- (type bmp)
-<results-5/graphs/webapps_xlm-roberta-base_lv_en-accuracy.png>
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-File: results-5/graphs/webapps_xlm-roberta-base_all-accuracy.png Graphic file (
+File: graphs-newest/webapps_xlm-roberta-base_all_en-accuracy.png Graphic file (
 type bmp)
-<results-5/graphs/webapps_xlm-roberta-base_all-accuracy.png>
-File: results-5/graphs/webapps_xlm-roberta-base_all_en-accuracy.png Graphic fil
-e (type bmp)
-<results-5/graphs/webapps_xlm-roberta-base_all_en-accuracy.png>
-
-Underfull \hbox (badness 10000) in paragraph at lines 635--635
-[][]|\TU/FreeSerif.ttf(0)/b/n/10 XLM-RoBERTa apvienotā mašīntulkoto tre-
- []
-
+<graphs-newest/webapps_xlm-roberta-base_all_en-accuracy.png>
+File: graphs-newest/webapps_xlm-roberta-base_all-accuracy.png Graphic file (typ
+e bmp)
+<graphs-newest/webapps_xlm-roberta-base_all-accuracy.png>
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
@@ -2428,11 +2418,11 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 34388 strings out of 411044
- 726791 string characters out of 2829678
- 1820418 words of memory out of 3000000
- 54579 multiletter control sequences out of 15000+600000
- 411946 words of font info for 93 fonts, out of 8000000 for 9000
+ 34389 strings out of 411044
+ 727593 string characters out of 2829678
+ 1824890 words of memory out of 3000000
+ 54580 multiletter control sequences out of 15000+600000
+ 411954 words of font info for 94 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  122i,11n,131p,10639b,5700s stack positions out of 5000i,500n,10000p,200000b,80000s
 

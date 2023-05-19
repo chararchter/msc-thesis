@@ -81,14 +81,17 @@ Nodomu noteikšanas precizitāte \textit{Chatbot} datu kopā ir apkopota pēc iz
 % Kopumā rezultāti liecina, ka XLM-RoBERT pārspēja mBERT lielākajā daļā scenāriju un valodu.
 % Stratēģijā, kas apmāca tikai uz angļu valodas datiem un testē citā valodā:
 
-Igauņu valodā ir vislielākais kritums stratēģijā, kas apmāca tikai uz angļu valodas datiem un testē igauņu valodā, tas atbilst paredzētajam, jo igauņu valoda ir vismazāk pārstāvēta korpusos, uz kuriem apmācīti mBERT un XLM-RoBERTa modeļi. Lai gan intuitīvi varētu šķist, ka modelis, kas apmācīts tikai angļu valodā, slikti spēs klasificēt nodomus citā valodā, rezultāti pierāda pretējo -- 3b kolonnā redzami salīdzinoši labi rezultāti uz testa kopām krievu un latviešu valodās (85.85--93.40\%). Tas tādēļ, ka daudzvalodu jēdzientelpas angļu datu kopās ir līdzīgas tādu pašu teikumu jēdzientelpām citās valodās.
+Igauņu valodā ir vislielākais kritums stratēģijā, kas apmāca tikai uz angļu valodas datiem un testē igauņu valodā, tas atbilst paredzētajam, jo igauņu valoda ir vismazāk pārstāvēta korpusos, uz kuriem apmācīti mBERT un XLM-RoBERTa modeļi.
+
+Lai gan intuitīvi varētu šķist, ka modelis, kas apmācīts tikai angļu valodā, slikti spēs klasificēt nodomus citā valodā, rezultāti pierāda pretējo -- 3b kolonnā redzami salīdzinoši labi rezultāti uz testa kopām latviešu, lietuviešu un igauņu valodās (74.29\% mBERT, 78.22\% XLM-RoBERTa). Tas tādēļ, ka daudzvalodu jēdzientelpas angļu datu kopās ir līdzīgas tādu pašu teikumu jēdzientelpām citās valodās. 
+% Iespējams, paralēls datu korpuss palīdz, un ja angļu valodas datu kopā nodomi būtu atsķirīgā attiecībā nekā latviešu valodā, nodomu noteikšanas precizitāte latviešu valodā būtu zemāka. TODO: izskaidrot, ka 2ab notiek language transfer/Cross-lingual Representation Learning/Increased Training Data
 
 
 % maz-resursu valodas iegūst no tulkošanas uz angļu valodu
 
 % Vidēji latviešu valodas mašīntulkojums uz angļu valodu ir ar lielāku precizitāti nekā oriģinālvalodā (1ab--2ab) abās jēdzientelpās, taču krievu valodas korpusa tulkojums uz angļu valodu precizitāti zaudēja. 
 
-Vidēji, izmantojot latviešu valodas mašīntulkojumus uz angļu valodu, var sasniegt lielāku precizitāti nekā oriģinālvalodā (1ab--2ab) abās jēdzientelpās, taču krievu valodas korpusa tulkojums uz angļu valodu precizitāti samazināja. Gadījumā, kad modelis apmācīts tikai uz angļu valodas korpusa, precizitāte būtiski uzlabojos testa kopu mašīntulkojot uz angļu valodu, igauņu un lietuviešu valodās precizitātei vidēji pieaugot par 30\% un 12\% attiecīgi, izņemot krievu valodu, kur precizitāte mazliet samazinās -- par 3.8\% mBERT un 1\% XLM-RoBERTa jēdzientelpām. Šo izņēmumu krievu valodā varētu izskaidrot tās salīdzinoši labā pārstāvētība korpusos, uz kuriem apmācīti mBERT un XLM-RoBERTa modeļi, salīdzinot ar latviešu, igauņu un lietuviešu valodām (\ref{fig:dataset-size} attēls).
+Vidēji, izmantojot latviešu valodas mašīntulkojumus uz angļu valodu, var sasniegt lielāku precizitāti nekā oriģinālvalodā (1ab--2ab) abās jēdzientelpās, taču krievu valodas korpusa tulkojums uz angļu valodu precizitāti samazināja. Gadījumā, kad modelis apmācīts tikai uz angļu valodas korpusa, precizitāte būtiski uzlabojās testa kopu mašīntulkojot uz angļu valodu, igauņu un lietuviešu valodās precizitātei vidēji pieaugot par 30\% un 12\% attiecīgi, izņemot krievu valodu, kur precizitāte mazliet samazinās -- par 3.8\% mBERT un 1\% XLM-RoBERTa jēdzientelpām. Šo izņēmumu krievu valodā varētu izskaidrot tās salīdzinoši labā pārstāvētība korpusos, uz kuriem apmācīti mBERT un XLM-RoBERTa modeļi, salīdzinot ar latviešu, igauņu un lietuviešu valodām (\ref{fig:dataset-size} attēls).
 
 
 % Maz-resursu valodās (latviešu, lietuviešu, igauņu) mašīntulkošana angļu valodā galvenokārt uzlaboja precizitāti (1ab).
@@ -136,7 +139,7 @@ Maz-resursu valodās (latviešu, lietuviešu, igauņu) tipiski precizitāte iegu
   \caption{Nodomu noteikšanas precizitāte uz \textit{Chatbot} datukopas ar mBERT modeli, \%}
     \begin{tabular}{lrrrrrr} \toprule
     languages & 1a & 1b & 2a & 2b & 3a & 3b \\\midrule
-    en    &       & \cellcolor[rgb]{ .984,  .973,  .984}91.27 &       & \cellcolor[rgb]{ .984,  .929,  .941}89.15 &       & \cellcolor[rgb]{ .353,  .541,  .776}95.05 \\
+    en    &   --    & \cellcolor[rgb]{ .984,  .973,  .984}91.27 &   --    & \cellcolor[rgb]{ .984,  .929,  .941}89.15 &   --    & \cellcolor[rgb]{ .353,  .541,  .776}95.05 \\
     lv    & \cellcolor[rgb]{ .984,  .941,  .953}89.62 & \cellcolor[rgb]{ .502,  .647,  .831}94.34 & \cellcolor[rgb]{ .851,  .894,  .953}92.69 & \cellcolor[rgb]{ .455,  .612,  .812}94.58 & \cellcolor[rgb]{ .604,  .718,  .867}93.87 & \cellcolor[rgb]{ .984,  .871,  .882}86.08 \\
     ru    & \cellcolor[rgb]{ .984,  .976,  .988}91.51 & \cellcolor[rgb]{ .902,  .925,  .969}92.45 & \cellcolor[rgb]{ .753,  .824,  .918}93.16 & \cellcolor[rgb]{ .753,  .824,  .918}93.16 & \cellcolor[rgb]{ .902,  .925,  .969}92.45 & \cellcolor[rgb]{ .984,  .984,  .996}91.98 \\
     et    & \cellcolor[rgb]{ .984,  .957,  .969}90.57 & \cellcolor[rgb]{ .984,  .894,  .906}87.26 & \cellcolor[rgb]{ .984,  .973,  .984}91.27 & \cellcolor[rgb]{ .984,  .933,  .945}89.39 & \cellcolor[rgb]{ .902,  .925,  .969}92.45 & \cellcolor[rgb]{ .973,  .412,  .42}62.26 \\
@@ -192,7 +195,7 @@ Maz-resursu valodās (latviešu, lietuviešu, igauņu) tipiski precizitāte iegu
   \caption{Nodomu noteikšanas precizitāte uz \textit{Chatbot} datukopas ar XLM-RoBERTa modeli, \%}
     \begin{tabular}{lrrrrrr} \toprule
     languages & 1a & 1b & 2a & 2b & 3a & 3b \\\midrule
-    en    &       & \cellcolor[rgb]{ .514,  .655,  .835}95.28 &       & \cellcolor[rgb]{ .514,  .655,  .835}95.28 &       & \cellcolor[rgb]{ .353,  .541,  .776}96.46 \\
+    en    &   --    & \cellcolor[rgb]{ .514,  .655,  .835}95.28 &   --    & \cellcolor[rgb]{ .514,  .655,  .835}95.28 &  --   & \cellcolor[rgb]{ .353,  .541,  .776}96.46 \\
     lv    & \cellcolor[rgb]{ .984,  .945,  .957}90.33 & \cellcolor[rgb]{ .984,  .902,  .914}88.92 & \cellcolor[rgb]{ .737,  .812,  .914}93.63 & \cellcolor[rgb]{ .639,  .745,  .878}94.34 & \cellcolor[rgb]{ .769,  .835,  .925}93.40 & \cellcolor[rgb]{ .984,  .867,  .878}87.74 \\
     ru    & \cellcolor[rgb]{ .894,  .922,  .969}92.45 & \cellcolor[rgb]{ .988,  .988,  1}91.75 & \cellcolor[rgb]{ .988,  .988,  1}91.75 & \cellcolor[rgb]{ .608,  .722,  .867}94.58 & \cellcolor[rgb]{ .957,  .969,  .992}91.98 & \cellcolor[rgb]{ .957,  .969,  .992}91.98 \\
     et    & \cellcolor[rgb]{ .984,  .89,  .902}88.44 & \cellcolor[rgb]{ .863,  .902,  .957}92.69 & \cellcolor[rgb]{ .988,  .988,  1}91.75 & \cellcolor[rgb]{ .984,  .894,  .906}88.68 & \cellcolor[rgb]{ .984,  .929,  .941}89.86 & \cellcolor[rgb]{ .973,  .412,  .42}72.17 \\
@@ -207,49 +210,52 @@ Maz-resursu valodās (latviešu, lietuviešu, igauņu) tipiski precizitāte iegu
 
 Att.~\ref{fig:chatbot-bert} parāda precizitāti apmācības laikā, lietojot mBERT jēdzientelpu un treniņdatus latviešu valodā. Redzams, ka apmācības laiks (epochs) bija nepietiekams (att.~\ref{fig:chatbot-bert}, pa labi), jo trenēšanās pārtrūka pie treniņkopas precizitātes 90\%, kad vairums citos grafikos tas sasniedza 100\%. Tas vieš cerības, ka palielinot epochs skaitu 1a un 1b scenārijos, izdotos iegūt augstāku precizitāti. Mašīntulkoto datu gadījumā trenēšanās laiks bija pietiekams (att.~\ref{fig:chatbot-bert}, pa labi), un arī precizitāte uz testa kopas ir mazliet augstāka -- 91.51\% salīdzinot ar 88.67\%.
 
+
+
 \begin{figure}[h] 
    \centering
-   \subcaptionbox{mBERT latviešu treniņdatu kopa}{\includegraphics[width=0.49\linewidth,trim={0 0.1cm 0 0},clip]{graphs/bert-base-multilingual-cased_lv-accuracy.png}}
-   \subcaptionbox{mBERT mašīntulkoto latviešu treniņdatu kopa}{\includegraphics[width=0.49\linewidth,trim={0 0.1cm 0 0},clip]{graphs/bert-base-multilingual-cased_lv_en-accuracy.png}}
-   \caption{caption} 
+   \subcaptionbox{mašīntulkoto latviešu treniņdatu kopa}{\includegraphics[width=0.49\linewidth,trim={0 0.1cm 0 0},clip]{graphs-newest/chatbot_bert-base-multilingual-cased_lv_en-accuracy.png}}
+   \subcaptionbox{latviešu treniņdatu kopa}{\includegraphics[width=0.49\linewidth,trim={0 0.1cm 0 0},clip]{graphs-newest/chatbot_bert-base-multilingual-cased_lv-accuracy.png}}
+   \caption{Nodomu noteikšanas precizitātes palielināšanās modeļa apmācībās gaitā. Precizitāte tika aprēķināta uz treniņdatu kopas (zilā līnija) un validācijas datu kopas (oranžā līnija). Tika izmantota mBERT jēdzientelpa, \textit{Chatbot} datu kopa, apmācība un testēšana notika uz latviešu valodas korpusa (1ab metodes).} 
    \label{fig:chatbot-bert}
 \end{figure}
 
 
 \begin{figure}[h] 
    \centering
-   \subcaptionbox{mBERT apvienotā treniņdatu kopa}{\includegraphics[width=0.49\linewidth,trim={0 0.1cm 0 0},clip]{graphs/bert-base-multilingual-cased_all-accuracy.png}}
-   \subcaptionbox{mBERT apvienotā mašīntulkoto treniņdatu kopa}{\includegraphics[width=0.49\linewidth,trim={0 0.1cm 0 0},clip]{graphs/bert-base-multilingual-cased_all_en-accuracy.png}}
-   \caption{caption} 
+   \subcaptionbox{apvienotā mašīntulkoto treniņdatu kopa}{\includegraphics[width=0.49\linewidth,trim={0 0.1cm 0 0},clip]{graphs-newest/chatbot_bert-base-multilingual-cased_all_en-accuracy.png}}
+   \subcaptionbox{apvienotā treniņdatu kopa}{\includegraphics[width=0.49\linewidth,trim={0 0.1cm 0 0},clip]{graphs-newest/chatbot_bert-base-multilingual-cased_all-accuracy.png}}
+   \caption{Nodomu noteikšanas precizitātes palielināšanās modeļa apmācībās gaitā. Precizitāte aprēķināta uz treniņdatu kopas (zilā līnija) un validācijas datu kopas (oranžā līnija). Izmantota mBERT jēdzientelpa, \textit{Chatbot} datu kopa, apmācība notika uz visām valodām, testēšana uz latviešu valodas korpusa (2ab metodes).} 
    \label{fig:chatbot-bert-all}
 \end{figure}
 
 
 \begin{figure}[h] 
    \centering
-   \subcaptionbox{mBERT angļu treniņdatu kopa}{\includegraphics[width=0.49\linewidth,trim={0 0.1cm 0 0},clip]{graphs/bert-base-multilingual-cased_en-accuracy.png}}
-   \subcaptionbox{XLM-RoBERTa angļu treniņdatu kopa}{\includegraphics[width=0.49\linewidth,trim={0 0.1cm 0 0},clip]{graphs/xlm-roberta-base_en-accuracy.png}}
-   \caption{caption} 
+   \subcaptionbox{mBERT angļu treniņdatu kopa}{\includegraphics[width=0.49\linewidth,trim={0 0.1cm 0 0},clip]{graphs-newest/chatbot_bert-base-multilingual-cased_en-accuracy.png}}
+   \subcaptionbox{XLM-RoBERTa angļu treniņdatu kopa}{\includegraphics[width=0.49\linewidth,trim={0 0.1cm 0 0},clip]{graphs-newest/chatbot_xlm-roberta-base_en-accuracy.png}}
+   \caption{Nodomu noteikšanas precizitātes palielināšanās modeļa apmācībās gaitā. Precizitāte tika aprēķināta uz treniņdatu kopas (zilā līnija) un validācijas datu kopas (oranžā līnija). Tika izmantotas dažādas jēdzientelpas, \textit{Chatbot} datu kopa, apmācība un testēšana notika uz angļu valodas korpusa (3b metode).} 
    \label{fig:chabot-bert-xlm-en}
 \end{figure}
 
 
 \begin{figure}[h] 
    \centering
-   \subcaptionbox{XLM-RoBERTa latviešu treniņdatu kopa}{\includegraphics[width=0.49\linewidth,trim={0 0.1cm 0 0},clip]{graphs/xlm-roberta-base_lv-accuracy.png}}
-   \subcaptionbox{XLM-RoBERTa mašīntulkoto latviešu treniņdatu kopa}{\includegraphics[width=0.49\linewidth,trim={0 0.1cm 0 0},clip]{graphs/xlm-roberta-base_lv_en-accuracy.png}}
-   \caption{caption} 
+   \subcaptionbox{mašīntulkoto latviešu treniņdatu kopa}{\includegraphics[width=0.49\linewidth,trim={0 0.1cm 0 0},clip]{graphs-newest/chatbot_xlm-roberta-base_lv_en-accuracy.png}}
+   \subcaptionbox{latviešu treniņdatu kopa}{\includegraphics[width=0.49\linewidth,trim={0 0.1cm 0 0},clip]{graphs-newest/chatbot_xlm-roberta-base_lv-accuracy.png}}
+   \caption{Nodomu noteikšanas precizitātes palielināšanās modeļa apmācībās gaitā. Precizitāte aprēķināta uz treniņdatu kopas (zilā līnija) un validācijas datu kopas (oranžā līnija). Izmantota XLM-RoBERTa jēdzientelpa, \textit{Chatbot} datu kopa, apmācība un testēšana notika uz latviešu valodas korpusa (1ab metodes).} 
    \label{fig:chatbot-xlm}
 \end{figure}
 
 
 \begin{figure}[h] 
    \centering
-   \subcaptionbox{XLM-RoBERTa apvienotā treniņdatu kopa}{\includegraphics[width=0.49\linewidth,trim={0 0.1cm 0 0},clip]{graphs/xlm-roberta-base_all-accuracy.png}}
-   \subcaptionbox{XLM-RoBERTa apvienotā mašīntulkoto treniņdatu kopa}{\includegraphics[width=0.49\linewidth,trim={0 0.1cm 0 0},clip]{graphs/xlm-roberta-base_all_en-accuracy.png}}
-   \caption{caption} 
+   \subcaptionbox{apvienotā mašīntulkoto treniņdatu kopa}{\includegraphics[width=0.49\linewidth,trim={0 0.1cm 0 0},clip]{graphs-newest/chatbot_xlm-roberta-base_all_en-accuracy.png}}
+   \subcaptionbox{apvienotā treniņdatu kopa}{\includegraphics[width=0.49\linewidth,trim={0 0.1cm 0 0},clip]{graphs-newest/chatbot_xlm-roberta-base_all-accuracy.png}}
+   \caption{Nodomu noteikšanas precizitātes palielināšanās modeļa apmācībās gaitā. Precizitāte aprēķināta uz treniņdatu kopas (zilā līnija) un validācijas datu kopas (oranžā līnija). Izmantota XLM-RoBERTa jēdzientelpa, \textit{Chatbot} datu kopa, apmācība notika uz visām valodām, testēšana uz latviešu valodas korpusa (2ab metodes).} 
    \label{fig:chatbot-xlm-all}
 \end{figure}
+
 
 
 \section{Askubuntu datu kopa}
@@ -322,7 +328,7 @@ Datu kopā \textit{Askubuntu} 3b metodei vienmēr bija viszemākā nodomu noteik
   \caption{Nodomu noteikšanas precizitāte uz \textit{Askubuntu} datukopas ar mBERT modeli, \%.}
     \begin{tabular}{lrrrrrr} \toprule
     languages & 1a & 1b & 2a & 2b & 3a & 3b \\\midrule
-    en    &       & \cellcolor[rgb]{ .475,  .627,  .82}82.57 &       & \cellcolor[rgb]{ .357,  .545,  .78}83.26 &       & \cellcolor[rgb]{ .475,  .627,  .82}82.57 \\
+    en    &   --    & \cellcolor[rgb]{ .475,  .627,  .82}82.57 &  --     & \cellcolor[rgb]{ .357,  .545,  .78}83.26 &   --    & \cellcolor[rgb]{ .475,  .627,  .82}82.57 \\
     lv    & \cellcolor[rgb]{ .984,  .98,  .992}79.36 & \cellcolor[rgb]{ .514,  .655,  .835}82.34 & \cellcolor[rgb]{ .831,  .878,  .945}80.50 & \cellcolor[rgb]{ .514,  .655,  .835}82.34 & \cellcolor[rgb]{ .984,  .98,  .992}79.36 & \cellcolor[rgb]{ .973,  .412,  .42}54.13 \\
     ru    & \cellcolor[rgb]{ .984,  .973,  .98}78.90 & \cellcolor[rgb]{ .984,  .965,  .976}78.67 & \cellcolor[rgb]{ .984,  .902,  .914}75.92 & \cellcolor[rgb]{ .988,  .988,  1}79.59 & \cellcolor[rgb]{ .988,  .988,  1}79.59 & \cellcolor[rgb]{ .976,  .639,  .647}64.22 \\
     et    & \cellcolor[rgb]{ .753,  .824,  .918}80.96 & \cellcolor[rgb]{ .353,  .541,  .776}83.26 & \cellcolor[rgb]{ .949,  .961,  .988}79.82 & \cellcolor[rgb]{ .984,  .929,  .941}77.06 & \cellcolor[rgb]{ .91,  .933,  .973}80.05 & \cellcolor[rgb]{ .973,  .494,  .502}57.80 \\
@@ -377,7 +383,7 @@ Datu kopā \textit{Askubuntu} 3b metodei vienmēr bija viszemākā nodomu noteik
   \caption{Nodomu noteikšanas precizitāte uz \textit{Askubuntu} datukopas ar XLM-RoBERTa modeli, \%}
     \begin{tabular}{lrrrrrr}\toprule
     languages & 1a & 1b & 2a & 2b & 3a & 3b \\\midrule
-    en    &       & \cellcolor[rgb]{ .694,  .784,  .898}73.85 &       & \cellcolor[rgb]{ .353,  .541,  .776}78.90 &       & \cellcolor[rgb]{ .882,  .914,  .965}71.10 \\
+    en    &   --    & \cellcolor[rgb]{ .694,  .784,  .898}73.85 &   --    & \cellcolor[rgb]{ .353,  .541,  .776}78.90 &   --    & \cellcolor[rgb]{ .882,  .914,  .965}71.10 \\
     lv    & \cellcolor[rgb]{ .984,  .965,  .976}68.58 & \cellcolor[rgb]{ .984,  .878,  .89}64.91 & \cellcolor[rgb]{ .384,  .565,  .788}78.44 & \cellcolor[rgb]{ .557,  .686,  .851}75.92 & \cellcolor[rgb]{ .757,  .827,  .922}72.94 & \cellcolor[rgb]{ .973,  .416,  .424}44.95 \\
     ru    & \cellcolor[rgb]{ .984,  .906,  .918}66.06 & \cellcolor[rgb]{ .898,  .925,  .969}70.87 & \cellcolor[rgb]{ .51,  .651,  .831}76.61 & \cellcolor[rgb]{ .557,  .686,  .851}75.92 & \cellcolor[rgb]{ .984,  .918,  .929}66.51 & \cellcolor[rgb]{ .976,  .576,  .584}51.83 \\
     et    & \cellcolor[rgb]{ .984,  .847,  .859}63.53 & \cellcolor[rgb]{ .741,  .816,  .914}73.17 & \cellcolor[rgb]{ .557,  .686,  .851}75.92 & \cellcolor[rgb]{ .416,  .588,  .8}77.98 & \cellcolor[rgb]{ .984,  .945,  .957}67.66 & \cellcolor[rgb]{ .976,  .58,  .588}52.06 \\
@@ -389,48 +395,47 @@ Datu kopā \textit{Askubuntu} 3b metodei vienmēr bija viszemākā nodomu noteik
 \end{table}%
 
 
-
 \begin{figure}[h] 
    \centering
-   \subcaptionbox{mBERT latviešu treniņdatu kopa}{\includegraphics[width=0.49\linewidth,trim={0 0.1cm 0 0},clip]{results-5/graphs/askubuntu_bert-base-multilingual-cased_lv-accuracy.png}}
-   \subcaptionbox{mBERT mašīntulkoto latviešu treniņdatu kopa}{\includegraphics[width=0.49\linewidth,trim={0 0.1cm 0 0},clip]{results-5/graphs/askubuntu_bert-base-multilingual-cased_lv_en-accuracy.png}}
-   \caption{caption} 
+   \subcaptionbox{mašīntulkoto latviešu treniņdatu kopa}{\includegraphics[width=0.49\linewidth,trim={0 0.1cm 0 0},clip]{graphs-newest/askubuntu_bert-base-multilingual-cased_lv_en-accuracy.png}}
+   \subcaptionbox{latviešu treniņdatu kopa}{\includegraphics[width=0.49\linewidth,trim={0 0.1cm 0 0},clip]{graphs-newest/askubuntu_bert-base-multilingual-cased_lv-accuracy.png}}
+   \caption{Nodomu noteikšanas precizitātes palielināšanās modeļa apmācībās gaitā. Precizitāte tika aprēķināta uz treniņdatu kopas (zilā līnija) un validācijas datu kopas (oranžā līnija). Tika izmantota mBERT jēdzientelpa, \textit{Askubuntu} datu kopa, apmācība un testēšana notika uz latviešu valodas korpusa (1ab metodes).} 
    \label{fig:askubuntu-bert}
 \end{figure}
 
 
 \begin{figure}[h] 
    \centering
-   \subcaptionbox{mBERT apvienotā treniņdatu kopa}{\includegraphics[width=0.49\linewidth,trim={0 0.1cm 0 0},clip]{results-5/graphs/askubuntu_bert-base-multilingual-cased_all-accuracy.png}}
-   \subcaptionbox{mBERT apvienotā mašīntulkoto treniņdatu kopa}{\includegraphics[width=0.49\linewidth,trim={0 0.1cm 0 0},clip]{results-5/graphs/askubuntu_bert-base-multilingual-cased_all_en-accuracy.png}}
-   \caption{caption} 
+   \subcaptionbox{apvienotā mašīntulkoto treniņdatu kopa}{\includegraphics[width=0.49\linewidth,trim={0 0.1cm 0 0},clip]{graphs-newest/askubuntu_bert-base-multilingual-cased_all_en-accuracy.png}}
+   \subcaptionbox{apvienotā treniņdatu kopa}{\includegraphics[width=0.49\linewidth,trim={0 0.1cm 0 0},clip]{graphs-newest/askubuntu_bert-base-multilingual-cased_all-accuracy.png}}
+   \caption{Nodomu noteikšanas precizitātes palielināšanās modeļa apmācībās gaitā. Precizitāte aprēķināta uz treniņdatu kopas (zilā līnija) un validācijas datu kopas (oranžā līnija). Izmantota mBERT jēdzientelpa, \textit{Askubuntu} datu kopa, apmācība notika uz visām valodām, testēšana uz latviešu valodas korpusa (2ab metodes).} 
    \label{fig:askubuntu-bert-all}
 \end{figure}
 
 
 \begin{figure}[h] 
    \centering
-   \subcaptionbox{mBERT angļu treniņdatu kopa}{\includegraphics[width=0.49\linewidth,trim={0 0.1cm 0 0},clip]{results-5/graphs/askubuntu_bert-base-multilingual-cased_en-accuracy.png}}
-   \subcaptionbox{XLM-RoBERTa angļu treniņdatu kopa}{\includegraphics[width=0.49\linewidth,trim={0 0.1cm 0 0},clip]{results-5/graphs/askubuntu_xlm-roberta-base_en-accuracy.png}}
-   \caption{caption} 
+   \subcaptionbox{mBERT angļu treniņdatu kopa}{\includegraphics[width=0.49\linewidth,trim={0 0.1cm 0 0},clip]{graphs-newest/askubuntu_bert-base-multilingual-cased_en-accuracy.png}}
+   \subcaptionbox{XLM-RoBERTa angļu treniņdatu kopa}{\includegraphics[width=0.49\linewidth,trim={0 0.1cm 0 0},clip]{graphs-newest/askubuntu_xlm-roberta-base_en-accuracy.png}}
+   \caption{Nodomu noteikšanas precizitātes palielināšanās modeļa apmācībās gaitā. Precizitāte tika aprēķināta uz treniņdatu kopas (zilā līnija) un validācijas datu kopas (oranžā līnija). Tika izmantotas dažādas jēdzientelpas, \textit{Askubuntu} datu kopa, apmācība un testēšana notika uz angļu valodas korpusa (3b metode).} 
    \label{fig:askubuntu-bert-xlm-en}
 \end{figure}
 
 
 \begin{figure}[h] 
    \centering
-   \subcaptionbox{XLM-RoBERTa latviešu treniņdatu kopa}{\includegraphics[width=0.49\linewidth,trim={0 0.1cm 0 0},clip]{results-5/graphs/askubuntu_xlm-roberta-base_lv-accuracy.png}}
-   \subcaptionbox{XLM-RoBERTa mašīntulkoto latviešu treniņdatu kopa}{\includegraphics[width=0.49\linewidth,trim={0 0.1cm 0 0},clip]{results-5/graphs/askubuntu_xlm-roberta-base_lv_en-accuracy.png}}
-   \caption{caption} 
+   \subcaptionbox{mašīntulkoto latviešu treniņdatu kopa}{\includegraphics[width=0.49\linewidth,trim={0 0.1cm 0 0},clip]{graphs-newest/askubuntu_xlm-roberta-base_lv_en-accuracy.png}}
+   \subcaptionbox{latviešu treniņdatu kopa}{\includegraphics[width=0.49\linewidth,trim={0 0.1cm 0 0},clip]{graphs-newest/askubuntu_xlm-roberta-base_lv-accuracy.png}}
+   \caption{Nodomu noteikšanas precizitātes palielināšanās modeļa apmācībās gaitā. Precizitāte aprēķināta uz treniņdatu kopas (zilā līnija) un validācijas datu kopas (oranžā līnija). Izmantota XLM-RoBERTa jēdzientelpa, \textit{Askubuntu} datu kopa, apmācība un testēšana notika uz latviešu valodas korpusa (1ab metodes).} 
    \label{fig:askubuntu-xlm}
 \end{figure}
 
 
 \begin{figure}[h] 
    \centering
-   \subcaptionbox{XLM-RoBERTa apvienotā treniņdatu kopa}{\includegraphics[width=0.49\linewidth,trim={0 0.1cm 0 0},clip]{results-5/graphs/askubuntu_xlm-roberta-base_all-accuracy.png}}
-   \subcaptionbox{XLM-RoBERTa apvienotā mašīntulkoto treniņdatu kopa}{\includegraphics[width=0.49\linewidth,trim={0 0.1cm 0 0},clip]{results-5/graphs/askubuntu_xlm-roberta-base_all_en-accuracy.png}}
-   \caption{caption} 
+   \subcaptionbox{apvienotā mašīntulkoto treniņdatu kopa}{\includegraphics[width=0.49\linewidth,trim={0 0.1cm 0 0},clip]{graphs-newest/askubuntu_xlm-roberta-base_all_en-accuracy.png}}
+   \subcaptionbox{apvienotā treniņdatu kopa}{\includegraphics[width=0.49\linewidth,trim={0 0.1cm 0 0},clip]{graphs-newest/askubuntu_xlm-roberta-base_all-accuracy.png}}
+   \caption{Nodomu noteikšanas precizitātes palielināšanās modeļa apmācībās gaitā. Precizitāte aprēķināta uz treniņdatu kopas (zilā līnija) un validācijas datu kopas (oranžā līnija). Izmantota XLM-RoBERTa jēdzientelpa, \textit{Askubuntu} datu kopa, apmācība notika uz visām valodām, testēšana uz latviešu valodas korpusa (2ab metodes).} 
    \label{fig:askubuntu-xlm-all}
 \end{figure}
 
@@ -524,7 +529,7 @@ Atšķirībā no pārējām datu kopām nodomu noteikšanas precizitāte igauņu
   \caption{Nodomu noteikšanas precizitāte uz \textit{Webapps} datukopas ar mBERT modeli, \%.}
     \begin{tabular}{lrrrrrr}\toprule
     languages & 1a & 1b & 2a & 2b & 3a & 3b \\\midrule
-    en    &       & \cellcolor[rgb]{ .843,  .886,  .949}66.53 &       & \cellcolor[rgb]{ .941,  .957,  .984}64.83 &       & \cellcolor[rgb]{ .984,  .969,  .98}63.14 \\
+    en    &  --   & \cellcolor[rgb]{ .843,  .886,  .949}66.53 &   --    & \cellcolor[rgb]{ .941,  .957,  .984}64.83 &   --    & \cellcolor[rgb]{ .984,  .969,  .98}63.14 \\
     lv    & \cellcolor[rgb]{ .698,  .784,  .898}69.07 & \cellcolor[rgb]{ .984,  .953,  .965}62.29 & \cellcolor[rgb]{ .576,  .698,  .855}71.19 & \cellcolor[rgb]{ .867,  .906,  .961}66.10 & \cellcolor[rgb]{ .984,  .961,  .973}62.71 & \cellcolor[rgb]{ .973,  .412,  .42}33.47 \\
     ru    & \cellcolor[rgb]{ .82,  .871,  .941}66.95 & \cellcolor[rgb]{ .722,  .8,  .906}68.64 & \cellcolor[rgb]{ .353,  .541,  .776}75.00 & \cellcolor[rgb]{ .502,  .647,  .831}72.46 & \cellcolor[rgb]{ .984,  .961,  .973}62.71 & \cellcolor[rgb]{ .976,  .62,  .627}44.49 \\
     et    & \cellcolor[rgb]{ .984,  .914,  .925}60.17 & \cellcolor[rgb]{ .984,  .898,  .91}59.32 & \cellcolor[rgb]{ .38,  .561,  .788}74.58 & \cellcolor[rgb]{ .867,  .906,  .961}66.10 & \cellcolor[rgb]{ .965,  .973,  .992}64.41 & \cellcolor[rgb]{ .973,  .506,  .514}38.56 \\
@@ -579,7 +584,7 @@ Atšķirībā no pārējām datu kopām nodomu noteikšanas precizitāte igauņu
   \caption{Nodomu noteikšanas precizitāte uz \textit{Webapps} datukopas ar XLM-RoBERTa modeli, \%.}
     \begin{tabular}{lrrrrrr}\toprule
     languages & 1a & 1b & 2a & 2b & 3a & 3b \\\midrule
-    en    &       & \cellcolor[rgb]{ .965,  .973,  .992}50.85 &       & \cellcolor[rgb]{ .475,  .627,  .82}66.53 &       & \cellcolor[rgb]{ .737,  .812,  .914}58.05 \\
+    en    &   --    & \cellcolor[rgb]{ .965,  .973,  .992}50.85 &  --   & \cellcolor[rgb]{ .475,  .627,  .82}66.53 &   --    & \cellcolor[rgb]{ .737,  .812,  .914}58.05 \\
     lv    & \cellcolor[rgb]{ .976,  .659,  .671}37.29 & \cellcolor[rgb]{ .988,  .988,  1}50.00 & \cellcolor[rgb]{ .463,  .62,  .816}66.95 & \cellcolor[rgb]{ .353,  .541,  .776}70.34 & \cellcolor[rgb]{ .984,  .843,  .855}44.49 & \cellcolor[rgb]{ .973,  .455,  .463}29.24 \\
     ru    & \cellcolor[rgb]{ .98,  .769,  .78}41.53 & \cellcolor[rgb]{ .949,  .961,  .988}51.27 & \cellcolor[rgb]{ .541,  .675,  .843}64.41 & \cellcolor[rgb]{ .608,  .722,  .867}62.29 & \cellcolor[rgb]{ .98,  .835,  .843}44.07 & \cellcolor[rgb]{ .976,  .573,  .58}33.90 \\
     et    & \cellcolor[rgb]{ .976,  .659,  .671}37.29 & \cellcolor[rgb]{ .984,  .898,  .91}46.61 & \cellcolor[rgb]{ .525,  .663,  .839}64.83 & \cellcolor[rgb]{ .502,  .647,  .831}65.68 & \cellcolor[rgb]{ .984,  .933,  .945}47.88 & \cellcolor[rgb]{ .973,  .486,  .494}30.51 \\
@@ -595,44 +600,44 @@ Atšķirībā no pārējām datu kopām nodomu noteikšanas precizitāte igauņu
 
 \begin{figure}[h] 
    \centering
-   \subcaptionbox{mBERT latviešu treniņdatu kopa}{\includegraphics[width=0.49\linewidth,trim={0 0.1cm 0 0},clip]{results-5/graphs/webapps_bert-base-multilingual-cased_lv-accuracy.png}}
-   \subcaptionbox{mBERT mašīntulkoto latviešu treniņdatu kopa}{\includegraphics[width=0.49\linewidth,trim={0 0.1cm 0 0},clip]{results-5/graphs/webapps_bert-base-multilingual-cased_lv_en-accuracy.png}}
-   \caption{caption} 
+   \subcaptionbox{mašīntulkoto latviešu treniņdatu kopa}{\includegraphics[width=0.49\linewidth,trim={0 0.1cm 0 0},clip]{graphs-newest/webapps_bert-base-multilingual-cased_lv_en-accuracy.png}}
+   \subcaptionbox{latviešu treniņdatu kopa}{\includegraphics[width=0.49\linewidth,trim={0 0.1cm 0 0},clip]{graphs-newest/webapps_bert-base-multilingual-cased_lv-accuracy.png}}
+   \caption{Nodomu noteikšanas precizitātes palielināšanās modeļa apmācībās gaitā. Precizitāte tika aprēķināta uz treniņdatu kopas (zilā līnija) un validācijas datu kopas (oranžā līnija). Tika izmantota mBERT jēdzientelpa, \textit{Webapps} datu kopa, apmācība un testēšana notika uz latviešu valodas korpusa (1ab metodes).} 
    \label{fig:webapps-bert}
 \end{figure}
 
 
 \begin{figure}[h] 
    \centering
-   \subcaptionbox{mBERT apvienotā treniņdatu kopa}{\includegraphics[width=0.49\linewidth,trim={0 0.1cm 0 0},clip]{results-5/graphs/webapps_bert-base-multilingual-cased_all-accuracy.png}}
-   \subcaptionbox{mBERT apvienotā mašīntulkoto treniņdatu kopa}{\includegraphics[width=0.49\linewidth,trim={0 0.1cm 0 0},clip]{results-5/graphs/webapps_bert-base-multilingual-cased_all_en-accuracy.png}}
-   \caption{caption} 
+   \subcaptionbox{apvienotā mašīntulkoto treniņdatu kopa}{\includegraphics[width=0.49\linewidth,trim={0 0.1cm 0 0},clip]{graphs-newest/webapps_bert-base-multilingual-cased_all_en-accuracy.png}}
+   \subcaptionbox{apvienotā treniņdatu kopa}{\includegraphics[width=0.49\linewidth,trim={0 0.1cm 0 0},clip]{graphs-newest/webapps_bert-base-multilingual-cased_all-accuracy.png}}
+   \caption{Nodomu noteikšanas precizitātes palielināšanās modeļa apmācībās gaitā. Precizitāte aprēķināta uz treniņdatu kopas (zilā līnija) un validācijas datu kopas (oranžā līnija). Izmantota mBERT jēdzientelpa, \textit{Webapps} datu kopa, apmācība notika uz visām valodām, testēšana uz latviešu valodas korpusa (2ab metodes).} 
    \label{fig:webapps-bert-all}
 \end{figure}
 
 
 \begin{figure}[h] 
    \centering
-   \subcaptionbox{mBERT angļu treniņdatu kopa}{\includegraphics[width=0.49\linewidth,trim={0 0.1cm 0 0},clip]{results-5/graphs/webapps_bert-base-multilingual-cased_en-accuracy.png}}
-   \subcaptionbox{XLM-RoBERTa angļu treniņdatu kopa}{\includegraphics[width=0.49\linewidth,trim={0 0.1cm 0 0},clip]{results-5/graphs/webapps_xlm-roberta-base_en-accuracy.png}}
-   \caption{caption} 
+   \subcaptionbox{mBERT angļu treniņdatu kopa}{\includegraphics[width=0.49\linewidth,trim={0 0.1cm 0 0},clip]{graphs-newest/webapps_bert-base-multilingual-cased_en-accuracy.png}}
+   \subcaptionbox{XLM-RoBERTa angļu treniņdatu kopa}{\includegraphics[width=0.49\linewidth,trim={0 0.1cm 0 0},clip]{graphs-newest/webapps_xlm-roberta-base_en-accuracy.png}}
+   \caption{Nodomu noteikšanas precizitātes palielināšanās modeļa apmācībās gaitā. Precizitāte tika aprēķināta uz treniņdatu kopas (zilā līnija) un validācijas datu kopas (oranžā līnija). Tika izmantotas dažādas jēdzientelpas, \textit{Webapps} datu kopa, apmācība un testēšana notika uz angļu valodas korpusa (3b metode).} 
    \label{fig:webapps-bert-xlm-en}
 \end{figure}
 
 
 \begin{figure}[h] 
    \centering
-   \subcaptionbox{XLM-RoBERTa latviešu treniņdatu kopa}{\includegraphics[width=0.49\linewidth,trim={0 0.1cm 0 0},clip]{results-5/graphs/webapps_xlm-roberta-base_lv-accuracy.png}}
-   \subcaptionbox{XLM-RoBERTa mašīntulkoto latviešu treniņdatu kopa}{\includegraphics[width=0.49\linewidth,trim={0 0.1cm 0 0},clip]{results-5/graphs/webapps_xlm-roberta-base_lv_en-accuracy.png}}
-   \caption{caption} 
+   \subcaptionbox{mašīntulkoto latviešu treniņdatu kopa}{\includegraphics[width=0.49\linewidth,trim={0 0.1cm 0 0},clip]{graphs-newest/webapps_xlm-roberta-base_lv_en-accuracy.png}}
+   \subcaptionbox{latviešu treniņdatu kopa}{\includegraphics[width=0.49\linewidth,trim={0 0.1cm 0 0},clip]{graphs-newest/webapps_xlm-roberta-base_lv-accuracy.png}}
+   \caption{Nodomu noteikšanas precizitātes palielināšanās modeļa apmācībās gaitā. Precizitāte aprēķināta uz treniņdatu kopas (zilā līnija) un validācijas datu kopas (oranžā līnija). Izmantota XLM-RoBERTa jēdzientelpa, \textit{Webapps} datu kopa, apmācība un testēšana notika uz latviešu valodas korpusa (1ab metodes).} 
    \label{fig:webapps-xlm}
 \end{figure}
 
 
 \begin{figure}[h] 
    \centering
-   \subcaptionbox{XLM-RoBERTa apvienotā treniņdatu kopa}{\includegraphics[width=0.49\linewidth,trim={0 0.1cm 0 0},clip]{results-5/graphs/webapps_xlm-roberta-base_all-accuracy.png}}
-   \subcaptionbox{XLM-RoBERTa apvienotā mašīntulkoto treniņdatu kopa}{\includegraphics[width=0.49\linewidth,trim={0 0.1cm 0 0},clip]{results-5/graphs/webapps_xlm-roberta-base_all_en-accuracy.png}}
-   \caption{caption} 
+   \subcaptionbox{apvienotā mašīntulkoto treniņdatu kopa}{\includegraphics[width=0.49\linewidth,trim={0 0.1cm 0 0},clip]{graphs-newest/webapps_xlm-roberta-base_all_en-accuracy.png}}
+   \subcaptionbox{apvienotā treniņdatu kopa}{\includegraphics[width=0.49\linewidth,trim={0 0.1cm 0 0},clip]{graphs-newest/webapps_xlm-roberta-base_all-accuracy.png}}
+   \caption{Nodomu noteikšanas precizitātes palielināšanās modeļa apmācībās gaitā. Precizitāte aprēķināta uz treniņdatu kopas (zilā līnija) un validācijas datu kopas (oranžā līnija). Izmantota XLM-RoBERTa jēdzientelpa, \textit{Webapps} datu kopa, apmācība notika uz visām valodām, testēšana uz latviešu valodas korpusa (2ab metodes).} 
    \label{fig:webapps-xlm-all}
 \end{figure}
