@@ -34,6 +34,7 @@ Skaitliski mazākās datu kopās (\textit{Askubuntu} un \textit{Webapps}) apvien
 Līdzīgu datu korpusu gadījumā virtuālajam asistentam autors izvēlētos trenēt vienu nodomu klasifikācijas modeli, kas apmācīts uz datiem, kas ir mašīntulkoti uz angļu valodu un apvienoti vienā korpusā.
 
 
+Salīdzinot darbā iegūto nodomu noteikšanas precizitāti angļu valodā ar literatūrā pieejamo \cite{fasttext2019}, var secināt, ka darbā izmantotie modeļi pārspēj dažus no komerciāli piedāvātajiem variantiem (\ref{fig:comparison} attēls).
 
 % Datu kopas
 
@@ -71,3 +72,11 @@ Līdzīgu datu korpusu gadījumā virtuālajam asistentam autors izvēlētos tre
     \end{tabular}%
   \label{tab:avg-method}%
 \end{table}%
+
+
+\begin{figure}[h]
+   \centering
+   \includegraphics[width=\linewidth]{figures/results.pdf}
+   \caption{Vairāku dialogu sistēmu nodomu noteikšanas precizitāte angļu valodā, \%, (dati \cite{fasttext2019}).}
+   \label{fig:comparison}
+\end{figure}

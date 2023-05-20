@@ -56,10 +56,10 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{Secinājumi}{48}{chapter*.47}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Pateicības}{50}{chapter*.49}%
+\contentsline {chapter}{Pateicības}{50}{chapter*.50}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Izmantotā literatūra un avoti}{51}{chapter*.49}%
+\contentsline {chapter}{Izmantotā literatūra un avoti}{51}{chapter*.50}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Pielikums}{56}{chapter*.51}%
+\contentsline {chapter}{Pielikums}{56}{chapter*.52}%
 \defcounter {refsection}{0}\relax 
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

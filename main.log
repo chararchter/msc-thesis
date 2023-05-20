@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (MiKTeX 21.12.10) (preloaded format=xelatex 2022.1.1)  20 MAY 2023 18:06
+This is XeTeX, Version 3.141592653-2.6-0.999993 (MiKTeX 21.12.10) (preloaded format=xelatex 2022.1.1)  20 MAY 2023 18:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1806,11 +1806,17 @@ e bmp)
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) [45] [46] [47] (tex/conclusions.tex) [48
+) [45] [46] [47] (tex/conclusions.tex
+File: figures/results.pdf Graphic file (type pdf)
+<use figures/results.pdf>
 
 
-] [49] (tex/acknowledgements.tex)
-[50
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) [48
+
+
+] [49] (tex/acknowledgements.tex) [50
 
 
 ]
@@ -2418,10 +2424,10 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 34393 strings out of 411044
- 727652 string characters out of 2829678
- 1825325 words of memory out of 3000000
- 54584 multiletter control sequences out of 15000+600000
+ 34401 strings out of 411044
+ 727856 string characters out of 2829678
+ 1825456 words of memory out of 3000000
+ 54592 multiletter control sequences out of 15000+600000
  411954 words of font info for 94 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  122i,11n,131p,10639b,5700s stack positions out of 5000i,500n,10000p,200000b,80000s
