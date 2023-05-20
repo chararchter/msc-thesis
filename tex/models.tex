@@ -23,7 +23,7 @@ Jēdzientelpas no teksta korpusa iegūst ar neironu tīkliem, kuri uztver kontek
 Bag-of-Words (BOW) apzīmē vārdu grupu nesaglabājot kārību. Vienā izlasē (bag) vārda tuvums mērķa vārdam konkrētā izlasē nav tik svarīgs, atkārtojot procesu uz korpusa no konteksta tāpat tiks sīkāk (granulētāk) izšķirti svari tuvākajiem vārdiem, piemēram, Rīga un Latvija būs tuvumā 1000 reizes biežāk nekā Rīga un sniegs.
 % \url{https://en.wikipedia.org/wiki/Bag-of-words_model}
 
-CBOW (Continuous Bag-of-Words) metodē neironu tīkls mēģina uzminēt esošo (vidējo) vārdu no $n$ iepriekšējiem un $n$ nākošajiem vārdiem. Procesu atkārtojot, vārdiem, kas bieži parādās vienā kontekstā, būs līdzīgi vektori. Pēc izkliedētības (\textit{distributional}) hipotēzes vārdi, kas atrodas līdzīgos kontekstos, ir ar līdzīgu nozīmi \cite{word2vec2013}. Tāpat kā BOW modelī, CBOW vārdu secība neietekmē projekciju. Nepārtrauktība (\textit{continuuity}) modelī rodas no tā, ka izmanto nepārtrauktu izkliedētu konteksta reprezentāciju
+CBOW (Continuous Bag-of-Words) metodē neironu tīkls mēģina uzminēt esošo (vidējo) vārdu no $n$ iepriekšējiem un $n$ nākošajiem vārdiem. Procesu atkārtojot, vārdiem, kas bieži parādās vienā kontekstā, būs līdzīgi vektori. Pēc izkliedētības (\textit{distributional}) hipotēzes vārdi, kas atrodas līdzīgos kontekstos, ir ar līdzīgu nozīmi \cite{word2vec2013}. Tāpat kā BOW modelī, CBOW vārdu secība neietekmē projekciju. Nepārtrauktība (\textit{continuity}) modelī rodas no tā, ka izmanto nepārtrauktu izkliedētu konteksta reprezentāciju
 % (continuous distributed representation of the context)
 jeb svari starp ievades un projekcijas slāņiem tiek lietoti visiem vārdiem.
 % (weight matrix between the input and the projection layer is shared for all word positions) 
