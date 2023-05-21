@@ -207,7 +207,7 @@ Maģistra darbs „\doktitle” izstrādāts Latvijas Universitātes \dokfak.
   
 Ar savu parakstu apliecinu, ka pētījums veikts patstāvīgi, izmantoti tikai tajā norādītie informācijas avoti un iesniegtā darba elektroniskā kopija atbilst izdrukai.
 
-\vspace*{3ex}Autors: \tline{(Autora paraksts un datums)}{8cm}
+\vspace*{3ex}Autore: \tline{(Autores paraksts un datums)}{8cm}
 \vfill
 
 Rekomendēju/nerekomendēju darbu aizstāvēšanai
