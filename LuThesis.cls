@@ -83,7 +83,7 @@
    \begin{flushleft}
     {%
       {
-      Autors: \textbf \@author}\\
+      Autore: \textbf \@author}\\
       Studenta apliecības Nr.: \studaplnum  \\
       Darba vadītājs: \darbvad\\
       \par}%

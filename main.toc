@@ -48,18 +48,18 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {4}Rezultāti}{29}{chapter.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Chatbot datu kopa}{30}{section.4.1}%
+\contentsline {section}{\numberline {4.1}Chatbot datu kopa}{31}{section.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Askubuntu datu kopa}{36}{section.4.2}%
+\contentsline {section}{\numberline {4.2}Askubuntu datu kopa}{37}{section.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.3}Webapps datu kopa}{41}{section.4.3}%
+\contentsline {section}{\numberline {4.3}Webapps datu kopa}{42}{section.4.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Secinājumi}{48}{chapter*.47}%
+\contentsline {chapter}{Secinājumi}{49}{chapter*.47}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Pateicības}{50}{chapter*.50}%
+\contentsline {chapter}{Pateicības}{51}{chapter*.50}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Izmantotā literatūra un avoti}{51}{chapter*.50}%
+\contentsline {chapter}{Izmantotā literatūra un avoti}{52}{chapter*.50}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Pielikums}{56}{chapter*.52}%
+\contentsline {chapter}{Pielikums}{57}{chapter*.52}%
 \defcounter {refsection}{0}\relax 
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

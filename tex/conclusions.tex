@@ -29,12 +29,14 @@ mBERT jēdzientelpām ir labāka precizitāte \textit{Askubuntu} un \textit{Weba
 
 Mašīntulkošana uz angļu valodu ir izdevīga stratēģija (četri a metožu labākie vidējie rezultāti pret diviem b, skat. \ref{tab:avg-method}. tabula). Lai arī nodomu noteikšanas korpusā visas valodas ir vienādi pārstāvētas, daudzvalodu jēdzientelpu modeļi ir apmācīti uz procentuāli lielākas daļas angļu valodas teksta. Mašīntulkošanas pārākums par oriģinālvalodu šajā kontekstā ir interesants, jo mašīntulkošana rada papildu trokšņus un kļūdas un ``pazaudē tulkojumā" katrai valodai svarīgās nianses, kas var ietekmēt ievades datu kvalitāti.
 
-Skaitliski mazākās datu kopās (\textit{Askubuntu} un \textit{Webapps}) apvienot treniņdatus vienā korpusā ir laba ideja, trijos no četriem gadījumiem labākais vidējais rezultāts bija metodē, kurā ne-angļu treniņdati tika mašīntulkoti uz angļu valodu. Stabili vissliktākā metode ir apmācīt datus tikai uz angļu valodas korpusa un testēt uz korpusa citā valodā, pirms tam netulkojot uz angļu valodu. Iespējams tas ir saistīts ar šo korpusu specifiku (maz datu). Taču 3b ir interesanta metode, jo parāda starpvalodu mācīšanos. 
+Skaitliski mazākās datu kopās (\textit{Askubuntu} un \textit{Webapps}) apvienot treniņdatus vienā korpusā ir laba ideja, trijos no četriem gadījumiem labākais vidējais rezultāts bija metodē, kurā ne-angļu treniņdati tika mašīntulkoti uz angļu valodu.  
 
-Līdzīgu datu korpusu gadījumā virtuālajam asistentam autors izvēlētos trenēt vienu nodomu klasifikācijas modeli, kas apmācīts uz datiem, kas ir mašīntulkoti uz angļu valodu un apvienoti vienā korpusā.
+3a metodei, neskatoties uz salīdzinošu zemu precizitāti, ir svarīga priekšrocība: tā ir vislētāk implementējama praksē, jo tai nav nepieciešami apmācības dati daudzās valodās un pietiek tikai ar angļu valodas datiem. Stabili vissliktākā metode ir 3b: apmācīt datus tikai uz angļu valodas korpusa un testēt uz korpusa citā valodā, pirms tam netulkojot uz angļu valodu. Iespējams tas ir saistīts ar šo korpusu specifiku (maz datu). Taču 3b ir interesanta metode, jo parāda starpvalodu mācīšanos.
+
+Līdzīgu datu korpusu gadījumā virtuālajam asistentam autore izvēlētos trenēt vienu nodomu klasifikācijas modeli, kas apmācīts uz datiem, kas ir mašīntulkoti uz angļu valodu un apvienoti vienā korpusā.
 
 
-Salīdzinot darbā iegūto nodomu noteikšanas precizitāti angļu valodā ar literatūrā pieejamo \cite{fasttext2019}, var secināt, ka darbā izmantotie modeļi pārspēj dažus no komerciāli piedāvātajiem variantiem (\ref{fig:comparison} attēls).
+Salīdzinot darbā iegūto nodomu noteikšanas precizitāti angļu valodā ar literatūrā pieejamo \cite{fasttext2019}, var secināt, ka darbā izmantotie modeļi pārspēj dažus no komerciāli piedāvātajiem variantiem (\ref{fig:comparison} attēls). Tomēr jāņem vērā, ka literatūras datos, atšķirība no šī darba, nodomi ar mazāku piemēru skaitu netika apvienoti "\textit{Other}" nodomā.
 
 % Datu kopas
 

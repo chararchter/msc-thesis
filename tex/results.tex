@@ -1,8 +1,12 @@
 
-Izmantotais nodomu noteikšanas modelis ir teksta klasifikators, kas sastāv no Conv1D un MaxPooling1D slāņiem (\textit{layers}). Conv1D slānis dara viendimensiju konvolūciju (\textit{convolution}), pārbīdot logu (\textit{kernel}) ar izmēru trīs pāri ievades vektoram. MaxPooling1D samazina modeļa arhitektūras dimensijas izvēloties maksimālo vērtību starp diviem elementiem. Tas samazina parametru skaitu un uzlabo modeļa ātrdarbību. Tāpat modelī ir Dropout slānis, kas atmet 10\% parametru, lai novērstu pārpielāgošanu.
+Izmantotais nodomu noteikšanas modelis ir teksta klasifikators, kas sastāv no \texttt{Conv1D} un 
+
+\texttt{MaxPooling1D} slāņiem (\textit{layers}). \texttt{Conv1D} slānis veic viendimensijas konvolūciju (\textit{convolution}), pārbīdot logu (\textit{kernel}) ar izmēru trīs pāri ievades vektoram. \texttt{MaxPooling1D} samazina modeļa parametru skaitu, izvēloties maksimālo vērtību starp diviem elementiem. Tas uzlabo modeļa ātrdarbību. Tāpat modelī ir \texttt{Dropout} slānis, kas atmet 10\% parametru, lai novērstu pārpielāgošanu. Visi modeļi tiek trenēti uz 200 epohām, jo tas ir pietiekami, lai precizitāte konverģētu uz treniņu datu kopas. Sērijas apjoms (t.i., vienlaicīgi apstrādāto piemēru skaits, \textit{batch size}) tika izvēlēts, balstoties uz datu kopas izmēra: \textit{Chatbot} datu kopai 24, \textit{Askubuntu} -- 16 un \textit{Webapps} -- 8. Apmācības ātrums (\textit{learning rate}) tika izvēlēts $10^{-3}$ \textit{Chatbot} datu kopai un $10^{-4}$ pārējām datu kopām.
+
+Kā optimizators tiek izmantots Adam ar parametriem: \texttt{beta\_1=0.9, beta\_2=0.999, weight\_decay=0, epsilon=0, amsgrad=False, clipnorm=1.0}. Visām metodēm tiek lietots viens neironu tīkla modelis, un rezultāti ir vidējais no četrām palaišanas reizēm.
 
 
-Šajā nodaļā ir izklāstīti pētījuma rezultāti, kuru mērķis ir salīdzināt dažādu lietotāju nodomu noteikšanas metožu precizitāti angļu, latviešu, krievu, igauņu un lietuviešu valodās, izmantojot mBERT un XLM-RoBERTa jēdzientelpas un dažādu valodu datus. Nodaļā rezultāti tiek analizēti pēc precizitātes un tiek apskatīti modeļu apmācības grafiki. Tāpat nodaļā ir apskatīta iegūto rezultātu ietekme uz virtuālo asistentu sistēmu izstrādi un uzlabošanu.
+Šajā nodaļā ir izklāstīti pētījuma rezultāti, kuru mērķis ir salīdzināt dažādu lietotāju nodomu noteikšanas metožu precizitāti angļu, latviešu, krievu, igauņu un lietuviešu valodās, izmantojot mBERT un XLM-RoBERTa jēdzientelpas un dažādu valodu datus. Nodaļā rezultāti tiek analizēti pēc precizitātes (pareizi klasificēto nodomu skaits, izdalīts ar kopējo piemēru skaitu, \textit{accuracy}) un tiek apskatīti modeļu apmācības grafiki. Tāpat nodaļā ir apskatīta iegūto rezultātu ietekme uz virtuālo asistentu sistēmu izstrādi un uzlabošanu.
 
 \ref{tab:legend} tabula sniedz pārskatu par atšķirībām starp dažādām lietotāju nodomu noteikšanai izmantotajām metodēm, pamatojoties uz apmācībā izmantoto valodu un to, vai korpuss ir bijis mašīntulkots uz angļu valodu. Papildus \ref{tab:legend2} tabulā ir īsi definēti 1a, 1b, 2a, 2b, 3a, 3b metožu atšifrējumi par piemēru ņemot latviešu valodas korpusu, ļaujot interpretēt turpmākās tabulas ar rezultātiem.
 
@@ -348,22 +352,17 @@ Tas izskaidrojams ar lielāku piemēru skaitu validācijas datu kopā.
 \section{Webapps datu kopa}
 
 
-Webapps datu kopā ir nodoms ar tikai vienu piemēru, kas izraisa “ValueError: The least populated class in y has only 1 member, which is too few. The minimum number of groups for any class cannot be less than 2." Tāpēc nodomi ar mazāk nekā trīs piemēriem tika apvienoti vienā nodomā “Other". Tas atbilst reālam pielietojumam industrijā, kur nodomi nav vienlīdzīgi pārstāvēti  -- piemēram, starp 115 dažādiem nodomiem divi visbiežākie nodomi kopā pārstāv 33\% datu kopas \cite{paikens2020} -- un ir svarīgi spēt atsijāt nodomus, kurus jāapstrādā klientu apkalpošanas speciālistam -- cilvēkam.
+Webapps datu kopā ir nodoms ar tikai vienu piemēru, kas izraisa kļūdu “ValueError: The least populated class in y has only 1 member, which is too few. The minimum number of groups for any class cannot be less than 2." Tāpēc nodomi ar mazāk nekā trīs piemēriem tika apvienoti vienā nodomā “Other". Tas atbilst reālam pielietojumam industrijā, kur nodomi nav vienlīdzīgi pārstāvēti  -- piemēram, starp 115 dažādiem nodomiem divi visbiežākie nodomi kopā pārstāv 33\% datu kopas \cite{paikens2020} -- un ir svarīgi spēt atsijāt nodomus, kurus jāapstrādā klientu apkalpošanas speciālistam -- cilvēkam.
 
 % , bet visaugstākajos rezultātos -- 2a un 2b metodēs XLM-RoBERTa ir pārāks. Šajā gadījumā spēja vienā metodē sasniegt konsekventi labus rezultātus ir svarīgāka nekā viduvēji rezultāti visās, jo pastāv iespēja izvēlēties un lietot vislabāko.
 
 
-Nodomu noteikšanas precizitāte \textit{Webapps} datu kopā ir apkopota pēc izmantotā jēdzientelpu modeļa: mBERT (\ref{tab:webapps-bert} tabula) un XLM-RoBERTa (\ref{tab:webapps-xlm} tabula). Salīdzinot abas tabulas, redzams, ka XLM-RoBERTa jēdzientelpām vairumā gadījumu ir zemāka preciztāte nekā nekā mBERT. Tāpat kā \textit{Askubuntu} datu kopā, arī šeit XLM-RoBERTa jēdzientelpas ļoti iegūst no lielāka daudzvalodu datu korpusa -- no 1ab un 3a vidējās 47\% precizitātes, 2ab tā pieaug par 19\%. 
+Nodomu noteikšanas precizitāte \textit{Webapps} datu kopā ir apkopota pēc izmantotā jēdzientelpu modeļa: mBERT (\ref{tab:webapps-bert} tabula) un XLM-RoBERTa (\ref{tab:webapps-xml} tabula). Salīdzinot abas tabulas, redzams, ka XLM-RoBERTa jēdzientelpām vairumā gadījumu ir zemāka preciztāte nekā nekā mBERT. Tāpat kā \textit{Askubuntu} datu kopā, arī šeit XLM-RoBERTa jēdzientelpas ļoti iegūst no lielāka daudzvalodu datu korpusa -- no 1ab un 3a vidējās 47\% precizitātes, 2ab tā pieaug par 19\%. 
 
 
-Angļu valodā 1b XLM-RoBERTa ir ar precizitāti 42.37\%, kas varētu būt nejaušība, jo 3b arī apmāca un trenē uz tieši tāda paša korpusa un ir 64.41\%, tāpēc to var neņemt vērā. Ar mBERT jēdzientelpu šāda problēma angļu valodai nebija novērota (apmācot modeli ar 1b metodi tika iegūta precizitāte 64.41\%).
+%Angļu valodā 1b XLM-RoBERTa ir ar precizitāti 42.37\%, kas varētu būt nejaušība, jo 3b arī apmāca un trenē uz tieši tāda paša korpusa un ir 64.41\%, tāpēc to var neņemt vērā. Ar mBERT jēdzientelpu šāda problēma angļu valodai nebija novērota (apmācot modeli ar 1b metodi tika iegūta precizitāte 64.41\%).
 
 Atšķirībā no pārējām datu kopām nodomu noteikšanas precizitāte igauņu valodā nav sliktāka, salīdzinot ar citām maz-resursu valodām -- igauņu valodai maksimālā precizitāte sasniedz gandrīz 75\%, bet latviešu un lietuviešu valodām tā ir attiecīgi 73\% un 80\%. Tādā veidā maz-resursu valodas uz šīs datu kopas ir ar līdzīgu precizitāti kā krievu valodai, kura ir daudz plašāk pārstāvēta tekstu korpusos.
-
-
-
-Angļu valodā 1b XLM-RoBERTa ir ar precizitāti 50.85\%, kas varētu būt nejaušība, jo 3b arī apmāca un trenē uz tieši tāda paša korpusa un ir 58.05\%, tāpēc to var neņemt vērā. Ar mBERT jēdzientelpu šāda problēma angļu valodai nebija novērota (apmācot modeli ar 1b metodi tika iegūta precizitāte 64.41\%).
-
 
 Jāpievērš uzmanība, ka 1b un 3b tieši angļu valodā faktiski ir viena un tā pati metode -- modelis tiek trenēts uz angļu valodas treniņdatiem un testēts uz angļu valodas testa datiem, tas attiecas uz visām datu kopām. Izvēle atstāt 1b un 3b metodi atsevišķi, nevis apkopot, tika izdarīta, lai visām valodām būtu vienāds skaits eksperimentu un atklātības (\textit{transparency}) dēļ. Mašīnmācīsanās nav deterministiska. Apmācot modeli ar vienādu arhitektūru uz tiem pašiem apmācības datiem, katru reizi var iegūt atšķirīgus rezultātus apmācības procesam raksturīgās nejaušības dēļ. Modeļa svari tiek inicializēti nejauši, un apmācības laikā optimizācijas algoritms var konverģēt uz dažādiem lokāliem minimumiem, kas noved pie dažādām nodomu noteikšanas precizitātēm. Darbā tas tika ņemts vērā palaižot modeli četras reizes un izmantojot vidējo vērtību.
 
