@@ -1,6 +1,6 @@
 Jēdzientelpas no teksta korpusa iegūst ar neironu tīkliem, kuri uztver kontekstu no tuvākajiem vārdiem tekstā.
 
-\textit{Continuous Bag-of-Words} (CBOW) un \textit{Continuous Skip-gram Model} ir divas neironu tīklu modeļu arhitektūras jēdzientelpu izveidei balstoties uz teksta korpusa. Metožu priekšrocība ir tajā, ka nav nepieciešama anotēta treniņu datu kopa, trenēšanai izmanto lielus teksta korpusus. CBOW modelī apkārt esošos vārdus izmanto vidū esošā vārda paredzēšanai. Skip-gram modelī vārda vektoru izmanto konteksta paredzēšanai (\ref{fig:cbow-skipgram} attēls).
+\textit{Continuous Bag-of-Words} (CBOW) un \textit{Continuous Skip-gram Model} ir divas neironu tīklu modeļu arhitektūras jēdzientelpu izveidei balstoties uz teksta korpusa. Metožu priekšrocība ir tajā, ka nav nepieciešama anotēta treniņu datu kopa, trenēšanai izmanto lielus teksta korpusus. CBOW modelī apkārt esošos vārdus izmanto vidū esošā vārda paredzēšanai \cite{word2vec2013}. Skip-gram modelī vārda vektoru izmanto konteksta paredzēšanai (\ref{fig:cbow-skipgram} attēls).
 
 \begin{figure}[h]
 	\centering
@@ -25,9 +25,8 @@ Bag-of-Words (BOW) apzīmē vārdu grupu nesaglabājot kārību. Vienā izlasē 
 
 CBOW (Continuous Bag-of-Words) metodē neironu tīkls mēģina uzminēt esošo (vidējo) vārdu no $n$ iepriekšējiem un $n$ nākošajiem vārdiem. Procesu atkārtojot, vārdiem, kas bieži parādās vienā kontekstā, būs līdzīgi vektori. Pēc izkliedētības (\textit{distributional}) hipotēzes vārdi, kas atrodas līdzīgos kontekstos, ir ar līdzīgu nozīmi \cite{word2vec2013}. Tāpat kā BOW modelī, CBOW vārdu secība neietekmē projekciju. Nepārtrauktība (\textit{continuity}) modelī rodas no tā, ka izmanto nepārtrauktu izkliedētu konteksta reprezentāciju
 % (continuous distributed representation of the context)
-jeb svari starp ievades un projekcijas slāņiem tiek lietoti visiem vārdiem.
+jeb svari starp ievades un projekcijas slāņiem tiek lietoti visiem vārdiem \cite{word2vec2013}.
 % (weight matrix between the input and the projection layer is shared for all word positions) 
-\cite{word2vec2013}.
 CBOW neironu tīkla galvenās daļas ir kartējuma (\textit{embedding}) slānis un tam sekojošs blīvais (\textit{dense}) slānis, kurā katrs slāņa mezgls ir pilnībā savienots ar citu mezglu nākamajā slānī (\ref{fig:cbow-skipgram} attēls).
 
 
